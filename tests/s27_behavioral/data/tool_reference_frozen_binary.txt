@@ -1,0 +1,31 @@
+# LatchSTA 冻结版二进制对 s27 的原始运行输出
+# 机器: WSL Ubuntu-24.04
+# 二进制: ~/LatchSTA/code/build/main (mtime 2025-09-14 11:42, 即用户工作区同源副本, 无 LEDA)
+# 命令: cd ~/LatchSTA/code && ./build/main benchmark/s27.blif.out 1 100
+# 运行日期: 2026-10-12
+# 备注: 该版本文本不含 per-latch skew 表; T_LP_MCR=5.38621 与新版捕获(下方另一文件)不一致, 两个数字都存档
+#
+benchmark/s27.blif.out
+GLPK Simplex Optimizer 5.0
+140 rows, 17 columns, 294 non-zeros
+      0: obj =   0.000000000e+00 inf =   5.721e+01 (14)
+     31: obj =   5.386209846e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+GLPK Simplex Optimizer 5.0
+42 rows, 6 columns, 116 non-zeros
+      0: obj =   0.000000000e+00 inf =   1.144e+02 (28)
+     14: obj =   6.583829880e+00 inf =   0.000e+00 (0)
+*    17: obj =   5.060699940e+00 inf =   0.000e+00 (0)
+OPTIMAL LP SOLUTION FOUND
+=====================SUMMARY====================
+Input file is benchmark/s27.blif.out
+Initial T is 6.58383 ns
+MCR:
+	#vertices = 17, #edges = 140
+	T_Howard's = 5.38621 ns, time is 0.019838 ms
+	T_YTO's = 5.0607 ns, time is 0.010741 ms
+	T_LP_MCR = 5.38621 ns, time is 0.434059 ms
+ELL:
+	#vertices = 4, #edges = 42
+	T_ELL = 5.06076 ns, W_ELL = 0.000181703 ns, time is 0.129601 ms
+	T_LP_ELL = 5.0607 ns, W_LP_ELL = 0 ns, time is 0.162006 ms
