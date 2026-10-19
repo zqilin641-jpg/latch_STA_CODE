@@ -1,0 +1,11 @@
+# Negative control: close the latch before the new arithmetic data can arrive.
+# This deliberately unrealistic 1 ns pulse is not a board-clock recommendation.
+create_clock -name transaction_clock -period 640.0 -waveform {0.0 320.0} [get_ports {clk_reference}]
+create_clock -name phase_a -period 640.0 -waveform {2.0 3.0} [get_ports {phase_a}]
+create_clock -name phase_b -period 640.0 -waveform {320.0 480.0} [get_ports {phase_b}]
+set_clock_uncertainty 0.2 [get_clocks {transaction_clock phase_a phase_b}]
+set_input_delay -clock transaction_clock -max 2.0 [get_ports {data_in[*]}]
+set_input_delay -clock transaction_clock -min 0.2 [get_ports {data_in[*]}]
+set_output_delay -clock transaction_clock -max 2.0 [get_ports {result[*]}]
+set_output_delay -clock transaction_clock -min 0.2 [get_ports {result[*]}]
+set_false_path -from [get_ports {reset}]
