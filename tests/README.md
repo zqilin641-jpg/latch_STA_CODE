@@ -19,6 +19,13 @@ No package installation is performed by these commands.
 
 ## Semantics
 
+- Tsu and Th are signed finite timing requirements in both CLI defaults and
+  per-node files. Tcq and Tdq remain finite nonnegative propagation delays.
+  Negative setup/hold are passed unchanged to both Howard and LP graph models.
+  Tests include -0.012 ns setup and -0.014 ns hold, individually and together,
+  plus per-node overrides, nonfinite/malformed input and negative Tcq/Tdq.
+  These checks validate the existing model, not full PDS model equivalence.
+
 - Howard solves cyclic strongly connected components (SCCs) separately.
   Isolated vertices, sinks and acyclic components no longer invalidate a policy.
   A wholly acyclic graph returns NoCycle, not a finite timing result.

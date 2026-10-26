@@ -37,5 +37,10 @@ if(TARGET main)
         add_test(NAME howard_cli_validation COMMAND ${Python3_EXECUTABLE}
             "${CMAKE_CURRENT_SOURCE_DIR}/test_cli_validation.py" $<TARGET_FILE:main>)
         set_tests_properties(howard_cli_validation PROPERTIES TIMEOUT 150)
+        if(TARGET pds_howard)
+            add_test(NAME pds_graph_cli COMMAND ${Python3_EXECUTABLE}
+                "${CMAKE_CURRENT_SOURCE_DIR}/test_pds_graph_cli.py" $<TARGET_FILE:pds_howard>)
+            set_tests_properties(pds_graph_cli PROPERTIES TIMEOUT 30)
+        endif()
     endif()
 endif()

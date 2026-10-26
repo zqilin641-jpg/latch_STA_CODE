@@ -73,11 +73,12 @@ static bool loadNodeParams(const string &fileName, LatchTimingParamMap &nodePara
                cerr << fileName << ':' << lineNumber << ": unexpected extra field" << endl;
                return false;
           }
-          if (values.setup < 0 || values.hold < 0 ||
+          if (!isfinite(values.setup) || !isfinite(values.hold) ||
+              !isfinite(values.clockToQ) || !isfinite(values.dataToQ) ||
               values.clockToQ < 0 || values.dataToQ < 0)
           {
                cerr << fileName << ':' << lineNumber
-                    << ": latch timing parameters must be nonnegative" << endl;
+                    << ": timing parameters must be finite; Tcq and Tdq must be nonnegative" << endl;
                return false;
           }
 
@@ -243,10 +244,14 @@ int main(int argc, char *const argv[])
      LatchTimingParams params;
      if (positionalArgc >= 8)
      {
-          params.setup = atof(argv[4]);
-          params.hold = atof(argv[5]);
-          params.clockToQ = atof(argv[6]);
-          params.dataToQ = atof(argv[7]);
+          if (!parseDouble(argv[4], params.setup) ||
+              !parseDouble(argv[5], params.hold) ||
+              !parseDouble(argv[6], params.clockToQ) ||
+              !parseDouble(argv[7], params.dataToQ))
+          {
+               cerr << "Timing parameters must be finite numbers." << endl;
+               return 1;
+          }
      }
      LatchTimingParamMap nodeParams;
      string nodeParamsFile;
@@ -271,11 +276,11 @@ int main(int argc, char *const argv[])
               !validateNodeNames(filename, nodeParams))
                return 1;
      }
-     if (iter <= 0 || alpha <= 0 || params.setup < 0 || params.hold < 0 ||
+     if (iter <= 0 || !isfinite(alpha) || alpha <= 0 ||
          params.clockToQ < 0 || params.dataToQ < 0 ||
          dutyCycle <= 0.0 || dutyCycle > 0.5)
      {
-          cerr << "Iterations and radius must be positive; latch timing parameters must be nonnegative; duty cycle must be in (0, 0.5]." << endl;
+          cerr << "Iterations and radius must be positive and finite; Tsu/Th may be signed; Tcq/Tdq must be nonnegative; duty cycle must be in (0, 0.5]." << endl;
           return 1;
      }
      const bool hasNonzeroParams = params.setup != 0 || params.hold != 0 ||

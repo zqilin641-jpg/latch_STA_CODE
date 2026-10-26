@@ -227,7 +227,7 @@ void getMcrGraph(const string &fileName, Graph &g, double &tInitial,
     map<size_t, vector<Vertex>> toSubNode; 
     //a node in dg will split into four node:a,A,d,D
     //reference node
-    N* n_ref = {0, "REF", "t"};
+    NodeProperties n_ref = {0, "REF", "t"};
     Vertex ref = boost::add_vertex(n_ref, g);
     boost::graph_traits<DelayGraph>::vertex_iterator vi, viend;
     size_t numNode = 1;

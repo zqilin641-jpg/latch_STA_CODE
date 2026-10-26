@@ -74,9 +74,11 @@ int main(int argc, char **argv) {
         mcrLP("missing.unsupported", period, {}, {}, 0.5, &slacks, &lp);
         CHECK(lp.status == LpStatus::InputError && std::isnan(period) && slacks.empty());
         for (double duty : {0.5, 0.4}) {
-            for (bool nonzeroParams : {false, true}) {
-                LatchTimingParams params;
-                if (nonzeroParams) params = {0.1, 0.1, 0.1, 0.1};
+            for (const LatchTimingParams params : {
+                    LatchTimingParams{}, LatchTimingParams{0.1, 0.1, 0.1, 0.1},
+                    LatchTimingParams{-0.012, 0.1, 0.1, 0.1},
+                    LatchTimingParams{0.1, -0.014, 0.1, 0.1},
+                    LatchTimingParams{-0.012, -0.014, 0.1, 0.1}}) {
                 Graph timing;
                 double t0;
                 getMcrGraph(argv[1], timing, t0, params, {}, duty);
@@ -86,7 +88,7 @@ int main(int argc, char **argv) {
                 CHECK(lp.status == LpStatus::Optimal);
                 CHECK(comparePeriods(model.getResult(), lp, period).status == ComparisonStatus::Match);
             }
-            LatchTimingParamMap overrides{{"A", {0.1, 0.1, 0.1, 0.1}}};
+            LatchTimingParamMap overrides{{"A", {-0.012, -0.014, 0.1, 0.1}}};
             Graph timing;
             double t0;
             getMcrGraph(argv[1], timing, t0, {}, overrides, duty);

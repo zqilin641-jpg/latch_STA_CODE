@@ -18,6 +18,7 @@ struct EdgeDelay
 
 struct LatchTimingParams
 {
+    // Setup/hold are signed timing requirements, not propagation delays.
     double setup = 0.0;
     double hold = 0.0;
     double clockToQ = 0.0;

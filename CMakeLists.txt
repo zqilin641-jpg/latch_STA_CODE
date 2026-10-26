@@ -115,6 +115,8 @@ endif()
 # ---- Executable ----
 add_executable(main ${SRC_LIST})
 
+add_executable(pds_howard tools/pds_howard.cpp src/howard.cpp)
+
 # ---- Link ----
 target_link_libraries(main
     ${OpenBLAS_LIBRARIES}
