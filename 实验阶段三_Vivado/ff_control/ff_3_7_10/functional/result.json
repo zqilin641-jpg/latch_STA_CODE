@@ -1,0 +1,11 @@
+{
+  "design": "ff_3_7_10",
+  "passed": true,
+  "observations": [
+    [
+      "4132",
+      "0"
+    ]
+  ],
+  "scope": "RTL MMCM vendor-model simulation after LOCKED, reset and validity included; no SDF or formal proof"
+}

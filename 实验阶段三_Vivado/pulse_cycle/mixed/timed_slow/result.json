@@ -1,0 +1,9 @@
+{
+  "passed": false,
+  "corner": "slow",
+  "stimuli": 256,
+  "checks": 290,
+  "errors": 4,
+  "clock_evidence": "CLOCK_DIAG external=322 internal=291 locked=1",
+  "scope": "Fixed 10ns period; native timing netlist with SDF; not formal proof"
+}

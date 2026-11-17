@@ -1,0 +1,33 @@
+{"primary_pair_count": 50, "query_count": 260, "timed_count": 230, "primary_pair_corner_coverage_complete": true, "howard_ready": false, "design": "mixed_stage2"}
+Fixed routed checkpoint; native all_fanin sequential boundaries and output ports; reset excluded by XDC false path.
+Transparent-latch propagation and library/hold semantics must be modeled; unavailable D-start min queries are not zero delays.
+UNAVAILABLE {"id": "86", "adjacent_start": "latch_10/G", "end": "ff_15/D", "query_start": "latch_10/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "88", "adjacent_start": "latch_10/G", "end": "ff_15/D", "query_start": "latch_10/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "94", "adjacent_start": "latch_11/G", "end": "ff_16/D", "query_start": "latch_11/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "96", "adjacent_start": "latch_11/G", "end": "ff_16/D", "query_start": "latch_11/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "102", "adjacent_start": "latch_10/G", "end": "ff_16/D", "query_start": "latch_10/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "104", "adjacent_start": "latch_10/G", "end": "ff_16/D", "query_start": "latch_10/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "110", "adjacent_start": "latch_12/G", "end": "ff_17/D", "query_start": "latch_12/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "112", "adjacent_start": "latch_12/G", "end": "ff_17/D", "query_start": "latch_12/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "118", "adjacent_start": "latch_10/G", "end": "ff_17/D", "query_start": "latch_10/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "120", "adjacent_start": "latch_10/G", "end": "ff_17/D", "query_start": "latch_10/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "126", "adjacent_start": "latch_11/G", "end": "ff_17/D", "query_start": "latch_11/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "128", "adjacent_start": "latch_11/G", "end": "ff_17/D", "query_start": "latch_11/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "134", "adjacent_start": "latch_13/G", "end": "ff_18/D", "query_start": "latch_13/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "136", "adjacent_start": "latch_13/G", "end": "ff_18/D", "query_start": "latch_13/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "142", "adjacent_start": "latch_12/G", "end": "ff_18/D", "query_start": "latch_12/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "144", "adjacent_start": "latch_12/G", "end": "ff_18/D", "query_start": "latch_12/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "150", "adjacent_start": "latch_11/G", "end": "ff_18/D", "query_start": "latch_11/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "152", "adjacent_start": "latch_11/G", "end": "ff_18/D", "query_start": "latch_11/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "158", "adjacent_start": "latch_10/G", "end": "ff_18/D", "query_start": "latch_10/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "160", "adjacent_start": "latch_10/G", "end": "ff_18/D", "query_start": "latch_10/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "166", "adjacent_start": "latch_14/G", "end": "ff_19/D", "query_start": "latch_14/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "168", "adjacent_start": "latch_14/G", "end": "ff_19/D", "query_start": "latch_14/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "174", "adjacent_start": "latch_10/G", "end": "ff_19/D", "query_start": "latch_10/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "176", "adjacent_start": "latch_10/G", "end": "ff_19/D", "query_start": "latch_10/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "182", "adjacent_start": "latch_11/G", "end": "ff_19/D", "query_start": "latch_11/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "184", "adjacent_start": "latch_11/G", "end": "ff_19/D", "query_start": "latch_11/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "190", "adjacent_start": "latch_12/G", "end": "ff_19/D", "query_start": "latch_12/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "192", "adjacent_start": "latch_12/G", "end": "ff_19/D", "query_start": "latch_12/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "198", "adjacent_start": "latch_13/G", "end": "ff_19/D", "query_start": "latch_13/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "200", "adjacent_start": "latch_13/G", "end": "ff_19/D", "query_start": "latch_13/D", "corner": "Fast", "delay_type": "min"}

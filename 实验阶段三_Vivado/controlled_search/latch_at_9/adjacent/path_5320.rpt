@@ -1,0 +1,75 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Tue Nov 10 10:25:19 2026
+| Host         : nitro running 64-bit major release  (build 9200)
+| Command      : report_timing -from {result[2]} -to {result[2]} -corner Fast -delay_type min -max_paths 1 -nworst 1 -path_type full_clock_expanded -input_pins -significant_digits 3 -file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/controlled_search/latch_at_9/adjacent/path_5320.rpt
+| Design       : small25
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             3.264ns  (arrival time - required time)
+  Source:                 alignment_ff_02/C
+                            (rising edge-triggered cell FDCE clocked by common_clock  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            result[2]
+                            (output port clocked by common_clock  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             common_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (common_clock rise@0.000ns - common_clock rise@0.000ns)
+  Data Path Delay:        1.831ns  (logic 1.396ns (76.260%)  route 0.435ns (23.740%))
+  Logic Levels:           2  (LUT2=1 OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        -1.469ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.000ns
+    Source Clock Delay      (SCD):    1.469ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock common_clock rise edge)
+                                                      0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk_in (IN)
+                         net (fo=0)                   0.000     0.000    clk_in
+    M18                                                               r  clk_in_IBUF_inst/I
+    M18                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  clk_in_IBUF_inst/O
+                         net (fo=1, routed)           0.634     0.855    clk_in_IBUF
+    BUFGCTRL_X0Y0                                                     r  clock_buffer/I
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026     0.881 r  clock_buffer/O
+                         net (fo=101, routed)         0.588     1.469    clk
+    SLICE_X1Y18          FDCE                                         r  alignment_ff_02/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y18          FDCE (Prop_fdce_C_Q)         0.141     1.610 r  alignment_ff_02/Q
+                         net (fo=1, routed)           0.153     1.763    aligned[2]
+    SLICE_X0Y19                                                       r  result_OBUF[2]_inst_i_1/I1
+    SLICE_X0Y19          LUT2 (Prop_lut2_I1_O)        0.045     1.808 r  result_OBUF[2]_inst_i_1/O
+                         net (fo=1, routed)           0.282     2.089    result_OBUF[2]
+    V19                                                               r  result_OBUF[2]_inst/I
+    V19                  OBUF (Prop_obuf_I_O)         1.210     3.300 r  result_OBUF[2]_inst/O
+                         net (fo=0)                   0.000     3.300    result[2]
+    V19                                                               r  result[2] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock common_clock rise edge)
+                                                      0.000     0.000 r  
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.235     0.235    
+                         output delay                -0.200     0.035    
+  -------------------------------------------------------------------
+                         required time                         -0.035    
+                         arrival time                           3.300    
+  -------------------------------------------------------------------
+                         slack                                  3.264    
+
+
+
+

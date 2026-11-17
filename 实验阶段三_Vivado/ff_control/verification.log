@@ -1,0 +1,47 @@
+{
+  "rows": [
+    {
+      "design": "ff_3_6_10",
+      "pass_ns": "8.00048828125",
+      "frequency_mhz": "124.99237107110162",
+      "lower_bound_only": true,
+      "scan_lower_limit_ns": "8.0"
+    },
+    {
+      "design": "ff_3_7_10",
+      "fail_ns": "8.4072265625",
+      "pass_ns": "8.40771484375",
+      "frequency_mhz": "118.93838201986178",
+      "lower_bound_only": false
+    },
+    {
+      "design": "ff_4_7_10",
+      "fail_ns": "8.1513671875",
+      "pass_ns": "8.15185546875",
+      "frequency_mhz": "122.67145852051513",
+      "lower_bound_only": false
+    },
+    {
+      "design": "mixed_reference",
+      "fail_ns": "8.5654296875",
+      "pass_ns": "8.56591796875",
+      "frequency_mhz": "116.74172034429687",
+      "lower_bound_only": false
+    }
+  ],
+  "best_new_ff": {
+    "design": "ff_3_6_10",
+    "pass_ns": "8.00048828125",
+    "frequency_mhz": "124.99237107110162",
+    "lower_bound_only": true,
+    "scan_lower_limit_ns": "8.0"
+  },
+  "mixed": {
+    "design": "mixed_reference",
+    "fail_ns": "8.5654296875",
+    "pass_ns": "8.56591796875",
+    "frequency_mhz": "116.74172034429687",
+    "lower_bound_only": false
+  },
+  "mixed_gain_vs_best_new_ff_pct": -6.600923445248819
+}

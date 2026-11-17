@@ -1,0 +1,172 @@
+{
+  "results": [
+    {
+      "design": "ff_original",
+      "period_ns": 17.167,
+      "frequency_mhz": 58.25129609133803,
+      "ff": 85,
+      "latch": 0,
+      "critical": [
+        {
+          "k": 1.0,
+          "d_ns": 17.167,
+          "evidence": {
+            "path_id": "837",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\ff_original\\adjacent\\path_837.rpt",
+            "start": "ff_cut2_15/C",
+            "end": "ff_cut11_13/D",
+            "corner": "Slow",
+            "check": "max"
+          },
+          "id": "418",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native_bracket": {
+        "pass": {
+          "period_ns": 17.177000000000003,
+          "setup_wns_ns": 0.01,
+          "hold_whs_ns": 0.05,
+          "pulse_slack_ns": 8.088,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\solve\\ff_original\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 17.157,
+          "setup_wns_ns": -0.01,
+          "hold_whs_ns": 0.05,
+          "pulse_slack_ns": 8.078,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\solve\\ff_original\\fail.rpt"
+        }
+      },
+      "functional": {
+        "design": "ff_original",
+        "passed": true,
+        "observations": [
+          [
+            "4114",
+            "0"
+          ]
+        ],
+        "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+      },
+      "constraint_sha256": "d4c9c574e80838da0d644efddee953cf0d1a49ff2f0e22ce9c4f77053ed235ca",
+      "checkpoint_sha256": "5efe56255a8a8090eaa659ba31769ed23532b8f428e7cf6bf85080b01946428b"
+    },
+    {
+      "design": "ff_retimed",
+      "period_ns": 14.690999999999999,
+      "frequency_mhz": 68.0688857123409,
+      "ff": 85,
+      "latch": 0,
+      "critical": [
+        {
+          "k": 1.0,
+          "d_ns": 14.690999999999999,
+          "evidence": {
+            "path_id": "4285",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\ff_retimed\\adjacent\\path_4285.rpt",
+            "start": "ff_cut12_09/C",
+            "end": "result[9]",
+            "corner": "Slow",
+            "check": "max"
+          },
+          "id": "2142",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native_bracket": {
+        "pass": {
+          "period_ns": 14.700999999999999,
+          "setup_wns_ns": 0.01,
+          "hold_whs_ns": 0.14,
+          "pulse_slack_ns": 6.85,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\solve\\ff_retimed\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 14.681,
+          "setup_wns_ns": -0.01,
+          "hold_whs_ns": 0.14,
+          "pulse_slack_ns": 6.84,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\solve\\ff_retimed\\fail.rpt"
+        }
+      },
+      "functional": {
+        "design": "ff_retimed",
+        "passed": true,
+        "observations": [
+          [
+            "4114",
+            "0"
+          ]
+        ],
+        "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+      },
+      "constraint_sha256": "d4c9c574e80838da0d644efddee953cf0d1a49ff2f0e22ce9c4f77053ed235ca",
+      "checkpoint_sha256": "a3bb3d1bd864e0a35ebe46a8795fb64ce34d82be6a51b0ee2be0320883290b55"
+    },
+    {
+      "design": "mixed_aligned",
+      "period_ns": 14.829,
+      "frequency_mhz": 67.43543057522422,
+      "ff": 85,
+      "latch": 16,
+      "critical": [
+        {
+          "k": 1.0,
+          "d_ns": 14.829,
+          "evidence": {
+            "path_id": "5301",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\mixed_aligned\\adjacent\\path_5301.rpt",
+            "start": "alignment_ff_15/C",
+            "end": "result[15]",
+            "corner": "Slow",
+            "check": "max"
+          },
+          "id": "3162",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native_bracket": {
+        "pass": {
+          "period_ns": 14.839,
+          "setup_wns_ns": 0.0,
+          "hold_whs_ns": 0.023,
+          "pulse_slack_ns": 6.919,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\solve\\mixed_aligned\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 14.819,
+          "setup_wns_ns": -0.01,
+          "hold_whs_ns": 0.023,
+          "pulse_slack_ns": 6.909,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\retiming_benchmark\\solve\\mixed_aligned\\fail.rpt"
+        }
+      },
+      "functional": {
+        "design": "mixed_aligned",
+        "passed": true,
+        "observations": [
+          [
+            "4114",
+            "0"
+          ]
+        ],
+        "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+      },
+      "constraint_sha256": "d4c9c574e80838da0d644efddee953cf0d1a49ff2f0e22ce9c4f77053ed235ca",
+      "checkpoint_sha256": "ce4a51c0d0bed4fbe37b9fe3778c70c085857225e0f780d9b77ef302d542d2c8"
+    }
+  ],
+  "ff_retiming_gain_pct": 16.85385610237562,
+  "mixed_vs_original_gain_pct": 15.766403668487428,
+  "mixed_vs_retimed_ff_gain_pct": -0.9306089419381047
+}

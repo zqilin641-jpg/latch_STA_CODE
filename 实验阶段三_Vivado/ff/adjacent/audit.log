@@ -1,0 +1,3 @@
+{"primary_pair_count": 50, "query_count": 200, "timed_count": 200, "primary_pair_corner_coverage_complete": true, "howard_ready": false, "design": "ff"}
+Fixed routed checkpoint; native all_fanin sequential boundaries and output ports; reset excluded by XDC false path.
+Transparent-latch propagation and library/hold semantics must be modeled; unavailable D-start min queries are not zero delays.

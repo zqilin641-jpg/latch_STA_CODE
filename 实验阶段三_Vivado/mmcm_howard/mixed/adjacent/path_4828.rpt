@@ -1,0 +1,74 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sat Nov 14 11:46:58 2026
+| Host         : nitro running 64-bit major release  (build 9200)
+| Command      : report_timing -from {result[3]} -to {result[3]} -corner Fast -delay_type min -max_paths 1 -nworst 1 -path_type full_clock_expanded -input_pins -significant_digits 3 -file mmcm_howard/mixed/adjacent/path_4828.rpt
+| Design       : small25
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             0.505ns  (arrival time - required time)
+  Source:                 output_ff_03/C
+                            (rising edge-triggered cell FDCE clocked by mm_out  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            result[3]
+                            (output port clocked by common_clock  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             common_clock
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (common_clock rise@0.000ns - mm_out rise@0.000ns)
+  Data Path Delay:        1.303ns  (logic 1.302ns (99.923%)  route 0.001ns (0.077%))
+  Logic Levels:           1  (OBUF=1)
+  Output Delay:           0.200ns
+  Clock Path Skew:        0.605ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    0.000ns
+    Source Clock Delay      (SCD):    -0.605ns
+    Clock Pessimism Removal (CPR):    -0.000ns
+  Clock Uncertainty:      0.394ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Discrete Jitter          (DJ):    0.142ns
+    Phase Error              (PE):    0.114ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock mm_out rise edge)     0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk_in (IN)
+                         net (fo=0)                   0.000     0.000    clk_in
+    M18                                                               r  clk_in_IBUF_inst/I
+    M18                  IBUF (Prop_ibuf_I_O)         0.221     0.221 r  clk_in_IBUF_inst/O
+                         net (fo=1, routed)           0.440     0.661    clk_in_IBUF
+    MMCME2_ADV_X0Y0                                                   r  common_mmcm/CLKIN1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -2.362    -1.701 r  common_mmcm/CLKOUT0
+                         net (fo=1, routed)           0.489    -1.212    mm_out
+    BUFGCTRL_X0Y0                                                     r  clock_buffer/I
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.026    -1.186 r  clock_buffer/O
+                         net (fo=101, routed)         0.582    -0.605    clk
+    OLOGIC_X0Y20         FDCE                                         r  output_ff_03/C
+  -------------------------------------------------------------------    -------------------
+    OLOGIC_X0Y20         FDCE (Prop_fdce_C_Q)         0.177    -0.428 r  output_ff_03/Q
+                         net (fo=1, routed)           0.001    -0.427    result_OBUF[3]
+    U19                                                               r  result_OBUF[3]_inst/I
+    U19                  OBUF (Prop_obuf_I_O)         1.125     0.698 r  result_OBUF[3]_inst/O
+                         net (fo=0)                   0.000     0.698    result[3]
+    U19                                                               r  result[3] (OUT)
+  -------------------------------------------------------------------    -------------------
+
+                         (clock common_clock rise edge)
+                                                      0.000     0.000 r  
+                         clock pessimism              0.000     0.000    
+                         clock uncertainty            0.394     0.394    
+                         output delay                -0.200     0.194    
+  -------------------------------------------------------------------
+                         required time                         -0.194    
+                         arrival time                           0.698    
+  -------------------------------------------------------------------
+                         slack                                  0.505    
+
+
+
+

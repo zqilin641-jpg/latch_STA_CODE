@@ -1,0 +1,11 @@
+{
+  "design": "latch_at_6",
+  "passed": true,
+  "observations": [
+    [
+      "4114",
+      "0"
+    ]
+  ],
+  "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "design": "ff_balanced",
+    "fail_ns": "9.1982421875",
+    "pass_ns": "9.19873046875",
+    "frequency_mhz": "108.71065343171081",
+    "verified_native_bracket": true
+  },
+  {
+    "design": "latch_short_4",
+    "fail_ns": "10.60205078125",
+    "pass_ns": "10.6025390625",
+    "frequency_mhz": "94.31703048724326",
+    "verified_native_bracket": true
+  }
+]

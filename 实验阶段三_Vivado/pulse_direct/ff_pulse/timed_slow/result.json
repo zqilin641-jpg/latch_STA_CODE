@@ -1,0 +1,11 @@
+{
+  "passed": false,
+  "corner": "slow",
+  "stimuli": 256,
+  "checks": 318,
+  "errors": 23,
+  "clock_evidence": "CLOCK_DIAG external=319 internal=290 locked=1",
+  "period_ns": 12.0,
+  "sdf_enabled": true,
+  "scope": "Native timing netlist with SDF; not formal proof"
+}

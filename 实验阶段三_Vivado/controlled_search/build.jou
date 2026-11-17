@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Tue Nov 10 10:13:35 2026
+# Process ID: 42840
+# Current directory: E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock
+# Command line: vivado.exe -mode batch -source controlled_search/build.tcl -log controlled_search/build.log -journal controlled_search/build.jou
+# Log file: E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/controlled_search/build.log
+# Journal file: E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock\controlled_search/build.jou
+# Running On        :nitro
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12650H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16851 MB
+# Swap memory       :19982 MB
+# Total Virtual     :36833 MB
+# Available Virtual :11475 MB
+#-----------------------------------------------------------
+source controlled_search/build.tcl

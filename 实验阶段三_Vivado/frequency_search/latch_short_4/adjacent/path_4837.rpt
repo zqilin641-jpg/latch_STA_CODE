@@ -1,0 +1,77 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Wed Nov 11 15:47:03 2026
+| Host         : nitro running 64-bit major release  (build 9200)
+| Command      : report_timing -from valid_ff_01/C -to [get_pins valid_ff_02/D] -corner Slow -delay_type max -max_paths 1 -nworst 1 -path_type full_clock_expanded -input_pins -significant_digits 3 -file frequency_search/latch_short_4/adjacent/path_4837.rpt
+| Design       : small25
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             18.408ns  (required time - arrival time)
+  Source:                 valid_ff_01/C
+                            (rising edge-triggered cell FDCE clocked by common_clock  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Destination:            valid_ff_02/D
+                            (rising edge-triggered cell FDCE clocked by common_clock  {rise@0.000ns fall@10.000ns period=20.000ns})
+  Path Group:             common_clock
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            20.000ns  (common_clock rise@20.000ns - common_clock rise@0.000ns)
+  Data Path Delay:        1.254ns  (logic 0.456ns (36.378%)  route 0.798ns (63.622%))
+  Logic Levels:           0  
+  Clock Path Skew:        -0.036ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    4.844ns = ( 24.844 - 20.000 ) 
+    Source Clock Delay      (SCD):    5.139ns
+    Clock Pessimism Removal (CPR):    0.259ns
+  Clock Uncertainty:      0.235ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock common_clock rise edge)
+                                                      0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk_in (IN)
+                         net (fo=0)                   0.000     0.000    clk_in
+    M18                                                               r  clk_in_IBUF_inst/I
+    M18                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  clk_in_IBUF_inst/O
+                         net (fo=1, routed)           1.972     3.425    clk_in_IBUF
+    BUFGCTRL_X0Y0                                                     r  clock_buffer/I
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096     3.521 r  clock_buffer/O
+                         net (fo=101, routed)         1.618     5.139    clk
+    SLICE_X0Y24          FDCE                                         r  valid_ff_01/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X0Y24          FDCE (Prop_fdce_C_Q)         0.456     5.595 r  valid_ff_01/Q
+                         net (fo=1, routed)           0.798     6.392    vd[2]
+    SLICE_X0Y25          FDCE                                         r  valid_ff_02/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock common_clock rise edge)
+                                                     20.000    20.000 r  
+    M18                                               0.000    20.000 r  clk_in (IN)
+                         net (fo=0)                   0.000    20.000    clk_in
+    M18                                                               r  clk_in_IBUF_inst/I
+    M18                  IBUF (Prop_ibuf_I_O)         1.383    21.383 r  clk_in_IBUF_inst/O
+                         net (fo=1, routed)           1.868    23.251    clk_in_IBUF
+    BUFGCTRL_X0Y0                                                     r  clock_buffer/I
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    23.342 r  clock_buffer/O
+                         net (fo=101, routed)         1.502    24.844    clk
+    SLICE_X0Y25          FDCE                                         r  valid_ff_02/C
+                         clock pessimism              0.259    25.103    
+                         clock uncertainty           -0.235    24.868    
+    SLICE_X0Y25          FDCE (Setup_fdce_C_D)       -0.067    24.801    valid_ff_02
+  -------------------------------------------------------------------
+                         required time                         24.801    
+                         arrival time                          -6.392    
+  -------------------------------------------------------------------
+                         slack                                 18.408    
+
+
+
+

@@ -1,0 +1,8 @@
+create_clock -name common_clock -period 12.121212 -waveform {0 6.060606} [get_ports clk_in]
+set_clock_uncertainty 0.2 [get_clocks common_clock]
+set_input_delay -clock common_clock -max 2.0 [get_ports {data_in[*]}]
+set_input_delay -clock common_clock -min 0.2 [get_ports {data_in[*]}]
+set_output_delay -clock common_clock -max 2.0 [get_ports {result[*]}]
+set_output_delay -clock common_clock -min 0.2 [get_ports {result[*]}]
+set_false_path -from [get_ports reset]
+set_property IOSTANDARD LVCMOS33 [get_ports *]

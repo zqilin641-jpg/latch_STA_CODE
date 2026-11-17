@@ -1,0 +1,24 @@
+[
+  {
+    "design": "sta_retime_ff",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "sta_retime_latch",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  }
+]

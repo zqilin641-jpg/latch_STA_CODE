@@ -1,0 +1,11 @@
+{
+  "design": "ff_output_iob",
+  "passed": true,
+  "observations": [
+    [
+      "4114",
+      "0"
+    ]
+  ],
+  "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+}

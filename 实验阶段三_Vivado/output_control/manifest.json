@@ -1,0 +1,34 @@
+[
+  {
+    "design": "ff_output_iob",
+    "cuts": {
+      "3": "FF",
+      "6": "FF",
+      "9": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 0,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming",
+    "source_candidate": "ff_3_6_9",
+    "output_control": "Mask moved before final FF using v[3]; same output sample cycle; request final data/valid registers in IOB"
+  },
+  {
+    "design": "latch6_output_iob",
+    "cuts": {
+      "3": "FF",
+      "6": "LATCH",
+      "9": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming",
+    "source_candidate": "latch_at_6",
+    "output_control": "Mask moved before final FF using v[3]; same output sample cycle; request final data/valid registers in IOB"
+  }
+]

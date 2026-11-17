@@ -1,0 +1,261 @@
+id	adjacent_start	end	query_start	corner	delay_type	status	STARTPOINT_PIN	ENDPOINT_PIN	STARTPOINT_CLOCK	ENDPOINT_CLOCK	STARTPOINT_CLOCK_EDGE	ENDPOINT_CLOCK_EDGE	STARTPOINT_CLOCK_DELAY	ENDPOINT_CLOCK_DELAY	DATAPATH_DELAY	DATAPATH_LOGIC_DELAY	DATAPATH_NET_DELAY	ARRIVAL_TIME	REQUIRED_TIME	SLACK	REQUIREMENT	CLOCK_PESSIMISM	UNCERTAINTY	EXCEPTION
+1	data_in[0]	ff_00/D	data_in[0]	Slow	max	OK	data_in[0]	ff_00/D	common_clock	common_clock	0.000	20.000	0.000	4.861	6.896	1.451	5.444	8.896	24.559	15.663	20.000	0.000	0.235	
+2	data_in[0]	ff_00/D	data_in[0]	Slow	min	OK	data_in[0]	ff_00/D	common_clock	common_clock	0.000	0.000	0.000	5.159	6.091	1.381	4.709	6.291	5.586	0.704	0.000	0.000	0.235	
+3	data_in[0]	ff_00/D	data_in[0]	Fast	max	OK	data_in[0]	ff_00/D	common_clock	common_clock	0.000	20.000	0.000	1.476	3.012	0.407	2.604	5.012	21.226	16.215	20.000	0.000	0.235	
+4	data_in[0]	ff_00/D	data_in[0]	Fast	min	OK	data_in[0]	ff_00/D	common_clock	common_clock	0.000	0.000	0.000	1.992	2.469	0.219	2.249	2.669	2.297	0.372	0.000	0.000	0.235	
+5	data_in[1]	ff_01/D	data_in[1]	Slow	max	OK	data_in[1]	ff_01/D	common_clock	common_clock	0.000	20.000	0.000	4.861	6.792	1.446	5.346	8.792	24.545	15.753	20.000	0.000	0.235	
+6	data_in[1]	ff_01/D	data_in[1]	Slow	min	OK	data_in[1]	ff_01/D	common_clock	common_clock	0.000	0.000	0.000	5.159	6.018	1.376	4.642	6.218	5.574	0.644	0.000	0.000	0.235	
+7	data_in[1]	ff_01/D	data_in[1]	Fast	max	OK	data_in[1]	ff_01/D	common_clock	common_clock	0.000	20.000	0.000	1.476	3.001	0.402	2.599	5.001	21.221	16.221	20.000	0.000	0.235	
+8	data_in[1]	ff_01/D	data_in[1]	Fast	min	OK	data_in[1]	ff_01/D	common_clock	common_clock	0.000	0.000	0.000	1.992	2.471	0.214	2.257	2.671	2.293	0.378	0.000	0.000	0.235	
+9	data_in[2]	ff_02/D	data_in[2]	Slow	max	OK	data_in[2]	ff_02/D	common_clock	common_clock	0.000	20.000	0.000	4.861	6.523	1.449	5.074	8.523	24.565	16.042	20.000	0.000	0.235	
+10	data_in[2]	ff_02/D	data_in[2]	Slow	min	OK	data_in[2]	ff_02/D	common_clock	common_clock	0.000	0.000	0.000	5.159	5.783	1.379	4.404	5.983	5.590	0.392	0.000	0.000	0.235	
+11	data_in[2]	ff_02/D	data_in[2]	Fast	max	OK	data_in[2]	ff_02/D	common_clock	common_clock	0.000	20.000	0.000	1.476	2.905	0.405	2.500	4.905	21.226	16.322	20.000	0.000	0.235	
+12	data_in[2]	ff_02/D	data_in[2]	Fast	min	OK	data_in[2]	ff_02/D	common_clock	common_clock	0.000	0.000	0.000	1.992	2.382	0.217	2.165	2.582	2.297	0.285	0.000	0.000	0.235	
+13	data_in[3]	ff_03/D	data_in[3]	Slow	max	OK	data_in[3]	ff_03/D	common_clock	common_clock	0.000	20.000	0.000	4.861	6.900	1.450	5.450	8.900	24.568	15.667	20.000	0.000	0.235	
+14	data_in[3]	ff_03/D	data_in[3]	Slow	min	OK	data_in[3]	ff_03/D	common_clock	common_clock	0.000	0.000	0.000	5.159	6.078	1.380	4.698	6.278	5.593	0.685	0.000	0.000	0.235	
+15	data_in[3]	ff_03/D	data_in[3]	Fast	max	OK	data_in[3]	ff_03/D	common_clock	common_clock	0.000	20.000	0.000	1.476	2.970	0.406	2.564	4.970	21.229	16.259	20.000	0.000	0.235	
+16	data_in[3]	ff_03/D	data_in[3]	Fast	min	OK	data_in[3]	ff_03/D	common_clock	common_clock	0.000	0.000	0.000	1.992	2.420	0.218	2.201	2.620	2.299	0.320	0.000	0.000	0.235	
+17	data_in[4]	ff_04/D	data_in[4]	Slow	max	OK	data_in[4]	ff_04/D	common_clock	common_clock	0.000	20.000	0.000	4.861	6.529	1.460	5.070	8.529	24.579	16.049	20.000	0.000	0.235	
+18	data_in[4]	ff_04/D	data_in[4]	Slow	min	OK	data_in[4]	ff_04/D	common_clock	common_clock	0.000	0.000	0.000	5.159	5.766	1.389	4.377	5.966	5.585	0.381	0.000	0.000	0.235	
+19	data_in[4]	ff_04/D	data_in[4]	Fast	max	OK	data_in[4]	ff_04/D	common_clock	common_clock	0.000	20.000	0.000	1.476	2.837	0.415	2.422	4.837	21.235	16.398	20.000	0.000	0.235	
+20	data_in[4]	ff_04/D	data_in[4]	Fast	min	OK	data_in[4]	ff_04/D	common_clock	common_clock	0.000	0.000	0.000	1.992	2.306	0.228	2.079	2.506	2.302	0.204	0.000	0.000	0.235	
+21	ff_00/C	ff_05/D	ff_00/C	Slow	max	OK	ff_00/C	ff_05/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.664	0.580	1.084	6.823	24.930	18.106	20.000	0.273	0.235	
+22	ff_00/C	ff_05/D	ff_00/C	Slow	min	OK	ff_00/C	ff_05/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.362	0.467	0.895	6.224	5.356	0.867	0.000	-0.273	0.200	
+23	ff_00/C	ff_05/D	ff_00/C	Fast	max	OK	ff_00/C	ff_05/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.695	0.231	0.464	2.687	21.755	19.067	20.000	0.500	0.235	
+24	ff_00/C	ff_05/D	ff_00/C	Fast	min	OK	ff_00/C	ff_05/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.571	0.186	0.385	2.047	1.784	0.263	0.000	-0.500	0.200	
+25	ff_01/C	ff_06/D	ff_01/C	Slow	max	OK	ff_01/C	ff_06/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.373	0.580	0.793	6.532	24.930	18.398	20.000	0.273	0.235	
+26	ff_01/C	ff_06/D	ff_01/C	Slow	min	OK	ff_01/C	ff_06/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.126	0.467	0.659	5.987	5.356	0.631	0.000	-0.273	0.200	
+27	ff_01/C	ff_06/D	ff_01/C	Fast	max	OK	ff_01/C	ff_06/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.581	0.231	0.350	2.573	21.755	19.182	20.000	0.500	0.235	
+28	ff_01/C	ff_06/D	ff_01/C	Fast	min	OK	ff_01/C	ff_06/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.481	0.186	0.295	1.957	1.784	0.173	0.000	-0.500	0.200	
+29	ff_00/C	ff_06/D	ff_00/C	Slow	max	OK	ff_00/C	ff_06/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.712	0.580	1.132	6.871	24.930	18.059	20.000	0.273	0.235	
+30	ff_00/C	ff_06/D	ff_00/C	Slow	min	OK	ff_00/C	ff_06/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.418	0.467	0.951	6.279	5.356	0.923	0.000	-0.273	0.200	
+31	ff_00/C	ff_06/D	ff_00/C	Fast	max	OK	ff_00/C	ff_06/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.729	0.231	0.498	2.721	21.755	19.034	20.000	0.500	0.235	
+32	ff_00/C	ff_06/D	ff_00/C	Fast	min	OK	ff_00/C	ff_06/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.611	0.186	0.425	2.087	1.784	0.303	0.000	-0.500	0.200	
+33	ff_02/C	ff_07/D	ff_02/C	Slow	max	OK	ff_02/C	ff_07/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.261	0.608	0.653	6.420	24.974	18.553	20.000	0.273	0.235	
+34	ff_02/C	ff_07/D	ff_02/C	Slow	min	OK	ff_02/C	ff_07/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.027	0.489	0.538	5.888	5.375	0.513	0.000	-0.273	0.200	
+35	ff_02/C	ff_07/D	ff_02/C	Fast	max	OK	ff_02/C	ff_07/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.500	0.228	0.272	2.492	21.777	19.284	20.000	0.500	0.235	
+36	ff_02/C	ff_07/D	ff_02/C	Fast	min	OK	ff_02/C	ff_07/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.411	0.184	0.227	1.887	1.799	0.088	0.000	-0.500	0.200	
+37	ff_00/C	ff_07/D	ff_00/C	Slow	max	OK	ff_00/C	ff_07/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.707	0.575	1.132	6.866	24.974	18.108	20.000	0.273	0.235	
+38	ff_00/C	ff_07/D	ff_00/C	Slow	min	OK	ff_00/C	ff_07/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.414	0.463	0.951	6.275	5.375	0.900	0.000	-0.273	0.200	
+39	ff_00/C	ff_07/D	ff_00/C	Fast	max	OK	ff_00/C	ff_07/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.734	0.236	0.498	2.726	21.777	19.051	20.000	0.500	0.235	
+40	ff_00/C	ff_07/D	ff_00/C	Fast	min	OK	ff_00/C	ff_07/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.615	0.190	0.425	2.091	1.799	0.292	0.000	-0.500	0.200	
+41	ff_01/C	ff_07/D	ff_01/C	Slow	max	OK	ff_01/C	ff_07/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.399	0.606	0.793	6.558	24.974	18.416	20.000	0.273	0.235	
+42	ff_01/C	ff_07/D	ff_01/C	Slow	min	OK	ff_01/C	ff_07/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.147	0.488	0.659	6.008	5.375	0.633	0.000	-0.273	0.200	
+43	ff_01/C	ff_07/D	ff_01/C	Fast	max	OK	ff_01/C	ff_07/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.581	0.231	0.350	2.573	21.777	19.204	20.000	0.500	0.235	
+44	ff_01/C	ff_07/D	ff_01/C	Fast	min	OK	ff_01/C	ff_07/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.481	0.186	0.295	1.957	1.799	0.158	0.000	-0.500	0.200	
+45	ff_03/C	ff_08/D	ff_03/C	Slow	max	OK	ff_03/C	ff_08/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.195	0.580	0.615	6.354	24.930	18.575	20.000	0.273	0.235	
+46	ff_03/C	ff_08/D	ff_03/C	Slow	min	OK	ff_03/C	ff_08/D	common_clock	common_clock	0.000	0.000	4.861	5.159	0.982	0.467	0.515	5.843	5.356	0.487	0.000	-0.273	0.200	
+47	ff_03/C	ff_08/D	ff_03/C	Fast	max	OK	ff_03/C	ff_08/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.491	0.231	0.260	2.483	21.755	19.271	20.000	0.500	0.235	
+48	ff_03/C	ff_08/D	ff_03/C	Fast	min	OK	ff_03/C	ff_08/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.408	0.186	0.222	1.884	1.784	0.100	0.000	-0.500	0.200	
+49	ff_02/C	ff_08/D	ff_02/C	Slow	max	OK	ff_02/C	ff_08/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.176	0.580	0.596	6.335	24.930	18.595	20.000	0.273	0.235	
+50	ff_02/C	ff_08/D	ff_02/C	Slow	min	OK	ff_02/C	ff_08/D	common_clock	common_clock	0.000	0.000	4.861	5.159	0.962	0.467	0.495	5.823	5.356	0.467	0.000	-0.273	0.200	
+51	ff_02/C	ff_08/D	ff_02/C	Fast	max	OK	ff_02/C	ff_08/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.490	0.231	0.259	2.482	21.755	19.273	20.000	0.500	0.235	
+52	ff_02/C	ff_08/D	ff_02/C	Fast	min	OK	ff_02/C	ff_08/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.405	0.186	0.219	1.881	1.784	0.097	0.000	-0.500	0.200	
+53	ff_01/C	ff_08/D	ff_01/C	Slow	max	OK	ff_01/C	ff_08/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.743	0.580	1.163	6.902	24.930	18.027	20.000	0.273	0.235	
+54	ff_01/C	ff_08/D	ff_01/C	Slow	min	OK	ff_01/C	ff_08/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.429	0.467	0.962	6.291	5.356	0.934	0.000	-0.273	0.200	
+55	ff_01/C	ff_08/D	ff_01/C	Fast	max	OK	ff_01/C	ff_08/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.757	0.231	0.526	2.749	21.755	19.005	20.000	0.500	0.235	
+56	ff_01/C	ff_08/D	ff_01/C	Fast	min	OK	ff_01/C	ff_08/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.626	0.186	0.440	2.102	1.784	0.318	0.000	-0.500	0.200	
+57	ff_00/C	ff_08/D	ff_00/C	Slow	max	OK	ff_00/C	ff_08/D	common_clock	common_clock	0.000	20.000	5.159	4.861	2.243	0.580	1.663	7.402	24.930	17.528	20.000	0.273	0.235	
+58	ff_00/C	ff_08/D	ff_00/C	Slow	min	OK	ff_00/C	ff_08/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.849	0.467	1.382	6.710	5.356	1.354	0.000	-0.273	0.200	
+59	ff_00/C	ff_08/D	ff_00/C	Fast	max	OK	ff_00/C	ff_08/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.955	0.231	0.724	2.947	21.755	18.808	20.000	0.500	0.235	
+60	ff_00/C	ff_08/D	ff_00/C	Fast	min	OK	ff_00/C	ff_08/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.794	0.186	0.608	2.270	1.784	0.486	0.000	-0.500	0.200	
+61	ff_04/C	ff_09/D	ff_04/C	Slow	max	OK	ff_04/C	ff_09/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.546	0.747	0.799	6.705	24.974	18.269	20.000	0.273	0.235	
+62	ff_04/C	ff_09/D	ff_04/C	Slow	min	OK	ff_04/C	ff_09/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.261	0.601	0.660	6.122	5.375	0.747	0.000	-0.273	0.200	
+63	ff_04/C	ff_09/D	ff_04/C	Fast	max	OK	ff_04/C	ff_09/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.618	0.280	0.338	2.610	21.777	19.167	20.000	0.500	0.235	
+64	ff_04/C	ff_09/D	ff_04/C	Fast	min	OK	ff_04/C	ff_09/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.506	0.224	0.282	1.982	1.799	0.183	0.000	-0.500	0.200	
+65	ff_03/C	ff_09/D	ff_03/C	Slow	max	OK	ff_03/C	ff_09/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.191	0.576	0.615	6.350	24.974	18.623	20.000	0.273	0.235	
+66	ff_03/C	ff_09/D	ff_03/C	Slow	min	OK	ff_03/C	ff_09/D	common_clock	common_clock	0.000	0.000	4.861	5.159	0.979	0.464	0.515	5.840	5.375	0.465	0.000	-0.273	0.200	
+67	ff_03/C	ff_09/D	ff_03/C	Fast	max	OK	ff_03/C	ff_09/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.498	0.238	0.260	2.490	21.777	19.286	20.000	0.500	0.235	
+68	ff_03/C	ff_09/D	ff_03/C	Fast	min	OK	ff_03/C	ff_09/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.414	0.192	0.222	1.890	1.799	0.091	0.000	-0.500	0.200	
+69	ff_00/C	ff_09/D	ff_00/C	Slow	max	OK	ff_00/C	ff_09/D	common_clock	common_clock	0.000	20.000	5.159	4.861	2.273	0.610	1.663	7.432	24.974	17.542	20.000	0.273	0.235	
+70	ff_00/C	ff_09/D	ff_00/C	Slow	min	OK	ff_00/C	ff_09/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.873	0.491	1.382	6.734	5.375	1.359	0.000	-0.273	0.200	
+71	ff_00/C	ff_09/D	ff_00/C	Fast	max	OK	ff_00/C	ff_09/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.954	0.230	0.724	2.946	21.777	18.831	20.000	0.500	0.235	
+72	ff_00/C	ff_09/D	ff_00/C	Fast	min	OK	ff_00/C	ff_09/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.793	0.185	0.608	2.269	1.799	0.470	0.000	-0.500	0.200	
+73	ff_01/C	ff_09/D	ff_01/C	Slow	max	OK	ff_01/C	ff_09/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.773	0.610	1.163	6.932	24.974	18.041	20.000	0.273	0.235	
+74	ff_01/C	ff_09/D	ff_01/C	Slow	min	OK	ff_01/C	ff_09/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.453	0.491	0.962	6.315	5.375	0.939	0.000	-0.273	0.200	
+75	ff_01/C	ff_09/D	ff_01/C	Fast	max	OK	ff_01/C	ff_09/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.754	0.228	0.526	2.746	21.777	19.030	20.000	0.500	0.235	
+76	ff_01/C	ff_09/D	ff_01/C	Fast	min	OK	ff_01/C	ff_09/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.624	0.184	0.440	2.100	1.799	0.301	0.000	-0.500	0.200	
+77	ff_02/C	ff_09/D	ff_02/C	Slow	max	OK	ff_02/C	ff_09/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.205	0.609	0.596	6.364	24.974	18.610	20.000	0.273	0.235	
+78	ff_02/C	ff_09/D	ff_02/C	Slow	min	OK	ff_02/C	ff_09/D	common_clock	common_clock	0.000	0.000	4.861	5.159	0.985	0.490	0.495	5.846	5.375	0.471	0.000	-0.273	0.200	
+79	ff_02/C	ff_09/D	ff_02/C	Fast	max	OK	ff_02/C	ff_09/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.490	0.231	0.259	2.482	21.777	19.295	20.000	0.500	0.235	
+80	ff_02/C	ff_09/D	ff_02/C	Fast	min	OK	ff_02/C	ff_09/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.405	0.186	0.219	1.881	1.799	0.082	0.000	-0.500	0.200	
+81	latch_10/G	ff_15/D	latch_10/G	Slow	max	OK	latch_10/G	ff_15/D	common_clock	common_clock	0.000	20.000	5.159	4.860	1.113	0.683	0.430	6.272	24.927	18.655	20.000	0.273	0.235	
+82	latch_10/G	ff_15/D	latch_10/G	Slow	min	OK	latch_10/G	ff_15/D	common_clock	common_clock	0.000	0.000	4.861	5.158	0.912	0.550	0.362	5.773	5.354	0.419	0.000	-0.273	0.200	
+83	latch_10/G	ff_15/D	latch_10/G	Fast	max	OK	latch_10/G	ff_15/D	common_clock	common_clock	0.000	20.000	1.992	1.475	0.444	0.252	0.192	2.436	21.753	19.317	20.000	0.500	0.235	
+84	latch_10/G	ff_15/D	latch_10/G	Fast	min	OK	latch_10/G	ff_15/D	common_clock	common_clock	0.000	0.000	1.476	1.991	0.368	0.203	0.165	1.844	1.782	0.062	0.000	-0.500	0.200	
+85	latch_10/G	ff_15/D	latch_10/D	Slow	max	OK	latch_10/D	ff_15/D	common_clock	common_clock	0.000	20.000	5.159	4.860	0.925	0.495	0.430	7.330	24.927	17.597	20.000	0.273	0.235	
+86	latch_10/G	ff_15/D	latch_10/D	Slow	min	NO_TIMED_PATH	
+87	latch_10/G	ff_15/D	latch_10/D	Fast	max	OK	latch_10/D	ff_15/D	common_clock	common_clock	0.000	20.000	1.992	1.475	0.387	0.195	0.192	2.886	21.753	18.867	20.000	0.500	0.235	
+88	latch_10/G	ff_15/D	latch_10/D	Fast	min	NO_TIMED_PATH	
+89	latch_11/G	ff_16/D	latch_11/G	Slow	max	OK	latch_11/G	ff_16/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.892	0.683	1.209	7.051	24.931	17.879	20.000	0.276	0.235	
+90	latch_11/G	ff_16/D	latch_11/G	Slow	min	OK	latch_11/G	ff_16/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.586	0.550	1.036	6.447	5.352	1.095	0.000	-0.276	0.200	
+91	latch_11/G	ff_16/D	latch_11/G	Fast	max	OK	latch_11/G	ff_16/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.878	0.252	0.626	2.870	21.757	18.886	20.000	0.503	0.235	
+92	latch_11/G	ff_16/D	latch_11/G	Fast	min	OK	latch_11/G	ff_16/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.759	0.203	0.556	2.235	1.780	0.455	0.000	-0.503	0.200	
+93	latch_11/G	ff_16/D	latch_11/D	Slow	max	OK	latch_11/D	ff_16/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.975	0.766	1.209	7.768	24.931	17.162	20.000	0.276	0.235	
+94	latch_11/G	ff_16/D	latch_11/D	Slow	min	NO_TIMED_PATH	
+95	latch_11/G	ff_16/D	latch_11/D	Fast	max	OK	latch_11/D	ff_16/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.916	0.290	0.626	3.150	21.757	18.606	20.000	0.503	0.235	
+96	latch_11/G	ff_16/D	latch_11/D	Fast	min	NO_TIMED_PATH	
+97	latch_10/G	ff_16/D	latch_10/G	Slow	max	OK	latch_10/G	ff_16/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.291	0.683	0.608	6.450	24.928	18.477	20.000	0.273	0.235	
+98	latch_10/G	ff_16/D	latch_10/G	Slow	min	OK	latch_10/G	ff_16/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.056	0.550	0.506	5.917	5.355	0.562	0.000	-0.273	0.200	
+99	latch_10/G	ff_16/D	latch_10/G	Fast	max	OK	latch_10/G	ff_16/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.515	0.252	0.263	2.507	21.754	19.246	20.000	0.500	0.235	
+100	latch_10/G	ff_16/D	latch_10/G	Fast	min	OK	latch_10/G	ff_16/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.426	0.203	0.223	1.902	1.783	0.119	0.000	-0.500	0.200	
+101	latch_10/G	ff_16/D	latch_10/D	Slow	max	OK	latch_10/D	ff_16/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.103	0.495	0.608	7.508	24.928	17.419	20.000	0.273	0.235	
+102	latch_10/G	ff_16/D	latch_10/D	Slow	min	NO_TIMED_PATH	
+103	latch_10/G	ff_16/D	latch_10/D	Fast	max	OK	latch_10/D	ff_16/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.458	0.195	0.263	2.957	21.754	18.796	20.000	0.500	0.235	
+104	latch_10/G	ff_16/D	latch_10/D	Fast	min	NO_TIMED_PATH	
+105	latch_12/G	ff_17/D	latch_12/G	Slow	max	OK	latch_12/G	ff_17/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.518	0.711	0.807	6.677	24.974	18.296	20.000	0.273	0.235	
+106	latch_12/G	ff_17/D	latch_12/G	Slow	min	OK	latch_12/G	ff_17/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.234	0.572	0.662	6.095	5.375	0.720	0.000	-0.273	0.200	
+107	latch_12/G	ff_17/D	latch_12/G	Fast	max	OK	latch_12/G	ff_17/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.596	0.251	0.345	2.588	21.777	19.188	20.000	0.500	0.235	
+108	latch_12/G	ff_17/D	latch_12/G	Fast	min	OK	latch_12/G	ff_17/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.486	0.202	0.284	1.962	1.799	0.163	0.000	-0.500	0.200	
+109	latch_12/G	ff_17/D	latch_12/D	Slow	max	OK	latch_12/D	ff_17/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.330	0.523	0.807	7.492	24.974	17.481	20.000	0.273	0.235	
+110	latch_12/G	ff_17/D	latch_12/D	Slow	min	NO_TIMED_PATH	
+111	latch_12/G	ff_17/D	latch_12/D	Fast	max	OK	latch_12/D	ff_17/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.539	0.194	0.345	2.931	21.777	18.845	20.000	0.500	0.235	
+112	latch_12/G	ff_17/D	latch_12/D	Fast	min	NO_TIMED_PATH	
+113	latch_10/G	ff_17/D	latch_10/G	Slow	max	OK	latch_10/G	ff_17/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.317	0.709	0.608	6.476	24.974	18.497	20.000	0.273	0.235	
+114	latch_10/G	ff_17/D	latch_10/G	Slow	min	OK	latch_10/G	ff_17/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.077	0.571	0.506	5.938	5.375	0.563	0.000	-0.273	0.200	
+115	latch_10/G	ff_17/D	latch_10/G	Fast	max	OK	latch_10/G	ff_17/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.516	0.253	0.263	2.508	21.777	19.268	20.000	0.500	0.235	
+116	latch_10/G	ff_17/D	latch_10/G	Fast	min	OK	latch_10/G	ff_17/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.427	0.204	0.223	1.903	1.799	0.104	0.000	-0.500	0.200	
+117	latch_10/G	ff_17/D	latch_10/D	Slow	max	OK	latch_10/D	ff_17/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.129	0.521	0.608	7.534	24.974	17.439	20.000	0.273	0.235	
+118	latch_10/G	ff_17/D	latch_10/D	Slow	min	NO_TIMED_PATH	
+119	latch_10/G	ff_17/D	latch_10/D	Fast	max	OK	latch_10/D	ff_17/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.459	0.196	0.263	2.958	21.777	18.818	20.000	0.500	0.235	
+120	latch_10/G	ff_17/D	latch_10/D	Fast	min	NO_TIMED_PATH	
+121	latch_11/G	ff_17/D	latch_11/G	Slow	max	OK	latch_11/G	ff_17/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.918	0.709	1.209	7.077	24.977	17.899	20.000	0.276	0.235	
+122	latch_11/G	ff_17/D	latch_11/G	Slow	min	OK	latch_11/G	ff_17/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.607	0.571	1.036	6.468	5.372	1.096	0.000	-0.276	0.200	
+123	latch_11/G	ff_17/D	latch_11/G	Fast	max	OK	latch_11/G	ff_17/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.874	0.248	0.626	2.866	21.780	18.913	20.000	0.503	0.235	
+124	latch_11/G	ff_17/D	latch_11/G	Fast	min	OK	latch_11/G	ff_17/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.756	0.200	0.556	2.232	1.796	0.436	0.000	-0.503	0.200	
+125	latch_11/G	ff_17/D	latch_11/D	Slow	max	OK	latch_11/D	ff_17/D	common_clock	common_clock	0.000	20.000	5.159	4.861	2.001	0.792	1.209	7.794	24.977	17.182	20.000	0.276	0.235	
+126	latch_11/G	ff_17/D	latch_11/D	Slow	min	NO_TIMED_PATH	
+127	latch_11/G	ff_17/D	latch_11/D	Fast	max	OK	latch_11/D	ff_17/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.912	0.286	0.626	3.146	21.780	18.633	20.000	0.503	0.235	
+128	latch_11/G	ff_17/D	latch_11/D	Fast	min	NO_TIMED_PATH	
+129	latch_13/G	ff_18/D	latch_13/G	Slow	max	OK	latch_13/G	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.456	0.683	0.773	6.615	24.930	18.315	20.000	0.273	0.235	
+130	latch_13/G	ff_18/D	latch_13/G	Slow	min	OK	latch_13/G	ff_18/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.187	0.550	0.637	6.048	5.356	0.692	0.000	-0.273	0.200	
+131	latch_13/G	ff_18/D	latch_13/G	Fast	max	OK	latch_13/G	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.565	0.252	0.313	2.557	21.755	19.198	20.000	0.500	0.235	
+132	latch_13/G	ff_18/D	latch_13/G	Fast	min	OK	latch_13/G	ff_18/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.462	0.203	0.259	1.938	1.784	0.154	0.000	-0.500	0.200	
+133	latch_13/G	ff_18/D	latch_13/D	Slow	max	OK	latch_13/D	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.357	0.584	0.773	7.323	24.930	17.607	20.000	0.273	0.235	
+134	latch_13/G	ff_18/D	latch_13/D	Slow	min	NO_TIMED_PATH	
+135	latch_13/G	ff_18/D	latch_13/D	Fast	max	OK	latch_13/D	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.533	0.220	0.313	2.837	21.755	18.918	20.000	0.500	0.235	
+136	latch_13/G	ff_18/D	latch_13/D	Fast	min	NO_TIMED_PATH	
+137	latch_12/G	ff_18/D	latch_12/G	Slow	max	OK	latch_12/G	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.493	0.683	0.810	6.652	24.930	18.278	20.000	0.273	0.235	
+138	latch_12/G	ff_18/D	latch_12/G	Slow	min	OK	latch_12/G	ff_18/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.215	0.550	0.665	6.076	5.356	0.720	0.000	-0.273	0.200	
+139	latch_12/G	ff_18/D	latch_12/G	Fast	max	OK	latch_12/G	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.601	0.252	0.349	2.593	21.755	19.162	20.000	0.500	0.235	
+140	latch_12/G	ff_18/D	latch_12/G	Fast	min	OK	latch_12/G	ff_18/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.491	0.203	0.288	1.967	1.784	0.183	0.000	-0.500	0.200	
+141	latch_12/G	ff_18/D	latch_12/D	Slow	max	OK	latch_12/D	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.305	0.495	0.810	7.467	24.930	17.463	20.000	0.273	0.235	
+142	latch_12/G	ff_18/D	latch_12/D	Slow	min	NO_TIMED_PATH	
+143	latch_12/G	ff_18/D	latch_12/D	Fast	max	OK	latch_12/D	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.544	0.195	0.349	2.936	21.755	18.819	20.000	0.500	0.235	
+144	latch_12/G	ff_18/D	latch_12/D	Fast	min	NO_TIMED_PATH	
+145	latch_11/G	ff_18/D	latch_11/G	Slow	max	OK	latch_11/G	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.666	0.683	0.983	6.825	24.933	18.107	20.000	0.276	0.235	
+146	latch_11/G	ff_18/D	latch_11/G	Slow	min	OK	latch_11/G	ff_18/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.403	0.550	0.853	6.264	5.353	0.911	0.000	-0.276	0.200	
+147	latch_11/G	ff_18/D	latch_11/G	Fast	max	OK	latch_11/G	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.790	0.252	0.538	2.782	21.758	18.975	20.000	0.503	0.235	
+148	latch_11/G	ff_18/D	latch_11/G	Fast	min	OK	latch_11/G	ff_18/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.688	0.203	0.485	2.164	1.781	0.383	0.000	-0.503	0.200	
+149	latch_11/G	ff_18/D	latch_11/D	Slow	max	OK	latch_11/D	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.749	0.766	0.983	7.542	24.933	17.391	20.000	0.276	0.235	
+150	latch_11/G	ff_18/D	latch_11/D	Slow	min	NO_TIMED_PATH	
+151	latch_11/G	ff_18/D	latch_11/D	Fast	max	OK	latch_11/D	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.828	0.290	0.538	3.062	21.758	18.696	20.000	0.503	0.235	
+152	latch_11/G	ff_18/D	latch_11/D	Fast	min	NO_TIMED_PATH	
+153	latch_10/G	ff_18/D	latch_10/G	Slow	max	OK	latch_10/G	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.280	0.683	0.597	6.439	24.930	18.491	20.000	0.273	0.235	
+154	latch_10/G	ff_18/D	latch_10/G	Slow	min	OK	latch_10/G	ff_18/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.046	0.550	0.496	5.907	5.356	0.551	0.000	-0.273	0.200	
+155	latch_10/G	ff_18/D	latch_10/G	Fast	max	OK	latch_10/G	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.506	0.252	0.254	2.498	21.755	19.257	20.000	0.500	0.235	
+156	latch_10/G	ff_18/D	latch_10/G	Fast	min	OK	latch_10/G	ff_18/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.417	0.203	0.214	1.893	1.784	0.109	0.000	-0.500	0.200	
+157	latch_10/G	ff_18/D	latch_10/D	Slow	max	OK	latch_10/D	ff_18/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.092	0.495	0.597	7.497	24.930	17.433	20.000	0.273	0.235	
+158	latch_10/G	ff_18/D	latch_10/D	Slow	min	NO_TIMED_PATH	
+159	latch_10/G	ff_18/D	latch_10/D	Fast	max	OK	latch_10/D	ff_18/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.449	0.195	0.254	2.948	21.755	18.807	20.000	0.500	0.235	
+160	latch_10/G	ff_18/D	latch_10/D	Fast	min	NO_TIMED_PATH	
+161	latch_14/G	ff_19/D	latch_14/G	Slow	max	OK	latch_14/G	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.519	0.711	0.808	6.678	24.974	18.295	20.000	0.273	0.235	
+162	latch_14/G	ff_19/D	latch_14/G	Slow	min	OK	latch_14/G	ff_19/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.232	0.572	0.660	6.093	5.375	0.718	0.000	-0.273	0.200	
+163	latch_14/G	ff_19/D	latch_14/G	Fast	max	OK	latch_14/G	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.589	0.252	0.337	2.581	21.777	19.195	20.000	0.500	0.235	
+164	latch_14/G	ff_19/D	latch_14/G	Fast	min	OK	latch_14/G	ff_19/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.479	0.203	0.276	1.955	1.799	0.156	0.000	-0.500	0.200	
+165	latch_14/G	ff_19/D	latch_14/D	Slow	max	OK	latch_14/D	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.592	0.784	0.808	7.390	24.974	17.584	20.000	0.273	0.235	
+166	latch_14/G	ff_19/D	latch_14/D	Slow	min	NO_TIMED_PATH	
+167	latch_14/G	ff_19/D	latch_14/D	Fast	max	OK	latch_14/D	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.624	0.287	0.337	2.863	21.777	18.914	20.000	0.500	0.235	
+168	latch_14/G	ff_19/D	latch_14/D	Fast	min	NO_TIMED_PATH	
+169	latch_10/G	ff_19/D	latch_10/G	Slow	max	OK	latch_10/G	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.306	0.709	0.597	6.465	24.974	18.509	20.000	0.273	0.235	
+170	latch_10/G	ff_19/D	latch_10/G	Slow	min	OK	latch_10/G	ff_19/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.067	0.571	0.496	5.928	5.375	0.553	0.000	-0.273	0.200	
+171	latch_10/G	ff_19/D	latch_10/G	Fast	max	OK	latch_10/G	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.506	0.252	0.254	2.498	21.777	19.279	20.000	0.500	0.235	
+172	latch_10/G	ff_19/D	latch_10/G	Fast	min	OK	latch_10/G	ff_19/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.417	0.203	0.214	1.893	1.799	0.094	0.000	-0.500	0.200	
+173	latch_10/G	ff_19/D	latch_10/D	Slow	max	OK	latch_10/D	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.118	0.521	0.597	7.523	24.974	17.451	20.000	0.273	0.235	
+174	latch_10/G	ff_19/D	latch_10/D	Slow	min	NO_TIMED_PATH	
+175	latch_10/G	ff_19/D	latch_10/D	Fast	max	OK	latch_10/D	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.449	0.195	0.254	2.948	21.777	18.829	20.000	0.500	0.235	
+176	latch_10/G	ff_19/D	latch_10/D	Fast	min	NO_TIMED_PATH	
+177	latch_11/G	ff_19/D	latch_11/G	Slow	max	OK	latch_11/G	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.661	0.678	0.983	6.820	24.977	18.156	20.000	0.276	0.235	
+178	latch_11/G	ff_19/D	latch_11/G	Slow	min	OK	latch_11/G	ff_19/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.399	0.546	0.853	6.260	5.372	0.888	0.000	-0.276	0.200	
+179	latch_11/G	ff_19/D	latch_11/G	Fast	max	OK	latch_11/G	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.795	0.257	0.538	2.787	21.780	18.992	20.000	0.503	0.235	
+180	latch_11/G	ff_19/D	latch_11/G	Fast	min	OK	latch_11/G	ff_19/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.692	0.207	0.485	2.168	1.796	0.372	0.000	-0.503	0.200	
+181	latch_11/G	ff_19/D	latch_11/D	Slow	max	OK	latch_11/D	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.744	0.761	0.983	7.537	24.977	17.440	20.000	0.276	0.235	
+182	latch_11/G	ff_19/D	latch_11/D	Slow	min	NO_TIMED_PATH	
+183	latch_11/G	ff_19/D	latch_11/D	Fast	max	OK	latch_11/D	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.833	0.295	0.538	3.067	21.780	18.713	20.000	0.503	0.235	
+184	latch_11/G	ff_19/D	latch_11/D	Fast	min	NO_TIMED_PATH	
+185	latch_12/G	ff_19/D	latch_12/G	Slow	max	OK	latch_12/G	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.521	0.711	0.810	6.680	24.974	18.294	20.000	0.273	0.235	
+186	latch_12/G	ff_19/D	latch_12/G	Slow	min	OK	latch_12/G	ff_19/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.237	0.572	0.665	6.098	5.375	0.723	0.000	-0.273	0.200	
+187	latch_12/G	ff_19/D	latch_12/G	Fast	max	OK	latch_12/G	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.599	0.250	0.349	2.591	21.777	19.186	20.000	0.500	0.235	
+188	latch_12/G	ff_19/D	latch_12/G	Fast	min	OK	latch_12/G	ff_19/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.489	0.201	0.288	1.965	1.799	0.166	0.000	-0.500	0.200	
+189	latch_12/G	ff_19/D	latch_12/D	Slow	max	OK	latch_12/D	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.333	0.523	0.810	7.495	24.974	17.479	20.000	0.273	0.235	
+190	latch_12/G	ff_19/D	latch_12/D	Slow	min	NO_TIMED_PATH	
+191	latch_12/G	ff_19/D	latch_12/D	Fast	max	OK	latch_12/D	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.542	0.193	0.349	2.934	21.777	18.843	20.000	0.500	0.235	
+192	latch_12/G	ff_19/D	latch_12/D	Fast	min	NO_TIMED_PATH	
+193	latch_13/G	ff_19/D	latch_13/G	Slow	max	OK	latch_13/G	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.484	0.711	0.773	6.643	24.974	18.331	20.000	0.273	0.235	
+194	latch_13/G	ff_19/D	latch_13/G	Slow	min	OK	latch_13/G	ff_19/D	common_clock	common_clock	0.000	0.000	4.861	5.159	1.209	0.572	0.637	6.070	5.375	0.695	0.000	-0.273	0.200	
+195	latch_13/G	ff_19/D	latch_13/G	Fast	max	OK	latch_13/G	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.562	0.249	0.313	2.554	21.777	19.223	20.000	0.500	0.235	
+196	latch_13/G	ff_19/D	latch_13/G	Fast	min	OK	latch_13/G	ff_19/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.460	0.201	0.259	1.936	1.799	0.137	0.000	-0.500	0.200	
+197	latch_13/G	ff_19/D	latch_13/D	Slow	max	OK	latch_13/D	ff_19/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.385	0.612	0.773	7.351	24.974	17.623	20.000	0.273	0.235	
+198	latch_13/G	ff_19/D	latch_13/D	Slow	min	NO_TIMED_PATH	
+199	latch_13/G	ff_19/D	latch_13/D	Fast	max	OK	latch_13/D	ff_19/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.530	0.217	0.313	2.834	21.777	18.943	20.000	0.500	0.235	
+200	latch_13/G	ff_19/D	latch_13/D	Fast	min	NO_TIMED_PATH	
+201	ff_18/C	ff_20/D	ff_18/C	Slow	max	OK	ff_18/C	ff_20/D	common_clock	common_clock	0.000	20.000	5.159	4.861	1.215	0.580	0.635	6.374	24.928	18.554	20.000	0.273	0.235	
+202	ff_18/C	ff_20/D	ff_18/C	Slow	min	OK	ff_18/C	ff_20/D	common_clock	common_clock	0.000	0.000	4.861	5.159	0.989	0.467	0.522	5.850	5.355	0.495	0.000	-0.273	0.200	
+203	ff_18/C	ff_20/D	ff_18/C	Fast	max	OK	ff_18/C	ff_20/D	common_clock	common_clock	0.000	20.000	1.992	1.476	0.487	0.231	0.256	2.479	21.754	19.275	20.000	0.500	0.235	
+204	ff_18/C	ff_20/D	ff_18/C	Fast	min	OK	ff_18/C	ff_20/D	common_clock	common_clock	0.000	0.000	1.476	1.992	0.398	0.186	0.212	1.874	1.783	0.091	0.000	-0.500	0.200	
+205	ff_19/C	ff_21/D	ff_19/C	Slow	max	OK	ff_19/C	ff_21/D	common_clock	common_clock	0.000	20.000	5.159	4.860	1.532	0.715	0.817	6.691	24.927	18.236	20.000	0.273	0.235	
+206	ff_19/C	ff_21/D	ff_19/C	Slow	min	OK	ff_19/C	ff_21/D	common_clock	common_clock	0.000	0.000	4.861	5.158	1.246	0.576	0.670	6.107	5.354	0.753	0.000	-0.273	0.200	
+207	ff_19/C	ff_21/D	ff_19/C	Fast	max	OK	ff_19/C	ff_21/D	common_clock	common_clock	0.000	20.000	1.992	1.475	0.634	0.283	0.351	2.626	21.753	19.127	20.000	0.500	0.235	
+208	ff_19/C	ff_21/D	ff_19/C	Fast	min	OK	ff_19/C	ff_21/D	common_clock	common_clock	0.000	0.000	1.476	1.991	0.516	0.226	0.290	1.992	1.782	0.210	0.000	-0.500	0.200	
+209	ff_15/C	ff_22/D	ff_15/C	Slow	max	OK	ff_15/C	ff_22/D	common_clock	common_clock	0.000	20.000	5.158	4.860	1.219	0.580	0.639	6.377	24.927	18.550	20.000	0.273	0.235	
+210	ff_15/C	ff_22/D	ff_15/C	Slow	min	OK	ff_15/C	ff_22/D	common_clock	common_clock	0.000	0.000	4.860	5.158	0.993	0.467	0.526	5.853	5.354	0.499	0.000	-0.273	0.200	
+211	ff_15/C	ff_22/D	ff_15/C	Fast	max	OK	ff_15/C	ff_22/D	common_clock	common_clock	0.000	20.000	1.991	1.475	0.492	0.231	0.261	2.483	21.753	19.270	20.000	0.500	0.235	
+212	ff_15/C	ff_22/D	ff_15/C	Fast	min	OK	ff_15/C	ff_22/D	common_clock	common_clock	0.000	0.000	1.475	1.991	0.402	0.186	0.216	1.877	1.782	0.095	0.000	-0.500	0.200	
+213	ff_16/C	ff_23/D	ff_16/C	Slow	max	OK	ff_16/C	ff_23/D	common_clock	common_clock	0.000	20.000	5.159	4.859	0.934	0.456	0.478	6.093	24.830	18.737	20.000	0.273	0.235	
+214	ff_16/C	ff_23/D	ff_16/C	Slow	min	OK	ff_16/C	ff_23/D	common_clock	common_clock	0.000	0.000	4.861	5.157	0.768	0.367	0.401	5.629	5.276	0.353	0.000	-0.273	0.200	
+215	ff_16/C	ff_23/D	ff_16/C	Fast	max	OK	ff_16/C	ff_23/D	common_clock	common_clock	0.000	20.000	1.992	1.475	0.385	0.175	0.210	2.377	21.726	19.349	20.000	0.500	0.235	
+216	ff_16/C	ff_23/D	ff_16/C	Fast	min	OK	ff_16/C	ff_23/D	common_clock	common_clock	0.000	0.000	1.476	1.991	0.321	0.141	0.180	1.797	1.761	0.036	0.000	-0.500	0.200	
+217	ff_17/C	ff_24/D	ff_17/C	Slow	max	OK	ff_17/C	ff_24/D	common_clock	common_clock	0.000	20.000	5.159	4.859	1.105	0.419	0.686	6.264	24.655	18.391	20.000	0.273	0.235	
+218	ff_17/C	ff_24/D	ff_17/C	Slow	min	OK	ff_17/C	ff_24/D	common_clock	common_clock	0.000	0.000	4.861	5.157	0.916	0.337	0.579	5.777	5.135	0.642	0.000	-0.273	0.200	
+219	ff_17/C	ff_24/D	ff_17/C	Fast	max	OK	ff_17/C	ff_24/D	common_clock	common_clock	0.000	20.000	1.992	1.474	0.445	0.160	0.285	2.437	21.657	19.220	20.000	0.500	0.235	
+220	ff_17/C	ff_24/D	ff_17/C	Fast	min	OK	ff_17/C	ff_24/D	common_clock	common_clock	0.000	0.000	1.476	1.990	0.373	0.128	0.245	1.849	1.706	0.143	0.000	-0.500	0.200	
+221	ff_08/C	latch_10/D	ff_08/C	Slow	max	OK	ff_08/C	latch_10/D	common_clock	common_clock	0.000	0.000	5.159	4.861	1.221	0.580	0.641	6.380	6.380	0.000	0.000	0.273	0.200	
+222	ff_08/C	latch_10/D	ff_08/C	Slow	min	OK	ff_08/C	latch_10/D	common_clock	common_clock	20.000	10.000	4.861	5.159	0.993	0.467	0.526	25.854	15.391	10.463	-10.000	-0.273	0.235	
+223	ff_08/C	latch_10/D	ff_08/C	Fast	max	OK	ff_08/C	latch_10/D	common_clock	common_clock	0.000	0.000	1.992	1.476	0.491	0.231	0.260	2.483	2.483	0.000	0.000	0.500	0.200	
+224	ff_08/C	latch_10/D	ff_08/C	Fast	min	OK	ff_08/C	latch_10/D	common_clock	common_clock	20.000	10.000	1.476	1.992	0.401	0.186	0.215	21.877	11.819	10.058	-10.000	-0.500	0.235	
+225	ff_09/C	latch_11/D	ff_09/C	Slow	max	OK	ff_09/C	latch_11/D	common_clock	common_clock	0.000	0.000	5.159	4.861	0.612	0.419	0.193	5.771	5.771	0.000	0.000	0.276	0.200	
+226	ff_09/C	latch_11/D	ff_09/C	Slow	min	OK	ff_09/C	latch_11/D	common_clock	common_clock	20.000	10.000	4.861	5.159	0.499	0.337	0.162	25.360	15.170	10.190	-10.000	-0.276	0.235	
+227	ff_09/C	latch_11/D	ff_09/C	Fast	max	OK	ff_09/C	latch_11/D	common_clock	common_clock	0.000	0.000	1.992	1.476	0.229	0.160	0.069	2.221	2.221	0.000	0.000	0.503	0.200	
+228	ff_09/C	latch_11/D	ff_09/C	Fast	min	OK	ff_09/C	latch_11/D	common_clock	common_clock	20.000	10.000	1.476	1.992	0.187	0.128	0.059	21.663	11.741	9.922	-10.000	-0.503	0.235	
+229	ff_05/C	latch_12/D	ff_05/C	Slow	max	OK	ff_05/C	latch_12/D	common_clock	common_clock	0.000	0.000	5.159	4.861	0.978	0.580	0.398	6.137	6.137	0.000	0.000	0.273	0.200	
+230	ff_05/C	latch_12/D	ff_05/C	Slow	min	OK	ff_05/C	latch_12/D	common_clock	common_clock	20.000	10.000	4.861	5.159	0.797	0.467	0.330	25.658	15.391	10.267	-10.000	-0.273	0.235	
+231	ff_05/C	latch_12/D	ff_05/C	Fast	max	OK	ff_05/C	latch_12/D	common_clock	common_clock	0.000	0.000	1.992	1.476	0.384	0.231	0.153	2.376	2.376	0.000	0.000	0.500	0.200	
+232	ff_05/C	latch_12/D	ff_05/C	Fast	min	OK	ff_05/C	latch_12/D	common_clock	common_clock	20.000	10.000	1.476	1.992	0.313	0.186	0.127	21.789	11.819	9.970	-10.000	-0.500	0.235	
+233	ff_06/C	latch_13/D	ff_06/C	Slow	max	OK	ff_06/C	latch_13/D	common_clock	common_clock	0.000	0.000	5.159	4.861	0.782	0.456	0.326	5.941	5.941	0.000	0.000	0.273	0.200	
+234	ff_06/C	latch_13/D	ff_06/C	Slow	min	OK	ff_06/C	latch_13/D	common_clock	common_clock	20.000	10.000	4.861	5.159	0.641	0.367	0.274	25.502	15.320	10.181	-10.000	-0.273	0.235	
+235	ff_06/C	latch_13/D	ff_06/C	Fast	max	OK	ff_06/C	latch_13/D	common_clock	common_clock	0.000	0.000	1.992	1.476	0.296	0.175	0.121	2.288	2.288	0.000	0.000	0.500	0.200	
+236	ff_06/C	latch_13/D	ff_06/C	Fast	min	OK	ff_06/C	latch_13/D	common_clock	common_clock	20.000	10.000	1.476	1.992	0.244	0.141	0.103	21.720	11.799	9.920	-10.000	-0.500	0.235	
+237	ff_07/C	latch_14/D	ff_07/C	Slow	max	OK	ff_07/C	latch_14/D	common_clock	common_clock	0.000	0.000	5.159	4.861	0.617	0.419	0.198	5.776	5.776	0.000	0.000	0.276	0.200	
+238	ff_07/C	latch_14/D	ff_07/C	Slow	min	OK	ff_07/C	latch_14/D	common_clock	common_clock	20.000	10.000	4.861	5.159	0.504	0.337	0.167	25.365	15.178	10.186	-10.000	-0.276	0.235	
+239	ff_07/C	latch_14/D	ff_07/C	Fast	max	OK	ff_07/C	latch_14/D	common_clock	common_clock	0.000	0.000	1.992	1.476	0.234	0.160	0.074	2.226	2.226	0.000	0.000	0.503	0.200	
+240	ff_07/C	latch_14/D	ff_07/C	Fast	min	OK	ff_07/C	latch_14/D	common_clock	common_clock	20.000	10.000	1.476	1.992	0.192	0.128	0.064	21.668	11.743	9.924	-10.000	-0.503	0.235	
+241	ff_20/C	result[0]	ff_20/C	Slow	max	OK	ff_20/C	result[0]	common_clock	common_clock	0.000	20.000	5.159	0.000	5.499	3.970	1.530	10.658	17.765	7.107	20.000	0.000	0.235	
+242	ff_20/C	result[0]	ff_20/C	Slow	min	OK	ff_20/C	result[0]	common_clock	common_clock	0.000	0.000	4.861	0.000	5.002	3.679	1.324	9.863	0.035	9.828	0.000	0.000	0.235	
+243	ff_20/C	result[0]	ff_20/C	Fast	max	OK	ff_20/C	result[0]	common_clock	common_clock	0.000	20.000	1.992	0.000	2.123	1.590	0.534	4.115	17.765	13.649	20.000	0.000	0.235	
+244	ff_20/C	result[0]	ff_20/C	Fast	min	OK	ff_20/C	result[0]	common_clock	common_clock	0.000	0.000	1.476	0.000	1.638	1.356	0.283	3.114	0.035	3.079	0.000	0.000	0.235	
+245	ff_21/C	result[1]	ff_21/C	Slow	max	OK	ff_21/C	result[1]	common_clock	common_clock	0.000	20.000	5.158	0.000	5.491	3.962	1.530	10.649	17.765	7.116	20.000	0.000	0.235	
+246	ff_21/C	result[1]	ff_21/C	Slow	min	OK	ff_21/C	result[1]	common_clock	common_clock	0.000	0.000	4.860	0.000	4.994	3.671	1.324	9.854	0.035	9.819	0.000	0.000	0.235	
+247	ff_21/C	result[1]	ff_21/C	Fast	max	OK	ff_21/C	result[1]	common_clock	common_clock	0.000	20.000	1.991	0.000	2.115	1.582	0.534	4.106	17.765	13.658	20.000	0.000	0.235	
+248	ff_21/C	result[1]	ff_21/C	Fast	min	OK	ff_21/C	result[1]	common_clock	common_clock	0.000	0.000	1.475	0.000	1.630	1.348	0.283	3.105	0.035	3.070	0.000	0.000	0.235	
+249	ff_22/C	result[2]	ff_22/C	Slow	max	OK	ff_22/C	result[2]	common_clock	common_clock	0.000	20.000	5.158	0.000	5.506	3.977	1.530	10.664	17.765	7.100	20.000	0.000	0.235	
+250	ff_22/C	result[2]	ff_22/C	Slow	min	OK	ff_22/C	result[2]	common_clock	common_clock	0.000	0.000	4.860	0.000	5.009	3.686	1.324	9.869	0.035	9.834	0.000	0.000	0.235	
+251	ff_22/C	result[2]	ff_22/C	Fast	max	OK	ff_22/C	result[2]	common_clock	common_clock	0.000	20.000	1.991	0.000	2.130	1.597	0.534	4.122	17.765	13.643	20.000	0.000	0.235	
+252	ff_22/C	result[2]	ff_22/C	Fast	min	OK	ff_22/C	result[2]	common_clock	common_clock	0.000	0.000	1.475	0.000	1.645	1.363	0.283	3.120	0.035	3.085	0.000	0.000	0.235	
+253	ff_23/C	result[3]	ff_23/C	Slow	max	OK	ff_23/C	result[3]	common_clock	common_clock	0.000	20.000	5.157	0.000	5.489	3.959	1.530	10.646	17.765	7.119	20.000	0.000	0.235	
+254	ff_23/C	result[3]	ff_23/C	Slow	min	OK	ff_23/C	result[3]	common_clock	common_clock	0.000	0.000	4.859	0.000	4.992	3.668	1.324	9.851	0.035	9.816	0.000	0.000	0.235	
+255	ff_23/C	result[3]	ff_23/C	Fast	max	OK	ff_23/C	result[3]	common_clock	common_clock	0.000	20.000	1.991	0.000	2.113	1.579	0.534	4.104	17.765	13.661	20.000	0.000	0.235	
+256	ff_23/C	result[3]	ff_23/C	Fast	min	OK	ff_23/C	result[3]	common_clock	common_clock	0.000	0.000	1.475	0.000	1.628	1.345	0.283	3.103	0.035	3.067	0.000	0.000	0.235	
+257	ff_24/C	result[4]	ff_24/C	Slow	max	OK	ff_24/C	result[4]	common_clock	common_clock	0.000	20.000	5.157	0.000	5.504	3.975	1.530	10.661	17.765	7.104	20.000	0.000	0.235	
+258	ff_24/C	result[4]	ff_24/C	Slow	min	OK	ff_24/C	result[4]	common_clock	common_clock	0.000	0.000	4.859	0.000	5.007	3.684	1.324	9.866	0.035	9.831	0.000	0.000	0.235	
+259	ff_24/C	result[4]	ff_24/C	Fast	max	OK	ff_24/C	result[4]	common_clock	common_clock	0.000	20.000	1.990	0.000	2.128	1.595	0.534	4.118	17.765	13.646	20.000	0.000	0.235	
+260	ff_24/C	result[4]	ff_24/C	Fast	min	OK	ff_24/C	result[4]	common_clock	common_clock	0.000	0.000	1.474	0.000	1.643	1.361	0.283	3.117	0.035	3.082	0.000	0.000	0.235	

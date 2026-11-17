@@ -1,0 +1,212 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/internal_comp/lat7_ff3_6_10/functional
+vBUFG
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Mlj0AeVk4@>8<f4cz6;>l0
+IfNE3zW>ZH^FBE_M<ZC7_E0
+!s105 BUFG_v_unit
+S1
+R0
+w1708598535
+8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v
+L0 27
+Z3 OL;L;10.4;61
+Z4 !s108 1794629038.107000
+Z5 !s107 E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\tb.v|E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\lat7_ff3_6_10\design.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_ADV.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_BASE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v|D:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v|
+Z6 !s90 -sv|D:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_BASE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_ADV.v|E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\lat7_ff3_6_10\design.v|E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\tb.v|
+!i113 0
+Z7 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@b@u@f@g
+vFDCE
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 MDk1D@GSFEVPEHAb:?Mez0
+IlU0:j7Z:[B@[lmZzeg8Lm1
+!s105 FDCE_v_unit
+S1
+R0
+w1708598512
+8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v
+L0 28
+R3
+R4
+R5
+R6
+!i113 0
+R7
+n@f@d@c@e
+vglbl
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 h_<Q7Ja2HUTYeAOBQ;]ml0
+I`@7DYPBJMnm>KIT^KFI3=1
+!s105 glbl_v_unit
+S1
+R0
+w1708598507
+8D:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v
+L0 6
+R3
+R4
+R5
+R6
+!i113 0
+R7
+Ulatchsre_ldce
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 G;`baf>21]M<niK21HZi31
+IcLki:9LF6G]AazSizoK1T1
+Z8 !s105 LDCE_v_unit
+S1
+R0
+Z9 w1708598515
+Z10 8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v
+Z11 FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v
+L0 183
+R3
+R4
+R5
+R6
+!i113 0
+R7
+vLDCE
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 N@Q^FVzcNH>jAlJW31QRn1
+IkgRzD@=nKdiQ=R;W50@Zz3
+R8
+S1
+R0
+R9
+R10
+R11
+L0 26
+R3
+R4
+R5
+R6
+!i113 0
+R7
+n@l@d@c@e
+vMMCME2_ADV
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 1lhIh>b33?Y6:b;fW78<X2
+I:HGBc?olR:VDH3FlzG<nB2
+!s105 MMCME2_ADV_v_unit
+S1
+R0
+R9
+8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_ADV.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_ADV.v
+L0 123
+R3
+R4
+R5
+R6
+!i113 0
+R7
+n@m@m@c@m@e2_@a@d@v
+vMMCME2_BASE
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 FFW0cTQM=mT_>MVaL[eN92
+I@P;]=f84W6_c6ee3F]:T72
+!s105 MMCME2_BASE_v_unit
+S1
+R0
+R9
+8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_BASE.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_BASE.v
+L0 25
+R3
+R4
+R5
+R6
+!i113 0
+R7
+n@m@m@c@m@e2_@b@a@s@e
+vsmall25
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 =FcP8h6OY?0EN6Q6QJE[g1
+Ih^kU4jBGk@RPdHUPTOPkg2
+!s105 design_v_unit
+S1
+R0
+w1794629031
+8E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\lat7_ff3_6_10\design.v
+FE:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\lat7_ff3_6_10\design.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+vtb
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 M@35YXE@Oh0UcSVeJ2@CZ0
+IDRXC_MBYoN7UEEL1=SI?=3
+!s105 tb_v_unit
+S1
+R0
+w1794582647
+8E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\tb.v
+FE:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\internal_comp\tb.v
+L0 2
+R3
+R4
+R5
+R6
+!i113 0
+R7

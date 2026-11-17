@@ -1,0 +1,16 @@
+[
+  {
+    "design": "ff_pulse",
+    "ff": 85,
+    "latch": 0,
+    "duty": 0.125,
+    "compensating_ff": 0
+  },
+  {
+    "design": "mixed_pulse",
+    "ff": 69,
+    "latch": 16,
+    "duty": 0.125,
+    "compensating_ff": 0
+  }
+]

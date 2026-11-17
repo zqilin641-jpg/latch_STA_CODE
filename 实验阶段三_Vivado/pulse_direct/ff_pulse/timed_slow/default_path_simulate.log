@@ -1,0 +1,38 @@
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Mon Nov 16 22:31:27 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/timed/xsim_script.tcl
+# xsim {timed} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+COMB count=5 q6=fdad op7=9931/9931 op8=88a5/88a5 op9=179Z/179c op10=a2a7/a2a7
+COMB count=6 q6=7dac op7=9925/9925 op8=8845/8845 op9=149Z/149c op10=8aa7/8aa7
+COMB count=7 q6=fdb7 op7=9981/9981 op8=8b25/8b25 op9=2b9Z/2b9c op10=42a8/42a8
+COMB count=8 q6=7db2 op7=9955/9955 op8=89c5/89c5 op9=209Z/209c op10=eaa8/eaa8
+COMB count=9 q6=902e op7=2d36/2d36 op8=a8ca/28ca op9=18cZ/18c1 op10=abef/abcf
+STAGE count=10 q0=ad69/ad69 q3=328b/328b q6=b605/b605 q10=abef/abcf
+COMB count=10 q6=b605 op7=5bef/5bef op8=9e93/9e93 op9=c70Z/c70c op10=1e2d/1e2d
+MISMATCH count=11 got=d14f expected=c94f valid=1
+COMB count=11 q6=4690 op7=e044/e044 op8=c140/c140 op9=dc7Z/dc76 op10=c97d/c97d
+COMB count=12 q6=c314 op7=c468/c468 op8=e25f/e25f op9=e56Z/e56f op10=1146/1146
+COMB count=13 q6=fdad op7=9931/9931 op8=88a5/88a5 op9=179Z/179c op10=a2a7/a2a7
+COMB count=14 q6=7dac op7=9925/9925 op8=8845/8845 op9=149Z/149c op10=8aa7/8aa7
+STAGE count=44 q0=ffff/ffff q3=a4e6/a4e6 q6=1dd4/1dd4 q10=de8f/deb7
+MISMATCH count=45 got=795c expected=835c valid=1
+STAGE count=75 q0=0000/0000 q3=1f26/1f26 q6=b596/b596 q10=72c6/72ae
+MISMATCH count=76 got=8701 expected=8101 valid=1
+STAGE count=78 q0=7fff/7fff q3=a5e6/a5e6 q6=7dac/7dac q10=a2bf/a2a7
+STAGE count=79 q0=ae17/ae17 q3=a3a6/a3a6 q6=fdb7/fdb7 q10=8abf/8aa7
+MISMATCH count=79 got=854d expected=7f4d valid=1
+MISMATCH count=80 got=8547 expected=7f47 valid=1
+CLOCK_DIAG external=319 internal=290 locked=1 clk=0
+ALIGNED_RESULT checks=318 errors=24
+$finish called at time : 3828 ns : File "E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/ff_pulse/timed_slow/tb.v" Line 43
+exit
+INFO: [Common 17-206] Exiting xsim at Mon Nov 16 22:31:30 2026...

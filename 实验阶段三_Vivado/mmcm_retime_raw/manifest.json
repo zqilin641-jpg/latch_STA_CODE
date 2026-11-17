@@ -1,0 +1,30 @@
+[
+  {
+    "design": "balanced_latch5",
+    "cuts": {
+      "4": "FF",
+      "5": "LATCH",
+      "8": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  },
+  {
+    "design": "balanced_latch6",
+    "cuts": {
+      "4": "FF",
+      "6": "LATCH",
+      "8": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  }
+]

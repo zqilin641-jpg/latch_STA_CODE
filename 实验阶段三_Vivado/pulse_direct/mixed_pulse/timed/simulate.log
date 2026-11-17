@@ -1,0 +1,17 @@
+
+****** xsim v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Nov 14 17:53:03 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source xsim.dir/timed_max/xsim_script.tcl
+# xsim {timed_max} -autoloadwcfg -runall
+Time resolution is 1 ps
+run -all
+ALIGNED_RESULT checks=1 errors=0
+$finish called at time : 41620 ns : File "E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/mixed_pulse/timed/tb.v" Line 38
+exit
+INFO: [Common 17-206] Exiting xsim at Sat Nov 14 17:53:05 2026...

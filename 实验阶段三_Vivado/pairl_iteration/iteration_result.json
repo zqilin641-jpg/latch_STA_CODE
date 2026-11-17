@@ -1,0 +1,734 @@
+{
+  "iteration": 1,
+  "max_iterations_this_run": 1,
+  "source_plan": {
+    "source_paper": "E:/大四上/曦源项目/论文/Pairl-ZKX_FPT25投稿版.pdf",
+    "paper_rules": "Section III-A: post-route critical path, backward-first/forward-fallback retiming, keep best-so-far. Section III-B: selective conversion at critical path boundaries.",
+    "source_report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\ff_output_iob\\setup.rpt",
+    "source_sha256": "11b2a78c4f4a1d6972ea5b42e7634aa017bfacd67bcbef9365a787018b6f4076",
+    "selected": {
+      "direction": "forward",
+      "old_cut": 9,
+      "new_cut": 10,
+      "start": "ff_cut9_03/C",
+      "end": "output_ff_15/D",
+      "slack_ns": 9.637
+    },
+    "skipped_path_count": 34,
+    "skipped_paths": [
+      {
+        "start": "output_ff_08/C",
+        "end": "result[8]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_08/C",
+        "end": "result[8]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_09/C",
+        "end": "result[9]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_09/C",
+        "end": "result[9]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_15/C",
+        "end": "result[15]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_15/C",
+        "end": "result[15]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_10/C",
+        "end": "result[10]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_10/C",
+        "end": "result[10]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_01/C",
+        "end": "result[1]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_01/C",
+        "end": "result[1]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_05/C",
+        "end": "result[5]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_05/C",
+        "end": "result[5]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_00/C",
+        "end": "result[0]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_00/C",
+        "end": "result[0]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "valid_ff_04/C",
+        "end": "valid_out",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "valid_ff_04/C",
+        "end": "valid_out",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_02/C",
+        "end": "result[2]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_02/C",
+        "end": "result[2]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_13/C",
+        "end": "result[13]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_13/C",
+        "end": "result[13]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_11/C",
+        "end": "result[11]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_11/C",
+        "end": "result[11]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_03/C",
+        "end": "result[3]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_03/C",
+        "end": "result[3]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_14/C",
+        "end": "result[14]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_14/C",
+        "end": "result[14]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_04/C",
+        "end": "result[4]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_04/C",
+        "end": "result[4]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_12/C",
+        "end": "result[12]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_12/C",
+        "end": "result[12]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_06/C",
+        "end": "result[6]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_06/C",
+        "end": "result[6]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_07/C",
+        "end": "result[7]",
+        "reason": "Protected interface/control or unsupported boundary"
+      },
+      {
+        "start": "output_ff_07/C",
+        "end": "result[7]",
+        "reason": "Protected interface/control or unsupported boundary"
+      }
+    ],
+    "original_cuts": [
+      3,
+      6,
+      9,
+      12
+    ],
+    "new_cuts": [
+      3,
+      6,
+      10,
+      12
+    ],
+    "variants": {
+      "sta_retime_ff": {
+        "3": "FF",
+        "6": "FF",
+        "10": "FF",
+        "12": "FF"
+      },
+      "sta_retime_latch": {
+        "3": "FF",
+        "6": "FF",
+        "10": "LATCH",
+        "12": "FF"
+      }
+    },
+    "replacement": {
+      "original_ff_cells_converted": [
+        "ff_cut10_00",
+        "ff_cut10_01",
+        "ff_cut10_02",
+        "ff_cut10_03",
+        "ff_cut10_04",
+        "ff_cut10_05",
+        "ff_cut10_06",
+        "ff_cut10_07",
+        "ff_cut10_08",
+        "ff_cut10_09",
+        "ff_cut10_10",
+        "ff_cut10_11",
+        "ff_cut10_12",
+        "ff_cut10_13",
+        "ff_cut10_14",
+        "ff_cut10_15"
+      ],
+      "original_ff_retained": 69,
+      "compensating_ff_inserted": 16,
+      "final_ff": 85,
+      "final_latch": 16
+    },
+    "limits": [
+      "Atomic operation-boundary moves in this feed-forward word datapath, not arbitrary LUT/netlist retiming.",
+      "Global IO paths protected; candidate selected from eligible internal paths, not claimed to repair protected IO.",
+      "One iteration, two candidates, retain prior best unless native STA improves.",
+      "Native FDCE/LDCE, not the paper custom VTR/HSPICE configurable hardware.",
+      "Common clock fixed; do not copy earliest-time inequality relaxation as a hold proof."
+    ]
+  },
+  "candidates": [
+    {
+      "group": "output_control",
+      "design": "ff_output_iob",
+      "period_ns": 11.429,
+      "frequency_mhz": 87.49671887304225,
+      "ff": 85,
+      "latch": 0,
+      "critical": [
+        {
+          "k": 1.0,
+          "d_ns": 11.429,
+          "evidence": {
+            "path_id": "4285",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\ff_output_iob\\adjacent\\path_4285.rpt",
+            "start": "output_ff_08/C",
+            "end": "result[8]",
+            "corner": "Slow",
+            "check": "max"
+          },
+          "id": "2142",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native": {
+        "pass": {
+          "period_ns": 11.439,
+          "setup_wns_ns": 0.01,
+          "hold_whs_ns": 0.138,
+          "pulse_slack_ns": 5.219,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\solve\\ff_output_iob\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 11.419,
+          "setup_wns_ns": -0.01,
+          "hold_whs_ns": 0.138,
+          "pulse_slack_ns": 5.209,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\solve\\ff_output_iob\\fail.rpt"
+        }
+      },
+      "output_sites": {
+        "output_ff_00": [
+          "OLOGIC_X0Y17",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_01": [
+          "OLOGIC_X0Y18",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_02": [
+          "OLOGIC_X0Y19",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_03": [
+          "OLOGIC_X0Y20",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_04": [
+          "OLOGIC_X0Y21",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_05": [
+          "OLOGIC_X0Y22",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_06": [
+          "OLOGIC_X0Y23",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_07": [
+          "OLOGIC_X0Y24",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_08": [
+          "OLOGIC_X0Y25",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_09": [
+          "OLOGIC_X0Y26",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_10": [
+          "OLOGIC_X0Y27",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_11": [
+          "OLOGIC_X0Y29",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_12": [
+          "OLOGIC_X0Y30",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_13": [
+          "OLOGIC_X0Y31",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_14": [
+          "OLOGIC_X0Y32",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_15": [
+          "OLOGIC_X0Y33",
+          "OLOGICE2.OUTFF"
+        ],
+        "valid_ff_04": [
+          "OLOGIC_X0Y34",
+          "OLOGICE2.OUTFF"
+        ]
+      },
+      "rtl": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\ff_output_iob\\design.v",
+      "rtl_sha256": "5fd572f58d3db130377d0ff70f1ec63695e2dbb14b22800153c153caf0cc22fb"
+    },
+    {
+      "group": "output_control",
+      "design": "latch6_output_iob",
+      "period_ns": 12.424,
+      "frequency_mhz": 80.48937540244688,
+      "ff": 85,
+      "latch": 16,
+      "critical": [
+        {
+          "k": 0.5,
+          "d_ns": 6.212,
+          "evidence": {
+            "path_id": "4997",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\latch6_output_iob\\adjacent\\path_4997.rpt",
+            "start": "ff_cut3_13/C",
+            "end": "latch_cut6_13/D",
+            "corner": "Slow",
+            "check": "max",
+            "max_borrow_ns": 10.073,
+            "borrowed_ns": 6.285
+          },
+          "id": "2928",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native": {
+        "pass": {
+          "period_ns": 12.434,
+          "setup_wns_ns": 0.0,
+          "hold_whs_ns": 0.149,
+          "pulse_slack_ns": 5.717,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\solve\\latch6_output_iob\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 12.414,
+          "setup_wns_ns": -0.005,
+          "hold_whs_ns": 0.149,
+          "pulse_slack_ns": 5.707,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\solve\\latch6_output_iob\\fail.rpt"
+        }
+      },
+      "output_sites": {
+        "output_ff_00": [
+          "OLOGIC_X0Y17",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_01": [
+          "OLOGIC_X0Y18",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_02": [
+          "OLOGIC_X0Y19",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_03": [
+          "OLOGIC_X0Y20",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_04": [
+          "OLOGIC_X0Y21",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_05": [
+          "OLOGIC_X0Y22",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_06": [
+          "OLOGIC_X0Y23",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_07": [
+          "OLOGIC_X0Y24",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_08": [
+          "OLOGIC_X0Y25",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_09": [
+          "OLOGIC_X0Y26",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_10": [
+          "OLOGIC_X0Y27",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_11": [
+          "OLOGIC_X0Y29",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_12": [
+          "OLOGIC_X0Y30",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_13": [
+          "OLOGIC_X0Y31",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_14": [
+          "OLOGIC_X0Y32",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_15": [
+          "OLOGIC_X0Y33",
+          "OLOGICE2.OUTFF"
+        ],
+        "valid_ff_04": [
+          "OLOGIC_X0Y34",
+          "OLOGICE2.OUTFF"
+        ]
+      },
+      "rtl": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\latch6_output_iob\\design.v",
+      "rtl_sha256": "569d9fce9c00794ccb1d56709ef8b79bd98e0576b150c166626c08a40aeb9f9b"
+    },
+    {
+      "group": "pairl_iteration",
+      "design": "sta_retime_ff",
+      "period_ns": 11.429,
+      "frequency_mhz": 87.49671887304225,
+      "ff": 85,
+      "latch": 0,
+      "critical": [
+        {
+          "k": 1.0,
+          "d_ns": 11.429,
+          "evidence": {
+            "path_id": "4285",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\sta_retime_ff\\adjacent\\path_4285.rpt",
+            "start": "output_ff_08/C",
+            "end": "result[8]",
+            "corner": "Slow",
+            "check": "max"
+          },
+          "id": "2142",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native": {
+        "pass": {
+          "period_ns": 11.439,
+          "setup_wns_ns": 0.01,
+          "hold_whs_ns": 0.113,
+          "pulse_slack_ns": 5.219,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\solve\\sta_retime_ff\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 11.419,
+          "setup_wns_ns": -0.01,
+          "hold_whs_ns": 0.113,
+          "pulse_slack_ns": 5.209,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\solve\\sta_retime_ff\\fail.rpt"
+        }
+      },
+      "output_sites": {
+        "output_ff_00": [
+          "OLOGIC_X0Y17",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_01": [
+          "OLOGIC_X0Y18",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_02": [
+          "OLOGIC_X0Y19",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_03": [
+          "OLOGIC_X0Y20",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_04": [
+          "OLOGIC_X0Y21",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_05": [
+          "OLOGIC_X0Y22",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_06": [
+          "OLOGIC_X0Y23",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_07": [
+          "OLOGIC_X0Y24",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_08": [
+          "OLOGIC_X0Y25",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_09": [
+          "OLOGIC_X0Y26",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_10": [
+          "OLOGIC_X0Y27",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_11": [
+          "OLOGIC_X0Y29",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_12": [
+          "OLOGIC_X0Y30",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_13": [
+          "OLOGIC_X0Y31",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_14": [
+          "OLOGIC_X0Y32",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_15": [
+          "OLOGIC_X0Y33",
+          "OLOGICE2.OUTFF"
+        ],
+        "valid_ff_04": [
+          "OLOGIC_X0Y34",
+          "OLOGICE2.OUTFF"
+        ]
+      },
+      "rtl": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\sta_retime_ff\\design.v",
+      "rtl_sha256": "55b0626bc1c9dbd843426e8b8e8703408d10a272f15be6db6a5a1cd6a151ba62"
+    },
+    {
+      "group": "pairl_iteration",
+      "design": "sta_retime_latch",
+      "period_ns": 14.968,
+      "frequency_mhz": 66.80919294494923,
+      "ff": 85,
+      "latch": 16,
+      "critical": [
+        {
+          "k": 0.5,
+          "d_ns": 7.484,
+          "evidence": {
+            "path_id": "4977",
+            "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\sta_retime_latch\\adjacent\\path_4977.rpt",
+            "start": "ff_cut6_14/C",
+            "end": "latch_cut10_13/D",
+            "corner": "Slow",
+            "check": "max",
+            "max_borrow_ns": 10.073,
+            "borrowed_ns": 7.557
+          },
+          "id": "2908",
+          "u": 0,
+          "v": 0
+        }
+      ],
+      "native": {
+        "pass": {
+          "period_ns": 14.978,
+          "setup_wns_ns": 0.0,
+          "hold_whs_ns": 0.199,
+          "pulse_slack_ns": 6.989,
+          "passed": true,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\solve\\sta_retime_latch\\pass.rpt"
+        },
+        "fail": {
+          "period_ns": 14.958,
+          "setup_wns_ns": -0.005,
+          "hold_whs_ns": 0.199,
+          "pulse_slack_ns": 6.979,
+          "passed": false,
+          "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\solve\\sta_retime_latch\\fail.rpt"
+        }
+      },
+      "output_sites": {
+        "output_ff_00": [
+          "OLOGIC_X0Y17",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_01": [
+          "OLOGIC_X0Y18",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_02": [
+          "OLOGIC_X0Y19",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_03": [
+          "OLOGIC_X0Y20",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_04": [
+          "OLOGIC_X0Y21",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_05": [
+          "OLOGIC_X0Y22",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_06": [
+          "OLOGIC_X0Y23",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_07": [
+          "OLOGIC_X0Y24",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_08": [
+          "OLOGIC_X0Y25",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_09": [
+          "OLOGIC_X0Y26",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_10": [
+          "OLOGIC_X0Y27",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_11": [
+          "OLOGIC_X0Y29",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_12": [
+          "OLOGIC_X0Y30",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_13": [
+          "OLOGIC_X0Y31",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_14": [
+          "OLOGIC_X0Y32",
+          "OLOGICE2.OUTFF"
+        ],
+        "output_ff_15": [
+          "OLOGIC_X0Y33",
+          "OLOGICE2.OUTFF"
+        ],
+        "valid_ff_04": [
+          "OLOGIC_X0Y34",
+          "OLOGICE2.OUTFF"
+        ]
+      },
+      "rtl": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\pairl_iteration\\sta_retime_latch\\design.v",
+      "rtl_sha256": "a4d97f714eead124d7e579d20ed5fdee2a1b3784071df22eaaa84ac7506a7102"
+    }
+  ],
+  "previous_best": "ff_output_iob",
+  "best_new": "sta_retime_ff",
+  "accepted_new_best": false,
+  "best_so_far": "ff_output_iob",
+  "best_period_ns": 11.429,
+  "stop_reason": "Bounded first physical-feedback iteration complete",
+  "implemented_rules": [
+    "Post-route eligible critical path",
+    "Backward-first or forward fallback",
+    "Selective boundary replacement",
+    "Cycle-aligned validation",
+    "Physical STA re-evaluation",
+    "Best-so-far retention"
+  ],
+  "excluded_scope": [
+    "Arbitrary RTL/netlist retiming",
+    "General multi-latch transparency graph",
+    "Custom configurable FPGA architecture",
+    "Formal equivalence"
+  ]
+}

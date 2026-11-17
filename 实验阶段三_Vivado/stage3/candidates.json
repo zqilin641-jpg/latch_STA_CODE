@@ -1,0 +1,22 @@
+[
+  {
+    "design": "mixed_stage2",
+    "replaced_stage": 2,
+    "ff": 20,
+    "latch": 5,
+    "clock_nets": 1,
+    "expected_latency_cycles": 4,
+    "baseline_latency_cycles": 5,
+    "scope": "Whole-stage selective replacement; not bitwise retiming or cycle-exact equivalence"
+  },
+  {
+    "design": "mixed_stage3",
+    "replaced_stage": 3,
+    "ff": 20,
+    "latch": 5,
+    "clock_nets": 1,
+    "expected_latency_cycles": 4,
+    "baseline_latency_cycles": 5,
+    "scope": "Whole-stage selective replacement; not bitwise retiming or cycle-exact equivalence"
+  }
+]

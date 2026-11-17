@@ -1,0 +1,12 @@
+[
+  {
+    "design": "ff",
+    "clock_relation_ok": true,
+    "cross_uncertainty_ok": true
+  },
+  {
+    "design": "mixed",
+    "clock_relation_ok": true,
+    "cross_uncertainty_ok": true
+  }
+]

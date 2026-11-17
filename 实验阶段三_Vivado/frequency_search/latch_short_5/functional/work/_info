@@ -1,0 +1,166 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/frequency_search/latch_short_5/functional
+vBUFG
+Z1 DXx6 sv_std 3 std 0 22 WmjPaeP=7F5?QFXzJ>D[Q2
+Z2 VDg1SIo80bB@j0V0VzS_@n1
+r1
+!s85 0
+31
+!i10b 1
+!s100 Mlj0AeVk4@>8<f4cz6;>l0
+IfNE3zW>ZH^FBE_M<ZC7_E0
+!s105 BUFG_v_unit
+S1
+R0
+w1708598535
+8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v
+L0 27
+Z3 OL;L;10.4;61
+Z4 !s108 1794382346.479000
+Z5 !s107 E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\tb.v|E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\latch_short_5\design.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v|D:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v|
+Z6 !s90 -sv|D:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v|D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v|E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\latch_short_5\design.v|E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\tb.v|
+!i113 0
+Z7 o-sv -L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+n@b@u@f@g
+vFDCE
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 MDk1D@GSFEVPEHAb:?Mez0
+IlU0:j7Z:[B@[lmZzeg8Lm1
+!s105 FDCE_v_unit
+S1
+R0
+w1708598512
+8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v
+L0 28
+R3
+R4
+R5
+R6
+!i113 0
+R7
+n@f@d@c@e
+vglbl
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 h_<Q7Ja2HUTYeAOBQ;]ml0
+I`@7DYPBJMnm>KIT^KFI3=1
+!s105 glbl_v_unit
+S1
+R0
+w1708598507
+8D:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v
+FD:\xilinx\Vivado\2024.1\data\verilog\src\glbl.v
+L0 6
+R3
+R4
+R5
+R6
+!i113 0
+R7
+Ulatchsre_ldce
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 G;`baf>21]M<niK21HZi31
+IcLki:9LF6G]AazSizoK1T1
+Z8 !s105 LDCE_v_unit
+S1
+R0
+Z9 w1708598515
+Z10 8D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v
+Z11 FD:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LDCE.v
+L0 183
+R3
+R4
+R5
+R6
+!i113 0
+R7
+vLDCE
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 N@Q^FVzcNH>jAlJW31QRn1
+IkgRzD@=nKdiQ=R;W50@Zz3
+R8
+S1
+R0
+R9
+R10
+R11
+L0 26
+R3
+R4
+R5
+R6
+!i113 0
+R7
+n@l@d@c@e
+vsmall25
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 >i;C^oWW6AF::Jgj0RnNI0
+I?lk`TK6WhV8BKOYn;aPao2
+!s105 design_v_unit
+S1
+R0
+Z12 w1794382340
+8E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\latch_short_5\design.v
+FE:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\latch_short_5\design.v
+L0 1
+R3
+R4
+R5
+R6
+!i113 0
+R7
+vtb
+R1
+R2
+r1
+!s85 0
+31
+!i10b 1
+!s100 Zi9:RoB2;TNFPmfHn8J;M0
+I=NB4mi_?6iJX;::VOEX1R1
+!s105 tb_v_unit
+S1
+R0
+R12
+8E:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\tb.v
+FE:\pds\lacth\latch_validation\howard_bridge\vivado_single_clock\frequency_search\tb.v
+L0 2
+R3
+R4
+R5
+R6
+!i113 0
+R7

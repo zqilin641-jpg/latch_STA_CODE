@@ -1,0 +1,68 @@
+[
+  {
+    "design": "ff_4_8_11",
+    "cuts": {
+      "4": "FF",
+      "8": "FF",
+      "11": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 0,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming",
+    "source_candidate": "ff_4_8_11",
+    "output_control": "Mask moved before final FF using v[3]; same output sample cycle; request final data/valid registers in IOB"
+  },
+  {
+    "design": "mixed_4_8_11",
+    "cuts": {
+      "4": "FF",
+      "8": "FF",
+      "11": "FF",
+      "12": "FF",
+      "5": "LATCH"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming",
+    "source_candidate": "mixed_4_8_11",
+    "output_control": "Mask moved before final FF using v[3]; same output sample cycle; request final data/valid registers in IOB"
+  },
+  {
+    "design": "ff_3_7_11",
+    "cuts": {
+      "3": "FF",
+      "7": "FF",
+      "11": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 0,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming",
+    "source_candidate": "ff_3_7_11",
+    "output_control": "Mask moved before final FF using v[3]; same output sample cycle; request final data/valid registers in IOB"
+  },
+  {
+    "design": "mixed_3_7_11",
+    "cuts": {
+      "3": "FF",
+      "7": "FF",
+      "11": "FF",
+      "12": "FF",
+      "4": "LATCH"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming",
+    "source_candidate": "mixed_3_7_11",
+    "output_control": "Mask moved before final FF using v[3]; same output sample cycle; request final data/valid registers in IOB"
+  }
+]

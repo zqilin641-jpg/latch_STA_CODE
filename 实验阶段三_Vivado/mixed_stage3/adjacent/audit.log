@@ -1,0 +1,13 @@
+{"primary_pair_count": 50, "query_count": 220, "timed_count": 210, "primary_pair_corner_coverage_complete": true, "howard_ready": false, "design": "mixed_stage3"}
+Fixed routed checkpoint; native all_fanin sequential boundaries and output ports; reset excluded by XDC false path.
+Transparent-latch propagation and library/hold semantics must be modeled; unavailable D-start min queries are not zero delays.
+UNAVAILABLE {"id": "106", "adjacent_start": "latch_18/G", "end": "ff_20/D", "query_start": "latch_18/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "108", "adjacent_start": "latch_18/G", "end": "ff_20/D", "query_start": "latch_18/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "114", "adjacent_start": "latch_19/G", "end": "ff_21/D", "query_start": "latch_19/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "116", "adjacent_start": "latch_19/G", "end": "ff_21/D", "query_start": "latch_19/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "122", "adjacent_start": "latch_15/G", "end": "ff_22/D", "query_start": "latch_15/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "124", "adjacent_start": "latch_15/G", "end": "ff_22/D", "query_start": "latch_15/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "130", "adjacent_start": "latch_16/G", "end": "ff_23/D", "query_start": "latch_16/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "132", "adjacent_start": "latch_16/G", "end": "ff_23/D", "query_start": "latch_16/D", "corner": "Fast", "delay_type": "min"}
+UNAVAILABLE {"id": "138", "adjacent_start": "latch_17/G", "end": "ff_24/D", "query_start": "latch_17/D", "corner": "Slow", "delay_type": "min"}
+UNAVAILABLE {"id": "140", "adjacent_start": "latch_17/G", "end": "ff_24/D", "query_start": "latch_17/D", "corner": "Fast", "delay_type": "min"}

@@ -1,0 +1,7 @@
+0.7
+2020.2
+May 22 2024
+19:03:11
+D:/xilinx/Vivado/2024.1/data/verilog/src/glbl.v,1708598507,verilog,,,,,,,,,,,,
+E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/mixed_pulse/timed/netlist.v,1794649502,verilog,,E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/mixed_pulse/timed/tb.v,,glbl;small25,,,,,,,,
+E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/mixed_pulse/timed/tb.v,1794650246,verilog,,D:/xilinx/Vivado/2024.1/data/verilog/src/glbl.v,,tb,,,,,,,,

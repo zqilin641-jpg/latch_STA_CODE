@@ -1,0 +1,28 @@
+[
+  {
+    "design": "latch4_bits",
+    "ff": 85,
+    "latch": 4,
+    "selected_bits": [
+      12,
+      13,
+      14,
+      15
+    ]
+  },
+  {
+    "design": "latch8_bits",
+    "ff": 85,
+    "latch": 8,
+    "selected_bits": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15
+    ]
+  }
+]

@@ -1,0 +1,70 @@
+Reading E:/real-modelsim/tcl/vsim/pref.tcl
+
+# 10.4
+
+# vsim -c -t 1ps -sdfmax /tb/dut=routed.sdf work.tb work.glbl -do "run -all; quit -f" 
+# Start time: 09:58:05 on Nov 17,2026
+# ** Note: (vsim-3812) Design is being optimized...
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Loading work.tb(fast)
+# Loading work.IBUF(fast)
+# Loading work.BUFG(fast)
+# Loading work.MMCME2_ADV(fast)
+# Loading work.FDCE(fast)
+# Loading work.FDCE(fast__1)
+# Loading work.CARRY4(fast)
+# Loading work.LUT1(fast)
+# Loading work.CARRY4(fast__1)
+# Loading work.LUT2(fast)
+# Loading work.LUT2(fast__1)
+# Loading work.OBUF(fast)
+# Loading work.glbl(fast)
+# Loading instances from routed.sdf
+# Loading timing data from routed.sdf
+# ** Note: (vsim-3587) SDF Backannotation Successfully Completed.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb.v
+# ** Warning: (vsim-3316) No solution possible for some delayed timing check nets. 408 negative limits were zeroed. Use +ntc_warn for more info.
+#    Time: 0 ps  Iteration: 0  Instance: /tb File: tb.v
+# run -all
+# STAGE count=5 q0=0000/8000 q3=0000/a4a6 q6=0000/fdad q10=0000/0136
+# MISMATCH count=5 got=0000 expected=303f valid=0
+# COMB count=5 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# STAGE count=6 q0=0000/7fff q3=0000/a5e6 q6=0000/7dac q10=0000/a2a7
+# MISMATCH count=6 got=0000 expected=22e5 valid=0
+# COMB count=6 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# STAGE count=7 q0=0000/64a0 q3=0000/a3a6 q6=0000/fdb7 q10=0000/8aa7
+# MISMATCH count=7 got=0000 expected=7f4d valid=0
+# COMB count=7 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# STAGE count=8 q0=0000/ea15 q3=0000/e5af q6=0000/7db2 q10=0000/42a8
+# MISMATCH count=8 got=0000 expected=7f47 valid=0
+# COMB count=8 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# STAGE count=9 q0=0000/cec6 q3=0000/d0c2 q6=0000/902e q10=0000/eaa8
+# MISMATCH count=9 got=0000 expected=7f75 valid=0
+# COMB count=9 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# PINTRACE ci=1 source=1 s=0111 di=0000 co=0111 q=1000 op7=abc2
+# INTERNAL S_in=0111 DI_in=0000 CI_in=1 CO_fb=1111 ideal=1000 O=1000
+# COMB count=10 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# COMB count=11 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# COMB count=12 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# COMB count=13 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# COMB count=14 q6=0000 op7=abc2/abc2 op8=1d2e/1d2e op9=bbeZ/bbe0 op10=c4cc/c4cc
+# CLOCK_DIAG external=319 internal=1 locked=1 clk=0
+# ALIGNED_RESULT checks=318 errors=251
+# ** Note: $finish    : tb.v(43)
+#    Time: 3828 ns  Iteration: 1  Instance: /tb
+# End time: 09:58:07 on Nov 17,2026, Elapsed time: 0:00:02
+# Errors: 0, Warnings: 1

@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# Vivado v2024.1 (64-bit)
+# SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+# IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+# SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+# Start of session at: Sat Nov 14 23:08:58 2026
+# Process ID: 21524
+# Current directory: E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_cycle/mixed/timed_slow
+# Command line: vivado.exe -mode batch -source export.tcl
+# Log file: E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_cycle/mixed/timed_slow/vivado.log
+# Journal file: E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_cycle/mixed/timed_slow\vivado.jou
+# Running On        :nitro
+# Platform          :Windows Server 2016 or Windows 10
+# Operating System  :22631
+# Processor Detail  :12th Gen Intel(R) Core(TM) i7-12650H
+# CPU Frequency     :2688 MHz
+# CPU Physical cores:10
+# CPU Logical cores :16
+# Host memory       :16851 MB
+# Swap memory       :29568 MB
+# Total Virtual     :46420 MB
+# Available Virtual :15605 MB
+#-----------------------------------------------------------
+source export.tcl

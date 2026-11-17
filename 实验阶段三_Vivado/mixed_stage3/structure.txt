@@ -1,0 +1,29 @@
+FF_COUNT 20
+LATCH_COUNT 5
+CLOCK_COUNT 1
+ff_00 : clk : common_clock
+ff_01 : clk : common_clock
+ff_02 : clk : common_clock
+ff_03 : clk : common_clock
+ff_04 : clk : common_clock
+ff_05 : clk : common_clock
+ff_06 : clk : common_clock
+ff_07 : clk : common_clock
+ff_08 : clk : common_clock
+ff_09 : clk : common_clock
+ff_10 : clk : common_clock
+ff_11 : clk : common_clock
+ff_12 : clk : common_clock
+ff_13 : clk : common_clock
+ff_14 : clk : common_clock
+ff_20 : clk : common_clock
+ff_21 : clk : common_clock
+ff_22 : clk : common_clock
+ff_23 : clk : common_clock
+ff_24 : clk : common_clock
+latch_15 : clk : common_clock
+latch_16 : clk : common_clock
+latch_17 : clk : common_clock
+latch_18 : clk : common_clock
+latch_19 : clk : common_clock
+UNIQUE_CLOCK_NETS clk

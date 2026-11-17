@@ -1,0 +1,11 @@
+{
+  "period_ns": 12.0,
+  "stimuli": 4096,
+  "checks": 4151,
+  "data_errors": 0,
+  "clock_evidence": "CLOCK_DIAG external=4159 internal=4130 locked=1",
+  "negative_check_adjustments": 408,
+  "warning_lines": [],
+  "scoreboard_pass": true,
+  "full_timing_signoff": false
+}

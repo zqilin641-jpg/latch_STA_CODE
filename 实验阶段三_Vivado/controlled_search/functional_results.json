@@ -1,0 +1,57 @@
+[
+  {
+    "design": "ff_3_6_9",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "ff_2_5_8",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "latch_at_3",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "latch_at_6",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "latch_at_9",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  }
+]

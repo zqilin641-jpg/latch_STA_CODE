@@ -1,0 +1,112 @@
+[
+  {
+    "design": "ff_3_6_9",
+    "native_validated": true,
+    "native_bracket": {
+      "pass": {
+        "period_ns": 14.700999999999999,
+        "setup_wns_ns": 0.01,
+        "hold_whs_ns": 0.14,
+        "pulse_slack_ns": 6.85,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\ff_3_6_9\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 14.681,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.14,
+        "pulse_slack_ns": 6.84,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\ff_3_6_9\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "ff_2_5_8",
+    "native_validated": true,
+    "native_bracket": {
+      "pass": {
+        "period_ns": 15.049999999999999,
+        "setup_wns_ns": 0.01,
+        "hold_whs_ns": 0.008,
+        "pulse_slack_ns": 7.025,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\ff_2_5_8\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 15.03,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.008,
+        "pulse_slack_ns": 7.015,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\ff_2_5_8\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "latch_at_3",
+    "native_validated": true,
+    "native_bracket": {
+      "pass": {
+        "period_ns": 14.839,
+        "setup_wns_ns": 0.0,
+        "hold_whs_ns": 0.023,
+        "pulse_slack_ns": 6.919,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\latch_at_3\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 14.819,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.023,
+        "pulse_slack_ns": 6.909,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\latch_at_3\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "latch_at_6",
+    "native_validated": true,
+    "native_bracket": {
+      "pass": {
+        "period_ns": 14.569999999999999,
+        "setup_wns_ns": 0.0,
+        "hold_whs_ns": 0.031,
+        "pulse_slack_ns": 6.785,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\latch_at_6\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 14.549999999999999,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.031,
+        "pulse_slack_ns": 6.775,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\latch_at_6\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "latch_at_9",
+    "native_validated": true,
+    "native_bracket": {
+      "pass": {
+        "period_ns": 14.764,
+        "setup_wns_ns": 0.0,
+        "hold_whs_ns": 0.008,
+        "pulse_slack_ns": 6.882,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\latch_at_9\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 14.744,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.008,
+        "pulse_slack_ns": 6.872,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\controlled_search\\solve\\latch_at_9\\fail.rpt"
+      }
+    }
+  }
+]

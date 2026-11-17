@@ -1,0 +1,109 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2024.1 (win64) Build 5076996 Wed May 22 18:37:14 MDT 2024
+| Date         : Sat Nov 14 11:46:46 2026
+| Host         : nitro running 64-bit major release  (build 9200)
+| Command      : report_timing -from latch_cut5_10/G -to [get_pins ff_cut8_14/D] -corner Slow -delay_type min -max_paths 1 -nworst 1 -path_type full_clock_expanded -input_pins -significant_digits 3 -file mmcm_howard/mixed/adjacent/path_3930.rpt
+| Design       : small25
+| Device       : 7a35t-cpg236
+| Speed File   : -1  PRODUCTION 1.23 2018-06-13
+| Design State : Routed
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Report
+
+Slack (MET) :             2.867ns  (arrival time - required time)
+  Source:                 latch_cut5_10/G
+                            (positive level-sensitive latch clocked by mm_out  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            ff_cut8_14/D
+                            (rising edge-triggered cell FDCE clocked by mm_out  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             mm_out
+  Path Type:              Hold (Min at Slow Process Corner)
+  Requirement:            0.000ns  (mm_out rise@0.000ns - mm_out rise@0.000ns)
+  Data Path Delay:        3.377ns  (logic 2.167ns (64.166%)  route 1.210ns (35.834%))
+  Logic Levels:           7  (CARRY4=6 LUT1=1)
+  Clock Path Skew:        0.015ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    -0.890ns
+    Source Clock Delay      (SCD):    -1.481ns
+    Clock Pessimism Removal (CPR):    0.576ns
+  Clock Uncertainty:      0.200ns  ((TSJ^2 + DJ^2)^1/2) / 2 + PE + UU
+    Total System Jitter     (TSJ):    0.000ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+    User Uncertainty         (UU):    0.200ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock mm_out rise edge)     0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk_in (IN)
+                         net (fo=0)                   0.000     0.000    clk_in
+    M18                                                               r  clk_in_IBUF_inst/I
+    M18                  IBUF (Prop_ibuf_I_O)         1.383     1.383 r  clk_in_IBUF_inst/O
+                         net (fo=1, routed)           1.162     2.545    clk_in_IBUF
+    MMCME2_ADV_X0Y0                                                   r  common_mmcm/CLKIN1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -7.221    -4.677 r  common_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.587    -3.090    mm_out
+    BUFGCTRL_X0Y0                                                     r  clock_buffer/I
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.091    -2.999 r  clock_buffer/O
+                         net (fo=101, routed)         1.517    -1.481    clk
+    SLICE_X1Y10          LDCE                                         r  latch_cut5_10/G
+  -------------------------------------------------------------------    -------------------
+    SLICE_X1Y10          LDCE (EnToQ_ldce_G_Q)        0.450    -1.031 r  latch_cut5_10/Q
+                         net (fo=1, routed)           0.417    -0.614    q5[10]
+    SLICE_X3Y14                                                       r  op6_inferred_i_1/S[0]
+    SLICE_X3Y14          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.289    -0.325 r  op6_inferred_i_1/O[0]
+                         net (fo=1, routed)           0.398     0.073    op6[13]
+    SLICE_X4Y14                                                       r  op7_inferred_i_4/S[0]
+    SLICE_X4Y14          CARRY4 (Prop_carry4_S[0]_O[0])
+                                                      0.430     0.503 f  op7_inferred_i_4/O[0]
+                         net (fo=2, routed)           0.395     0.898    op7[0]
+    SLICE_X3Y16                                                       f  op8_inferred_i_14/I0
+    SLICE_X3Y16          LUT1 (Prop_lut1_I0_O)        0.241     1.139 r  op8_inferred_i_14/O
+                         net (fo=1, routed)           0.000     1.139    op8_inferred_i_14_n_0
+    SLICE_X3Y16                                                       r  op8_inferred_i_4/S[2]
+    SLICE_X3Y16          CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.304     1.443 r  op8_inferred_i_4/CO[3]
+                         net (fo=1, routed)           0.000     1.443    op8_inferred_i_4_n_0
+    SLICE_X3Y17                                                       r  op8_inferred_i_3/CI
+    SLICE_X3Y17          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     1.535 r  op8_inferred_i_3/CO[3]
+                         net (fo=1, routed)           0.000     1.535    op8_inferred_i_3_n_0
+    SLICE_X3Y18                                                       r  op8_inferred_i_2/CI
+    SLICE_X3Y18          CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.092     1.627 r  op8_inferred_i_2/CO[3]
+                         net (fo=1, routed)           0.000     1.627    op8_inferred_i_2_n_0
+    SLICE_X3Y19                                                       r  op8_inferred_i_1/CI
+    SLICE_X3Y19          CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.269     1.896 r  op8_inferred_i_1/O[1]
+                         net (fo=1, routed)           0.000     1.896    op8[14]
+    SLICE_X3Y19          FDCE                                         r  ff_cut8_14/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock mm_out rise edge)     0.000     0.000 r  
+    M18                                               0.000     0.000 r  clk_in (IN)
+                         net (fo=0)                   0.000     0.000    clk_in
+    M18                                                               r  clk_in_IBUF_inst/I
+    M18                  IBUF (Prop_ibuf_I_O)         1.453     1.453 r  clk_in_IBUF_inst/O
+                         net (fo=1, routed)           1.233     2.686    clk_in_IBUF
+    MMCME2_ADV_X0Y0                                                   r  common_mmcm/CLKIN1
+    MMCME2_ADV_X0Y0      MMCME2_ADV (Prop_mmcme2_adv_CLKIN1_CLKOUT0)
+                                                     -6.965    -4.279 r  common_mmcm/CLKOUT0
+                         net (fo=1, routed)           1.666    -2.612    mm_out
+    BUFGCTRL_X0Y0                                                     r  clock_buffer/I
+    BUFGCTRL_X0Y0        BUFG (Prop_bufg_I_O)         0.096    -2.516 r  clock_buffer/O
+                         net (fo=101, routed)         1.626    -0.890    clk
+    SLICE_X3Y19          FDCE                                         r  ff_cut8_14/C
+                         clock pessimism             -0.576    -1.466    
+                         clock uncertainty            0.200    -1.266    
+    SLICE_X3Y19          FDCE (Hold_fdce_C_D)         0.295    -0.971    ff_cut8_14
+  -------------------------------------------------------------------
+                         required time                          0.971    
+                         arrival time                           1.896    
+  -------------------------------------------------------------------
+                         slack                                  2.867    
+
+
+
+

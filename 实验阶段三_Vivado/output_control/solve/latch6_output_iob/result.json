@@ -1,0 +1,55 @@
+{
+  "design": "latch6_output_iob",
+  "howard": {
+    "status": "Converged",
+    "period_ns": 12.424,
+    "max_violation": 0,
+    "cycle_residual": 0,
+    "iterations": 3,
+    "cycle": [
+      "2928"
+    ]
+  },
+  "lp_period_ns": 12.424,
+  "frequency_mhz": 80.48937540244688,
+  "critical_edges": [
+    {
+      "k": 0.5,
+      "d_ns": 6.212,
+      "evidence": {
+        "path_id": "4997",
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\latch6_output_iob\\adjacent\\path_4997.rpt",
+        "start": "ff_cut3_13/C",
+        "end": "latch_cut6_13/D",
+        "corner": "Slow",
+        "check": "max",
+        "max_borrow_ns": 10.073,
+        "borrowed_ns": 6.285
+      },
+      "id": "2928",
+      "u": 0,
+      "v": 0
+    }
+  ],
+  "phase_variables": 0,
+  "native_validated": true,
+  "native_bracket": {
+    "pass": {
+      "period_ns": 12.434,
+      "setup_wns_ns": 0.0,
+      "hold_whs_ns": 0.149,
+      "pulse_slack_ns": 5.717,
+      "passed": true,
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\solve\\latch6_output_iob\\pass.rpt"
+    },
+    "fail": {
+      "period_ns": 12.414,
+      "setup_wns_ns": -0.005,
+      "hold_whs_ns": 0.149,
+      "pulse_slack_ns": 5.707,
+      "passed": false,
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\solve\\latch6_output_iob\\fail.rpt"
+    }
+  },
+  "scope": "Fixed-route period boundary within 0.02 ns; not fresh-route global Fmax; one common clock, isolated latch stage only."
+}

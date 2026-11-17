@@ -1,0 +1,495 @@
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Sat Nov 14 13:16:35 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source internal_comp/screen.tcl
+# set root [lindex $argv 0]
+# set names [lrange $argv 1 end]
+# set f [open "$root/screen.tsv" w]
+# puts $f "design\tfail_ns\tpass_ns\tfrequency_mhz"
+# foreach name $names {
+#     open_checkpoint "$root/$name/routed.dcp"
+#     set low 7.0
+#     set high 12.0
+#     for {set n 0} {$n < 14} {incr n} {
+#         if {$n == 0} {set t $high} else {set t [expr {($low+$high)/2.0}]}
+#         create_clock -name common_clock -period $t -waveform [list 0 [expr {$t/2.0}]] [get_ports clk_in]
+#         set_clock_uncertainty 0.2 [get_clocks common_clock]
+#         set report [report_timing_summary -delay_type min_max -report_unconstrained -return_string]
+#         set pass [expr {[string first "All user specified timing constraints are met." $report] >= 0}]
+#         if {$n == 0 && !$pass} {error "Candidate fails even at 10 ns: $name"}
+#         if {$pass} {set high $t; set tag pass} else {set low $t; set tag fail}
+#         set rf [open "$root/$name/screen_${tag}.rpt" w]
+#         puts $rf $report
+#         close $rf
+#     }
+#     puts $f "$name\t$low\t$high\t[expr {1000.0/$high}]"
+#     flush $f
+#     create_clock -name common_clock -period $high -waveform [list 0 [expr {$high/2.0}]] [get_ports clk_in]
+#     report_drc -file "$root/$name/screen_drc.rpt"
+#     close_design
+# }
+Command: open_checkpoint E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/ff_4_8_11/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.043 . Memory (MB): peak = 347.938 ; gain = 5.262
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Device 21-9227] Part: xc7a35tcpg236-1 does not have CEAM library.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 939.820 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1026.480 ; gain = 0.129
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.293 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1639.293 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1639.293 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.293 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.027 . Memory (MB): peak = 1639.293 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.054 . Memory (MB): peak = 1639.293 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.099 . Memory (MB): peak = 1639.293 ; gain = 7.691
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1639.293 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+open_checkpoint: Time (s): cpu = 00:00:03 ; elapsed = 00:00:16 . Memory (MB): peak = 1639.293 ; gain = 1305.941
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -waveform contains time 4.437500 which will be rounded to 4.438 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.562500 which will be rounded to 8.563 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.281250 which will be rounded to 4.281 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.718750 which will be rounded to 8.719 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.359375 which will be rounded to 4.359 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.640625 which will be rounded to 8.641 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.320313 which will be rounded to 4.320 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.679688 which will be rounded to 8.680 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.339844 which will be rounded to 4.340 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.660156 which will be rounded to 8.660 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.330078 which will be rounded to 4.330 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.669922 which will be rounded to 8.670 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.334961 which will be rounded to 4.335 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.674805 which will be rounded to 8.675 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.337402 which will be rounded to 4.337 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.677246 which will be rounded to 8.677 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.338623 which will be rounded to 4.339 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.678467 which will be rounded to 8.678 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.339233 which will be rounded to 4.339 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.677856 which will be rounded to 8.678 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.338928 which will be rounded to 4.339 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.677856 which will be rounded to 8.678 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.338928 which will be rounded to 4.339 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+Command: report_drc -file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/ff_4_8_11/screen_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2024.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/ff_4_8_11/screen_drc.rpt.
+report_drc completed successfully
+Command: open_checkpoint E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/mixed_4_8_11/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1693.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1693.129 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.039 . Memory (MB): peak = 1693.129 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1693.129 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+open_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1693.129 ; gain = 0.000
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -waveform contains time 4.437500 which will be rounded to 4.438 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.562500 which will be rounded to 8.563 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.281250 which will be rounded to 4.281 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.406250 which will be rounded to 8.406 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.203125 which will be rounded to 4.203 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.484375 which will be rounded to 8.484 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.242188 which will be rounded to 4.242 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.523438 which will be rounded to 8.523 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.261719 which will be rounded to 4.262 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.542969 which will be rounded to 8.543 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.271484 which will be rounded to 4.271 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.533203 which will be rounded to 8.533 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.266602 which will be rounded to 4.267 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.538086 which will be rounded to 8.538 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.269043 which will be rounded to 4.269 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.540527 which will be rounded to 8.541 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.270264 which will be rounded to 4.270 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.541748 which will be rounded to 8.542 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.270874 which will be rounded to 4.271 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.541138 which will be rounded to 8.541 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.270569 which will be rounded to 4.271 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.541748 which will be rounded to 8.542 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.270874 which will be rounded to 4.271 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+Command: report_drc -file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/mixed_4_8_11/screen_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2024.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/mixed_4_8_11/screen_drc.rpt.
+report_drc completed successfully
+Command: open_checkpoint E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/ff_3_7_11/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1720.672 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.003 . Memory (MB): peak = 1720.672 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.009 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1720.672 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1720.672 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+open_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1720.672 ; gain = 0.000
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -waveform contains time 3.812500 which will be rounded to 3.813 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 7.937500 which will be rounded to 7.938 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 3.968750 which will be rounded to 3.969 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.093750 which will be rounded to 8.094 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.046875 which will be rounded to 4.047 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.171875 which will be rounded to 8.172 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.085938 which will be rounded to 4.086 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.210938 which will be rounded to 8.211 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.105469 which will be rounded to 4.105 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.230469 which will be rounded to 8.230 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.115234 which will be rounded to 4.115 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.240234 which will be rounded to 8.240 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.120117 which will be rounded to 4.120 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.235352 which will be rounded to 8.235 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.117676 which will be rounded to 4.118 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.232910 which will be rounded to 8.233 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.116455 which will be rounded to 4.116 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.231689 which will be rounded to 8.232 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.115845 which will be rounded to 4.116 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.232300 which will be rounded to 8.232 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.116150 which will be rounded to 4.116 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.232910 which will be rounded to 8.233 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.116455 which will be rounded to 4.116 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+Command: report_drc -file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/ff_3_7_11/screen_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2024.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/ff_3_7_11/screen_drc.rpt.
+report_drc completed successfully
+Command: open_checkpoint E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/mixed_3_7_11/routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1741.852 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 49 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2024.1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Read ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1741.852 ; gain = 0.000
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Constraints 18-5170] The checkpoint was created with non-default parameter values which do not match the current Vivado settings.  Mismatching parameters are:
+  general.maxThreads
+INFO: [Project 1-853] Binary constraint restore complete.
+INFO: [Designutils 20-5722] Start Reading Physical Databases.
+Reading placement.
+Read Netlist Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Reading placer database...
+Read Device Cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Read PlaceDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.010 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Read PulsedLatchDB: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Reading routing.
+Read RouteStorage: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Read Physdb Files: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.032 . Memory (MB): peak = 1741.852 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1741.852 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Project 1-604] Checkpoint was created with Vivado v2024.1 (64-bit) build 5076996
+open_checkpoint: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1741.852 ; gain = 0.000
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -waveform contains time 4.437500 which will be rounded to 4.438 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.562500 which will be rounded to 8.563 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.281250 which will be rounded to 4.281 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.718750 which will be rounded to 8.719 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.359375 which will be rounded to 4.359 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.640625 which will be rounded to 8.641 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.320313 which will be rounded to 4.320 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.601563 which will be rounded to 8.602 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.300781 which will be rounded to 4.301 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.582031 which will be rounded to 8.582 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.291016 which will be rounded to 4.291 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.591797 which will be rounded to 8.592 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.295898 which will be rounded to 4.296 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.586914 which will be rounded to 8.587 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.293457 which will be rounded to 4.293 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.584473 which will be rounded to 8.584 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.292236 which will be rounded to 4.292 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.585693 which will be rounded to 8.586 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.292847 which will be rounded to 4.293 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.585083 which will be rounded to 8.585 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.292542 which will be rounded to 4.293 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+INFO: [Timing 38-2] Deriving generated clocks
+INFO: [Timing 38-91] UpdateTimingParams: Speed grade: -1, Delay Type: min_max.
+INFO: [Timing 38-191] Multithreading enabled for timing update using a maximum of 2 CPUs
+WARNING: [Vivado 12-2489] -period contains time 8.585083 which will be rounded to 8.585 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Vivado 12-2489] -waveform contains time 4.292542 which will be rounded to 4.293 to ensure it is an integer multiple of 1 picosecond
+WARNING: [Constraints 18-619] A clock with name 'common_clock' already exists, overwriting the previous clock with the same name.
+Command: report_drc -file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/mixed_3_7_11/screen_drc.rpt
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinx/Vivado/2024.1/data/ip'.
+INFO: [DRC 23-27] Running DRC with 2 threads
+INFO: [Vivado_Tcl 2-168] The results of DRC are in file E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/paired_search/mixed_3_7_11/screen_drc.rpt.
+report_drc completed successfully
+# close $f
+# exit
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 14 13:17:24 2026...

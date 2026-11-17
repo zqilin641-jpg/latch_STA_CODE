@@ -1,0 +1,47 @@
+{
+  "tool": "Vivado 2024.1",
+  "part": "xc7a35tcpg236-1",
+  "results": [
+    {
+      "design": "ff",
+      "period_ns": 12.121212,
+      "setup_wns_ns": -0.779,
+      "hold_whs_ns": 0.051,
+      "pulse_width_slack_ns": 5.56,
+      "sta_passed": false,
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\ff\\timing_summary.rpt",
+      "fixed_routing_reanalysis": false
+    },
+    {
+      "design": "ff",
+      "period_ns": 20.0,
+      "setup_wns_ns": 7.1,
+      "hold_whs_ns": 0.051,
+      "pulse_width_slack_ns": 9.5,
+      "sta_passed": true,
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\ff\\timing_T20.rpt",
+      "fixed_routing_reanalysis": true
+    },
+    {
+      "design": "mixed_stage1",
+      "period_ns": 12.121212,
+      "setup_wns_ns": -0.779,
+      "hold_whs_ns": 0.056,
+      "pulse_width_slack_ns": 5.56,
+      "sta_passed": false,
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\mixed_stage1\\timing_summary.rpt",
+      "fixed_routing_reanalysis": false
+    },
+    {
+      "design": "mixed_stage1",
+      "period_ns": 20.0,
+      "setup_wns_ns": 0.0,
+      "hold_whs_ns": 0.056,
+      "pulse_width_slack_ns": 9.5,
+      "sta_passed": true,
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\mixed_stage1\\timing_T20.rpt",
+      "fixed_routing_reanalysis": true
+    }
+  ],
+  "scope": "Tool feasibility, auto placed IO, not board constraints, no bitstream/SDF simulation/Fmax/Howard claim"
+}

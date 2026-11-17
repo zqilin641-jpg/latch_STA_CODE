@@ -1,0 +1,72 @@
+[
+  {
+    "design": "ff_3_6_9",
+    "cuts": {
+      "3": "FF",
+      "6": "FF",
+      "9": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 0,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  },
+  {
+    "design": "ff_2_5_8",
+    "cuts": {
+      "2": "FF",
+      "5": "FF",
+      "8": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 0,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  },
+  {
+    "design": "latch_at_3",
+    "cuts": {
+      "3": "LATCH",
+      "6": "FF",
+      "9": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  },
+  {
+    "design": "latch_at_6",
+    "cuts": {
+      "3": "FF",
+      "6": "LATCH",
+      "9": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  },
+  {
+    "design": "latch_at_9",
+    "cuts": {
+      "3": "FF",
+      "6": "FF",
+      "9": "LATCH",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  }
+]

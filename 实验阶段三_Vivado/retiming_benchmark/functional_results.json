@@ -1,0 +1,35 @@
+[
+  {
+    "design": "ff_original",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "ff_retimed",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  },
+  {
+    "design": "mixed_aligned",
+    "passed": true,
+    "observations": [
+      [
+        "4114",
+        "0"
+      ]
+    ],
+    "scope": "RTL vendor-model simulation, reset and validity included; no SDF or formal proof"
+  }
+]

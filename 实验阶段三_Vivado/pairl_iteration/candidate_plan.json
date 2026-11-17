@@ -1,0 +1,244 @@
+{
+  "source_paper": "E:/大四上/曦源项目/论文/Pairl-ZKX_FPT25投稿版.pdf",
+  "paper_rules": "Section III-A: post-route critical path, backward-first/forward-fallback retiming, keep best-so-far. Section III-B: selective conversion at critical path boundaries.",
+  "source_report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\output_control\\ff_output_iob\\setup.rpt",
+  "source_sha256": "11b2a78c4f4a1d6972ea5b42e7634aa017bfacd67bcbef9365a787018b6f4076",
+  "selected": {
+    "direction": "forward",
+    "old_cut": 9,
+    "new_cut": 10,
+    "start": "ff_cut9_03/C",
+    "end": "output_ff_15/D",
+    "slack_ns": 9.637
+  },
+  "skipped_path_count": 34,
+  "skipped_paths": [
+    {
+      "start": "output_ff_08/C",
+      "end": "result[8]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_08/C",
+      "end": "result[8]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_09/C",
+      "end": "result[9]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_09/C",
+      "end": "result[9]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_15/C",
+      "end": "result[15]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_15/C",
+      "end": "result[15]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_10/C",
+      "end": "result[10]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_10/C",
+      "end": "result[10]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_01/C",
+      "end": "result[1]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_01/C",
+      "end": "result[1]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_05/C",
+      "end": "result[5]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_05/C",
+      "end": "result[5]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_00/C",
+      "end": "result[0]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_00/C",
+      "end": "result[0]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "valid_ff_04/C",
+      "end": "valid_out",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "valid_ff_04/C",
+      "end": "valid_out",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_02/C",
+      "end": "result[2]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_02/C",
+      "end": "result[2]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_13/C",
+      "end": "result[13]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_13/C",
+      "end": "result[13]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_11/C",
+      "end": "result[11]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_11/C",
+      "end": "result[11]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_03/C",
+      "end": "result[3]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_03/C",
+      "end": "result[3]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_14/C",
+      "end": "result[14]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_14/C",
+      "end": "result[14]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_04/C",
+      "end": "result[4]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_04/C",
+      "end": "result[4]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_12/C",
+      "end": "result[12]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_12/C",
+      "end": "result[12]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_06/C",
+      "end": "result[6]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_06/C",
+      "end": "result[6]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_07/C",
+      "end": "result[7]",
+      "reason": "Protected interface/control or unsupported boundary"
+    },
+    {
+      "start": "output_ff_07/C",
+      "end": "result[7]",
+      "reason": "Protected interface/control or unsupported boundary"
+    }
+  ],
+  "original_cuts": [
+    3,
+    6,
+    9,
+    12
+  ],
+  "new_cuts": [
+    3,
+    6,
+    10,
+    12
+  ],
+  "variants": {
+    "sta_retime_ff": {
+      "3": "FF",
+      "6": "FF",
+      "10": "FF",
+      "12": "FF"
+    },
+    "sta_retime_latch": {
+      "3": "FF",
+      "6": "FF",
+      "10": "LATCH",
+      "12": "FF"
+    }
+  },
+  "replacement": {
+    "original_ff_cells_converted": [
+      "ff_cut10_00",
+      "ff_cut10_01",
+      "ff_cut10_02",
+      "ff_cut10_03",
+      "ff_cut10_04",
+      "ff_cut10_05",
+      "ff_cut10_06",
+      "ff_cut10_07",
+      "ff_cut10_08",
+      "ff_cut10_09",
+      "ff_cut10_10",
+      "ff_cut10_11",
+      "ff_cut10_12",
+      "ff_cut10_13",
+      "ff_cut10_14",
+      "ff_cut10_15"
+    ],
+    "original_ff_retained": 69,
+    "compensating_ff_inserted": 16,
+    "final_ff": 85,
+    "final_latch": 16
+  },
+  "limits": [
+    "Atomic operation-boundary moves in this feed-forward word datapath, not arbitrary LUT/netlist retiming.",
+    "Global IO paths protected; candidate selected from eligible internal paths, not claimed to repair protected IO.",
+    "One iteration, two candidates, retain prior best unless native STA improves.",
+    "Native FDCE/LDCE, not the paper custom VTR/HSPICE configurable hardware.",
+    "Common clock fixed; do not copy earliest-time inequality relaxation as a hold proof."
+  ]
+}

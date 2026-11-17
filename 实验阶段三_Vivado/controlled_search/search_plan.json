@@ -1,0 +1,38 @@
+{
+  "candidate_space_count": 165,
+  "physically_selected_count": 5,
+  "rule": "Rank FF cut triples by maximum operation count per stage, then sum of squared counts; choose two. Enumerate one latch at each internal cut of the best triple.",
+  "limitations": "Heuristic preselection by operation counts, not physical optimum. Only five candidates. All latches common high-transparent clock. Compensating output FF retained.",
+  "variants": {
+    "ff_3_6_9": {
+      "3": "FF",
+      "6": "FF",
+      "9": "FF",
+      "12": "FF"
+    },
+    "ff_2_5_8": {
+      "2": "FF",
+      "5": "FF",
+      "8": "FF",
+      "12": "FF"
+    },
+    "latch_at_3": {
+      "3": "LATCH",
+      "6": "FF",
+      "9": "FF",
+      "12": "FF"
+    },
+    "latch_at_6": {
+      "3": "FF",
+      "6": "LATCH",
+      "9": "FF",
+      "12": "FF"
+    },
+    "latch_at_9": {
+      "3": "FF",
+      "6": "FF",
+      "9": "LATCH",
+      "12": "FF"
+    }
+  }
+}

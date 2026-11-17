@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/mixed_pulse/timed/netlist.v" into library work
+INFO: [VRFC 10-311] analyzing module small25
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/pds/lacth/latch_validation/howard_bridge/vivado_single_clock/pulse_direct/mixed_pulse/timed/tb.v" into library work
+INFO: [VRFC 10-311] analyzing module tb
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/xilinx/Vivado/2024.1/data/verilog/src/glbl.v" into library work

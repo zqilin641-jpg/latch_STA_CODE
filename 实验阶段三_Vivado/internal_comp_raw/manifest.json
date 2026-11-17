@@ -1,0 +1,32 @@
+[
+  {
+    "design": "lat4_ff3_6_10",
+    "cuts": {
+      "3": "FF",
+      "4": "LATCH",
+      "6": "FF",
+      "10": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  },
+  {
+    "design": "lat7_ff3_6_10",
+    "cuts": {
+      "3": "FF",
+      "6": "FF",
+      "7": "LATCH",
+      "10": "FF",
+      "12": "FF"
+    },
+    "ff": 85,
+    "latch": 16,
+    "input_to_output_sample_edges": 5,
+    "interface_validity": "valid_out false for first four sample edges after reset; result masked to zero",
+    "comparison": "Same function, one word per clock, same valid output edge; manual candidate cuts, not automatic retiming"
+  }
+]

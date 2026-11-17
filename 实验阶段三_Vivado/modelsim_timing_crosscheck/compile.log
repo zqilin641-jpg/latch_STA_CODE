@@ -1,0 +1,22 @@
+Model Technology ModelSim SE-64 vlog 10.4 Compiler 2014.12 Dec  3 2014
+Start time: 09:58:04 on Nov 17,2026
+vlog "+define+XIL_TIMING" D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\BUFG.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\CARRY4.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\FDCE.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\IBUF.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LUT1.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\LUT2.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\MMCME2_ADV.v D:\xilinx\Vivado\2024.1\data\verilog\src\unisims\OBUF.v netlist.v tb.v 
+-- Compiling module BUFG
+-- Compiling module CARRY4
+-- Compiling module FDCE
+-- Compiling module IBUF
+-- Compiling module LUT1
+-- Compiling UDP x_lut1_mux2
+-- Compiling module LUT2
+-- Compiling UDP x_lut2_mux4
+-- Compiling module MMCME2_ADV
+-- Compiling module OBUF
+-- Compiling module small25
+-- Compiling module glbl
+-- Compiling module tb
+
+Top level modules:
+	glbl
+	tb
+End time: 09:58:04 on Nov 17,2026, Elapsed time: 0:00:00
+Errors: 0, Warnings: 0

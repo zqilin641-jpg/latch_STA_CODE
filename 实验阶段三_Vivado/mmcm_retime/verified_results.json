@@ -1,0 +1,18 @@
+[
+  {
+    "design": "balanced_latch5",
+    "fail_ns": "8.5654296875",
+    "pass_ns": "8.56591796875",
+    "frequency_mhz": "116.74172034429687",
+    "gain_vs_ff_pct": 7.387561990537539,
+    "gain_vs_previous_latch_pct": 23.775865017385843
+  },
+  {
+    "design": "balanced_latch6",
+    "fail_ns": "8.67724609375",
+    "pass_ns": "8.677734375",
+    "frequency_mhz": "115.23745217195588",
+    "gain_vs_ff_pct": 6.003826243529153,
+    "gain_vs_previous_latch_pct": 22.18095881161377
+  }
+]

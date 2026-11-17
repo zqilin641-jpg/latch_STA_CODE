@@ -1,0 +1,27 @@
+{
+  "target_period_ns": 10,
+  "output_slew": "FAST",
+  "clock_count": 1,
+  "duty_cycle": 0.5,
+  "variants": {
+    "ff_balanced": {
+      "3": "FF",
+      "6": "FF",
+      "9": "FF",
+      "12": "FF"
+    },
+    "latch_short_4": {
+      "3": "FF",
+      "4": "LATCH",
+      "8": "FF",
+      "12": "FF"
+    },
+    "latch_short_5": {
+      "4": "FF",
+      "5": "LATCH",
+      "9": "FF",
+      "12": "FF"
+    }
+  },
+  "limits": "Unchanged IO delays/pins; no board signal-integrity validation; compensation FF retained for mixed candidates"
+}

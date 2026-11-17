@@ -1,0 +1,1 @@
+--transport_int_delays --pulse_int_r "0" --pulse_int_e "0" -L "simprims_ver" -L "unisims_ver" "work.tb" "work.glbl" -s "control" 

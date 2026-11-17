@@ -1,0 +1,474 @@
+[
+  {
+    "design": "ff",
+    "period_ns": 12.9,
+    "approximate_frequency_mhz": 77.51937984496124,
+    "internal_constraint_period_lower_bound_ns": 1.975999999999999,
+    "internal_constraint_witness": {
+      "path_id": "29",
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\ff\\adjacent\\path_29.rpt",
+      "start": "ff_00/C",
+      "end": "ff_06/D",
+      "corner": "Slow",
+      "check": "max"
+    },
+    "internal_native_checks": [
+      {
+        "design": "ff",
+        "tag": "above",
+        "period": "1.996000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "0.020",
+        "start": "ff_00/C",
+        "end": "ff_06/D"
+      },
+      {
+        "design": "ff",
+        "tag": "above",
+        "period": "1.996000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.422",
+        "start": "ff_12/C",
+        "end": "ff_17/D"
+      },
+      {
+        "design": "ff",
+        "tag": "above",
+        "period": "1.996000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.956",
+        "start": "ff_11/C",
+        "end": "ff_16/D"
+      },
+      {
+        "design": "ff",
+        "tag": "above",
+        "period": "1.996000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.051",
+        "start": "ff_12/C",
+        "end": "ff_17/D"
+      },
+      {
+        "design": "ff",
+        "tag": "below",
+        "period": "1.956000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "-0.020",
+        "start": "ff_00/C",
+        "end": "ff_06/D"
+      },
+      {
+        "design": "ff",
+        "tag": "below",
+        "period": "1.956000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.422",
+        "start": "ff_12/C",
+        "end": "ff_17/D"
+      },
+      {
+        "design": "ff",
+        "tag": "below",
+        "period": "1.956000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.916",
+        "start": "ff_11/C",
+        "end": "ff_16/D"
+      },
+      {
+        "design": "ff",
+        "tag": "below",
+        "period": "1.956000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.051",
+        "start": "ff_12/C",
+        "end": "ff_17/D"
+      }
+    ],
+    "latency_cycles": 5,
+    "xdc_sha256": "4f9328989cc2d09704a347794e3d5bcb4d21fb3462ec1d4d15bb96518265ce1d",
+    "checkpoint_sha256": "8f960b815c4dcbc077e24a57df916b6ee058bdc70b7642ef72eb6558d5ded81d",
+    "native_bracket": {
+      "pass": {
+        "period_ns": 12.91,
+        "setup_wns_ns": 0.01,
+        "hold_whs_ns": 0.051,
+        "pulse_slack_ns": 5.955,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\ff\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 12.89,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.051,
+        "pulse_slack_ns": 5.945,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\ff\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "mixed_stage1",
+    "period_ns": 12.9,
+    "approximate_frequency_mhz": 77.51937984496124,
+    "internal_constraint_period_lower_bound_ns": 3.362000000000002,
+    "internal_constraint_witness": {
+      "path_id": "189",
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\mixed_stage1\\adjacent\\path_189.rpt",
+      "start": "ff_00/C",
+      "end": "latch_09/D",
+      "corner": "Slow",
+      "check": "max",
+      "max_borrow_ns": 10.043,
+      "borrowed_ns": 1.724
+    },
+    "internal_native_checks": [
+      {
+        "design": "mixed_stage1",
+        "tag": "above",
+        "period": "3.382000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_00/C",
+        "end": "latch_09/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "above",
+        "period": "3.382000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.468",
+        "start": "ff_16/C",
+        "end": "ff_23/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "above",
+        "period": "3.382000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_00/C",
+        "end": "latch_09/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "above",
+        "period": "3.382000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.056",
+        "start": "latch_07/G",
+        "end": "ff_14/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "below",
+        "period": "3.342000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "-0.010",
+        "start": "ff_00/C",
+        "end": "latch_09/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "below",
+        "period": "3.342000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.468",
+        "start": "ff_16/C",
+        "end": "ff_23/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "below",
+        "period": "3.342000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_00/C",
+        "end": "latch_09/D"
+      },
+      {
+        "design": "mixed_stage1",
+        "tag": "below",
+        "period": "3.342000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.056",
+        "start": "latch_07/G",
+        "end": "ff_14/D"
+      }
+    ],
+    "latency_cycles": 4,
+    "xdc_sha256": "4f9328989cc2d09704a347794e3d5bcb4d21fb3462ec1d4d15bb96518265ce1d",
+    "checkpoint_sha256": "bfabee6f51a5a3e211f5c29f745e518aecbc01337c7c03fa73cc86c57d085c34",
+    "native_bracket": {
+      "pass": {
+        "period_ns": 12.91,
+        "setup_wns_ns": 0.0,
+        "hold_whs_ns": 0.056,
+        "pulse_slack_ns": 5.955,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\mixed_stage1\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 12.89,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.056,
+        "pulse_slack_ns": 5.945,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\mixed_stage1\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "mixed_stage2",
+    "period_ns": 12.9,
+    "approximate_frequency_mhz": 77.51937984496124,
+    "internal_constraint_period_lower_bound_ns": 2.838000000000001,
+    "internal_constraint_witness": {
+      "path_id": "93",
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\mixed_stage2\\adjacent\\path_93.rpt",
+      "start": "latch_11/D",
+      "end": "ff_16/D",
+      "corner": "Slow",
+      "check": "max"
+    },
+    "internal_native_checks": [
+      {
+        "design": "mixed_stage2",
+        "tag": "above",
+        "period": "2.858000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_08/C",
+        "end": "latch_10/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "above",
+        "period": "2.858000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.353",
+        "start": "ff_16/C",
+        "end": "ff_23/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "above",
+        "period": "2.858000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_08/C",
+        "end": "latch_10/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "above",
+        "period": "2.858000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.036",
+        "start": "ff_16/C",
+        "end": "ff_23/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "below",
+        "period": "2.818000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "-0.020",
+        "start": "latch_11/D",
+        "end": "ff_16/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "below",
+        "period": "2.818000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.353",
+        "start": "ff_16/C",
+        "end": "ff_23/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "below",
+        "period": "2.818000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_08/C",
+        "end": "latch_10/D"
+      },
+      {
+        "design": "mixed_stage2",
+        "tag": "below",
+        "period": "2.818000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.036",
+        "start": "ff_16/C",
+        "end": "ff_23/D"
+      }
+    ],
+    "latency_cycles": 4,
+    "xdc_sha256": "4f9328989cc2d09704a347794e3d5bcb4d21fb3462ec1d4d15bb96518265ce1d",
+    "checkpoint_sha256": "062effad0088f6bf0c153237042267075c4ef3a44799283855ff314aab3fbc0e",
+    "native_bracket": {
+      "pass": {
+        "period_ns": 12.91,
+        "setup_wns_ns": 0.0,
+        "hold_whs_ns": 0.036,
+        "pulse_slack_ns": 5.955,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\mixed_stage2\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 12.89,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.036,
+        "pulse_slack_ns": 5.945,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\mixed_stage2\\fail.rpt"
+      }
+    }
+  },
+  {
+    "design": "mixed_stage3",
+    "period_ns": 12.9,
+    "approximate_frequency_mhz": 77.51937984496124,
+    "internal_constraint_period_lower_bound_ns": 3.1700000000000017,
+    "internal_constraint_witness": {
+      "path_id": "193",
+      "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\mixed_stage3\\adjacent\\path_193.rpt",
+      "start": "ff_12/C",
+      "end": "latch_19/D",
+      "corner": "Slow",
+      "check": "max",
+      "max_borrow_ns": 10.042,
+      "borrowed_ns": 1.627
+    },
+    "internal_native_checks": [
+      {
+        "design": "mixed_stage3",
+        "tag": "above",
+        "period": "3.190000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_12/C",
+        "end": "latch_19/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "above",
+        "period": "3.190000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.330",
+        "start": "ff_08/C",
+        "end": "ff_10/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "above",
+        "period": "3.190000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_12/C",
+        "end": "latch_19/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "above",
+        "period": "3.190000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.017",
+        "start": "ff_06/C",
+        "end": "ff_13/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "below",
+        "period": "3.150000",
+        "corner": "Slow",
+        "check": "max",
+        "slack": "-0.010",
+        "start": "ff_12/C",
+        "end": "latch_19/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "below",
+        "period": "3.150000",
+        "corner": "Slow",
+        "check": "min",
+        "slack": "0.330",
+        "start": "ff_08/C",
+        "end": "ff_10/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "below",
+        "period": "3.150000",
+        "corner": "Fast",
+        "check": "max",
+        "slack": "0.000",
+        "start": "ff_12/C",
+        "end": "latch_19/D"
+      },
+      {
+        "design": "mixed_stage3",
+        "tag": "below",
+        "period": "3.150000",
+        "corner": "Fast",
+        "check": "min",
+        "slack": "0.017",
+        "start": "ff_06/C",
+        "end": "ff_13/D"
+      }
+    ],
+    "latency_cycles": 4,
+    "xdc_sha256": "4f9328989cc2d09704a347794e3d5bcb4d21fb3462ec1d4d15bb96518265ce1d",
+    "checkpoint_sha256": "4fe9782739f3a373bea5678500548b53c317b66ce74c0628d7c0ec5c091a75a2",
+    "native_bracket": {
+      "pass": {
+        "period_ns": 12.91,
+        "setup_wns_ns": 0.0,
+        "hold_whs_ns": 0.017,
+        "pulse_slack_ns": 5.955,
+        "passed": true,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\mixed_stage3\\pass.rpt"
+      },
+      "fail": {
+        "period_ns": 12.89,
+        "setup_wns_ns": -0.01,
+        "hold_whs_ns": 0.017,
+        "pulse_slack_ns": 5.945,
+        "passed": false,
+        "report": "E:\\pds\\lacth\\latch_validation\\howard_bridge\\vivado_single_clock\\stage3\\mixed_stage3\\fail.rpt"
+      }
+    }
+  }
+]

@@ -1,0 +1,312 @@
+
+****** Vivado v2024.1 (64-bit)
+  **** SW Build 5076996 on Wed May 22 18:37:14 MDT 2024
+  **** IP Build 5075265 on Wed May 22 21:45:21 MDT 2024
+  **** SharedData Build 5076995 on Wed May 22 18:29:18 MDT 2024
+  **** Start of session at: Tue Nov 17 10:35:44 2026
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2024 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source latch_validation/howard_bridge/vivado_single_clock/pulse_cycle/help_export.tcl
+# puts [help write_verilog]
+write_verilog
+
+Description: 
+Export the current netlist in Verilog format
+
+Syntax: 
+write_verilog  [-cell <arg>] [-mode <arg>] [-lib] [-port_diff_buffers]
+               [-write_all_overrides] [-keep_vcc_gnd] [-rename_top <arg>]
+               [-sdf_anno <arg>] [-sdf_file <arg>] [-force]
+               [-include_xilinx_libs] [-logic_function_stripped]
+               [-skip_clock_attributes] [-quiet] [-verbose] <file>
+
+Returns: 
+the name of the output file or directory
+
+Usage: 
+  Name                        Description
+  ---------------------------------------
+  [-cell]                     Root of the design to write, e.g. 
+                              des.subblk.cpu
+                              Default: whole design
+  [-mode]                     Values: design, pin_planning, synth_stub, sta, 
+                              funcsim, timesim
+                              Default: design
+  [-lib]                      Write each library into a separate file
+  [-port_diff_buffers]        Output differential buffers when writing in 
+                              -port mode
+  [-write_all_overrides]      Write parameter overrides on Xilinx primitives 
+                              even if the override value is the same as the 
+                              default value
+  [-keep_vcc_gnd]             Don't replace VCC/GND instances by literal 
+                              constants on load terminals.  For simulation 
+                              modes only.
+  [-rename_top]               Replace top module name with custom name e.g. 
+                              netlist
+                              Default: new top module name
+  [-sdf_anno]                 Specify if sdf_annotate system task statement 
+                              is generated
+  [-sdf_file]                 Full path to sdf file location
+                              Default: <file>.sdf
+  [-force]                    Overwrite existing file
+  [-include_xilinx_libs]      Include simulation models directly in netlist 
+                              instead of linking to library
+  [-logic_function_stripped]  Convert INIT strings on LUTs & RAMBs to fixed 
+                              values.  Resulting netlist will not behave 
+                              correctly.
+  [-skip_clock_attributes]    Do not write the default special clock signal 
+                              attributes when writing the synthesis directive
+                              in synth_stub mode.
+  [-quiet]                    Ignore command errors
+  [-verbose]                  Suspend message limits during command execution
+  <file>                      Which file to write
+
+Categories: 
+FileIO, Simulation
+
+Description:
+
+  Write a Verilog netlist of the current design or from a specific cell of
+  the design to the specified file or directory. The output is a IEEE
+  1364-2001 compliant Verilog HDL file that contains netlist information
+  obtained from the input design files.
+
+  You can output a complete netlist of the design or specific cell, or output
+  a port list for the design, or a Verilog netlist for simulation or static
+  timing analysis.
+
+Arguments:
+
+  -cell <arg> - (Optional) Write the Verilog netlist from a specified cell or
+  block level of the design hierarchy. The output Verilog file or files will
+  only include information contained within the specified cell or module.
+
+  -mode <arg> - (Optional) The mode to use when writing the Verilog file. By
+  default, the Verilog netlist is written for the whole design. Valid mode
+  values are:
+
+   *  design - Output a Verilog netlist for the whole design. This acts as a
+      snapshot of the design, including all post placement, implementation,
+      and routing information in the netlist.
+
+   *  pin_planning - Output only the I/O ports for the top-level of the design.
+
+   *  synth_stub - Output the ports from the top-level of the design for use
+      as a synthesis stub.
+
+   *  sta - Output a Verilog netlist to be used for static timing analysis
+      (STA).
+
+   *  funcsim - Output a Verilog netlist to be used for functional
+      simulation. The output netlist is not suitable for synthesis.
+
+   *  timesim - Output a Verilog netlist to be used for timing simulation.
+      The output netlist is not suitable for synthesis.
+
+  -lib - (Optional) Create a separate Verilog file for each library used by
+  the design.
+
+  Note: The -library option can only be used for simulation. Vivado synthesis
+  will treat all Verilog files as being in the default work library.
+
+  -port_diff_buffers - (Optional) Add the differential pair buffers and
+  internal wires associated with those buffers into the output ports list.
+  This argument is only valid when -mode pin_planning or -mode synth_stub is
+  specified.
+
+  -write_all_overrides [ true | false ] - (Optional) Write parameter
+  overrides, in the design to the Verilog output even if the value of the
+  parameter is the same as the defined primitive default value. If the option
+  is false then parameter values which are equivalent to the primitive
+  defaults are not output to the Verilog file. Setting this option to true
+  will not change the result but makes the output Verilog more verbose.
+
+  -keep_vcc_gnd - (Optional) By default, when writing a nelist for
+  simulation, or from an IP integrator block design, the Vivado Design Suite
+  replaces VCC and GND primitives, and the nets they drive, with literal
+  constants on each of the loads on the net. The -keep_vcc_gnd option
+  disables this default behavior and preserves the VCC or GND primitives.
+
+  -rename_top <arg> - (Optional) Rename the top module in the output as
+  specified. This option only works with -mode funcsim or -mode timesim to
+  allow the Verilog netlist to plug into top-level simulation test benches.
+
+  -sdf_anno [ true | false ] - (Optional) Add the $sdf_annotate statement to
+  the Verilog netlist. Valid values are true (or 1) and false (or 0). This
+  option only works with -mode timesim, and is set to false by default.
+
+  -sdf_file <arg> - (Optional) The path and filename of the SDF file to use
+  when writing the $sdf_annotate statement into the output Verilog file. When
+  not specified, the SDF file is assumed to have the same name and path as
+  the Verilog output specified by <file>, with a file extension of .sdf. The
+  SDF file must be separately written to the specified file path and name
+  using the write_sdf command.
+
+  -force - (Optional) Overwrite the Verilog files if they already exists.
+
+  -include_xilinx_libs - (Optional) Write the simulation models directly in
+  the output netlist file rather than pointing to the libraries by reference.
+
+  -logic_function_stripped - (Optional) Hides the INIT values for LUTs & RAMs
+  by converting them to fixed values in order to create a netlist for debug
+  purposes that will not behave properly in simulation or synthesis.
+
+  -skip_clock_attributes - By default under synth_stub mode, module terminals
+  connected to clock are marked as such with a special synthesis directive
+  for clock signals. With this option, the synthesis directive for clock
+  signals is omitted and they are treated as regular terminals.
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <file> - (Required) The path and filename of the Verilog file to write. The
+  path is optional, but if one is not provided the Verilog file will be
+  written to the current working directory, or the directory from which the
+  Vivado tool was launched.
+
+Examples:
+
+  The following example writes a Verilog simulation netlist file for the
+  whole design to the specified file and path:
+
+    write_verilog C:/Data/my_verilog.v
+
+  In the following example, because the -mode timesim and -sdf_anno options
+  are specified, the $sdf_annotate statement will be added to the Verilog
+  netlist. However, since the -sdf_file option is not specified, the SDF file
+  is assumed to have the same name as the Verilog output file, with an .sdf
+  file extension:
+
+    write_verilog C:/Data/my_verilog.net -mode timesim -sdf_anno true
+
+  Note: The SDF filename written to the $sdf_annotate statement will be
+  my_verilog.sdf.
+
+  In the following example, the functional simulation mode is specified, the
+  option to keep VCC and GND primitives in the output simulation netlist is
+  enabled, and the output file is specified:
+
+    write_verilog -mode funcsim -keep_vcc_gnd out.v
+
+See Also:
+
+   *  write_sdf
+   *  write_vhdl
+
+# puts [help write_sdf]
+write_sdf
+
+Description: 
+write_sdf command generates flat sdf delay files for event simulation
+
+Syntax: 
+write_sdf  [-process_corner <arg>] [-cell <arg>] [-filter_cell <arg>]
+           [-rename_top <arg>] [-force] [-mode <arg>] [-gzip]
+           [-multithread <arg>] [-quiet] [-verbose] <file>
+
+Usage: 
+  Name               Description
+  ------------------------------
+  [-process_corner]  Specify process corner for which SDF delays are 
+                     required; Values: slow, fast
+                     Default: slow
+  [-cell]            Root of the design to write, e.g. des.subblk.cpu
+                     Default: whole design
+  [-filter_cell]     Confine sdf instances to those contained within this 
+                     hierarchical cell and to nets which contain at least one
+                     pin within this hierarchical cell, e.g. des.subblk.cpu
+                     Default: whole design
+  [-rename_top]      Replace name of top module with custom name e.g. netlist
+                     Default: new top module name
+  [-force]           Overwrite existing SDF file
+  [-mode]            Specify sta (Static Timing Analysis) or timesim (Timing 
+                     Simulation) mode for SDF
+                     Default: timesim
+  [-gzip]            write gzipped SDF
+  [-multithread]     Run in multithread mode with specified number of threads
+                     Default: -1
+  [-quiet]           Ignore command errors
+  [-verbose]         Suspend message limits during command execution
+  <file>             File name
+
+Categories: 
+FileIO, Simulation, Timing
+
+Description:
+
+  Writes the timing delays for cells in the design to a Standard Delay Format
+  (SDF) file.
+
+  The output SDF file can be used by the write_verilog command to create
+  Verilog netlists for static timing analysis and timing simulation.
+
+Arguments:
+
+  -process_corner [ fast | slow ] - (Optional) Write delays for a specified
+  process corner. Delays are greater in the slow process corner than in the
+  fast process corner. Valid values are `slow` or `fast`. By default, the SDF
+  file is written for the slow process corner.
+
+  -cell <arg> - (Optional) Write the SDF file from a specific cell of the
+  design hierarchy. The default is to create an SDF file for the whole
+  design.
+
+  -rename_top <arg> - (Optional) Rename the top module in the output SDF file
+  as specified.
+
+  -force - (Optional) Forces the overwrite of an existing SDF file of the
+  same name.
+
+  -mode [ timesim | sta ]- (Optional) Specifies the mode to use when writing
+  the SDF file. Valid values are:
+
+   *  timesim - Output an SDF file to be used for timing simulation. This is
+      the default setting.
+
+   *  sta - Output an SDF file to be used for static timing analysis (STA).
+
+  -quiet - (Optional) Execute the command quietly, returning no messages from
+  the command. The command also returns TCL_OK regardless of any errors
+  encountered during execution.
+
+  Note: Any errors encountered on the command-line, while launching the
+  command, will be returned. Only errors occurring inside the command will be
+  trapped.
+
+  -verbose - (Optional) Temporarily override any message limits and return
+  all messages from this command.
+
+  Note: Message limits can be defined with the set_msg_config command.
+
+  <file> - (Required) The file name of the SDF file to write. The SDF file is
+  referenced in the Verilog netlist by the use of the -sdf_anno and -sdf_file
+  arguments of the write_verilog command.
+
+  Note: If the path is not specified as part of the file name, the file will
+  be written into the current working directory, or the directory from which
+  the tool was launched.
+
+Examples:
+
+  The following example writes an SDF file to the specified directory:
+
+    write_sdf C:/Data/FPGA_Design/designOut.sdf 
+    
+
+See Also:
+
+   *  write_verilog
+
+# exit
+INFO: [Common 17-206] Exiting Vivado at Tue Nov 17 10:35:46 2026...
