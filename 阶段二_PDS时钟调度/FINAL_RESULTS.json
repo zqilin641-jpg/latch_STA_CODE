@@ -1,0 +1,586 @@
+{
+  "date": "2026-11-03",
+  "device": "PGL50H-6FBG484",
+  "pds": "2022.2-SP6.4",
+  "frequency_step_mhz": 0.5,
+  "result_scope": "Highest verified frequency in the documented implementation/search families; not a global hardware optimum or board measurement",
+  "cases": [
+    {
+      "name": "FF",
+      "frequency_mhz": 82.5,
+      "period_ns": 12.121212121212121,
+      "run": "fine_ff_common_lower/F165",
+      "repeat": "repeat_ff_common82p5",
+      "next_failure": "fine_ff_common_lower/F166",
+      "next_failure_slack_ns": {
+        "Setup_Slow": -0.034,
+        "Hold_Slow": 0.234,
+        "Minimum Pulse Width_Slow": 5.404,
+        "Setup_Fast": 2.726,
+        "Hold_Fast": 0.136,
+        "Minimum Pulse Width_Fast": 5.528
+      },
+      "verification": {
+        "passed": true,
+        "slack_ns": {
+          "Setup_Slow": 0.039,
+          "Hold_Slow": 0.234,
+          "Minimum Pulse Width_Slow": 5.44,
+          "Setup_Fast": 2.799,
+          "Hold_Fast": 0.136,
+          "Minimum Pulse Width_Fast": 5.564
+        },
+        "mapped_counts": {
+          "V_FFASYN": 25,
+          "V_LUT5": 15,
+          "V_BUF": 8,
+          "V_GRS": 1,
+          "V_IBUF": 7,
+          "V_OBUF": 6,
+          "V_MUX2": 6,
+          "V_PLL_E3": 1,
+          "V_USCM": 1
+        },
+        "verified_clock_outputs": 1,
+        "distinct_waveforms": 1,
+        "schedule_matches_mapped_plls": true,
+        "clock_loads_verified": true,
+        "physical_pll_startup_verified": false
+      },
+      "functional": {
+        "passed": true,
+        "results": [
+          [
+            "2048",
+            "0"
+          ]
+        ],
+        "scope": "Actual generated RTL with ideal 25 supplied clocks; vendor latch model; 1024 adjacent input-word pairs; no PLL model, SDF or board verification",
+        "kind": "ff"
+      },
+      "report_sha256": "c6e0fd99fd5b575b5eb58377302dfcdc4b13c302c6778fa99582271c1585ab97",
+      "vendor_pll_simulation": {
+        "passed": true,
+        "scope": "Unmodified vendor PLL and latch RTL models; no SDF or board validation",
+        "error": null,
+        "clocks": [
+          {
+            "index": 0,
+            "period_ns": 12.121200000000044,
+            "width_ns": 6.060600000000022,
+            "max_phase_error_ns": 0.00037575757574082047,
+            "passed": true
+          }
+        ],
+        "function": [
+          [
+            "2048",
+            "0"
+          ]
+        ],
+        "tolerance_ns": 0.02
+      }
+    },
+    {
+      "name": "Latch，无 Howard",
+      "frequency_mhz": 89.5,
+      "period_ns": 11.1731843575419,
+      "run": "fine_latch/F179",
+      "repeat": "repeat_latch89p5",
+      "next_failure": "fine_latch/F180",
+      "next_failure_slack_ns": {
+        "Setup_Slow": -0.313,
+        "Hold_Slow": 5.352,
+        "Minimum Pulse Width_Slow": 0.149,
+        "Setup_Fast": 0.0,
+        "Hold_Fast": 4.609,
+        "Minimum Pulse Width_Fast": 0.453
+      },
+      "verification": {
+        "passed": true,
+        "slack_ns": {
+          "Setup_Slow": 0.0,
+          "Hold_Slow": 5.392,
+          "Minimum Pulse Width_Slow": 0.158,
+          "Setup_Fast": 0.0,
+          "Hold_Fast": 4.609,
+          "Minimum Pulse Width_Fast": 0.462
+        },
+        "mapped_counts": {
+          "V_LUT5": 18,
+          "V_LAASYN": 25,
+          "V_MUX2": 7,
+          "V_GRS": 1,
+          "V_IBUF": 7,
+          "V_OBUF": 6,
+          "V_BUF": 2,
+          "V_PLL_E3": 5,
+          "V_USCM": 25
+        },
+        "verified_clock_outputs": 25,
+        "distinct_waveforms": 5,
+        "schedule_matches_mapped_plls": true,
+        "clock_loads_verified": true,
+        "physical_pll_startup_verified": false
+      },
+      "functional": {
+        "passed": true,
+        "results": [
+          [
+            "2048",
+            "0"
+          ]
+        ],
+        "scope": "Actual generated RTL with ideal 25 supplied clocks; vendor latch model; 1024 adjacent input-word pairs; no PLL model, SDF or board verification",
+        "kind": "latch"
+      },
+      "report_sha256": "cd1c2dacca732d14747c0ab26d608a719ec5ead0a1d0646b17923f558c445541",
+      "vendor_pll_simulation": {
+        "passed": true,
+        "scope": "Unmodified vendor PLL and latch RTL models; no SDF or board validation",
+        "error": null,
+        "clocks": [
+          {
+            "index": 0,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.00047240223458544506,
+            "passed": true
+          },
+          {
+            "index": 1,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.00047240223458544506,
+            "passed": true
+          },
+          {
+            "index": 2,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.00047240223458544506,
+            "passed": true
+          },
+          {
+            "index": 3,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.00047240223458544506,
+            "passed": true
+          },
+          {
+            "index": 4,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.00047240223458544506,
+            "passed": true
+          },
+          {
+            "index": 5,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004655307263661257,
+            "passed": true
+          },
+          {
+            "index": 6,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004655307263661257,
+            "passed": true
+          },
+          {
+            "index": 7,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004655307263661257,
+            "passed": true
+          },
+          {
+            "index": 8,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004655307263661257,
+            "passed": true
+          },
+          {
+            "index": 9,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004655307263661257,
+            "passed": true
+          },
+          {
+            "index": 10,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004686592178941851,
+            "passed": true
+          },
+          {
+            "index": 11,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004686592178941851,
+            "passed": true
+          },
+          {
+            "index": 12,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004686592178941851,
+            "passed": true
+          },
+          {
+            "index": 13,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004686592178941851,
+            "passed": true
+          },
+          {
+            "index": 14,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004686592178941851,
+            "passed": true
+          },
+          {
+            "index": 15,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004717877095927747,
+            "passed": true
+          },
+          {
+            "index": 16,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004717877095927747,
+            "passed": true
+          },
+          {
+            "index": 17,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004717877095927747,
+            "passed": true
+          },
+          {
+            "index": 18,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004717877095927747,
+            "passed": true
+          },
+          {
+            "index": 19,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004717877095927747,
+            "passed": true
+          },
+          {
+            "index": 20,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004849162011097974,
+            "passed": true
+          },
+          {
+            "index": 21,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004849162011097974,
+            "passed": true
+          },
+          {
+            "index": 22,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004849162011097974,
+            "passed": true
+          },
+          {
+            "index": 23,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004849162011097974,
+            "passed": true
+          },
+          {
+            "index": 24,
+            "period_ns": 11.173199999999952,
+            "width_ns": 1.6759799999999814,
+            "max_phase_error_ns": 0.0004849162011097974,
+            "passed": true
+          }
+        ],
+        "function": [
+          [
+            "2048",
+            "0"
+          ]
+        ],
+        "tolerance_ns": 0.02
+      }
+    },
+    {
+      "name": "Latch + Howard",
+      "frequency_mhz": 93.0,
+      "period_ns": 10.75268817204301,
+      "run": "fine_howard_zero_reserve/F186",
+      "repeat": "repeat_howard93",
+      "next_failure": "fine_howard_zero_reserve/F187",
+      "next_failure_slack_ns": {
+        "Setup_Slow": -0.473,
+        "Hold_Slow": 1.373,
+        "Minimum Pulse Width_Slow": 0.622,
+        "Setup_Fast": 0.0,
+        "Hold_Fast": 0.912,
+        "Minimum Pulse Width_Fast": 0.926
+      },
+      "verification": {
+        "passed": true,
+        "slack_ns": {
+          "Setup_Slow": 0.0,
+          "Hold_Slow": 1.064,
+          "Minimum Pulse Width_Slow": 0.633,
+          "Setup_Fast": 0.0,
+          "Hold_Fast": 0.704,
+          "Minimum Pulse Width_Fast": 0.937
+        },
+        "mapped_counts": {
+          "V_LUT5": 20,
+          "V_LAASYN": 25,
+          "V_MUX2": 8,
+          "V_GRS": 1,
+          "V_IBUF": 7,
+          "V_OBUF": 6,
+          "V_BUF": 2,
+          "V_PLL_E3": 5,
+          "V_USCM": 25
+        },
+        "verified_clock_outputs": 25,
+        "distinct_waveforms": 14,
+        "schedule_matches_mapped_plls": true,
+        "clock_loads_verified": true,
+        "physical_pll_startup_verified": false
+      },
+      "functional": {
+        "passed": true,
+        "results": [
+          [
+            "2048",
+            "0"
+          ]
+        ],
+        "scope": "Actual generated RTL with ideal 25 supplied clocks; vendor latch model; 1024 adjacent input-word pairs; no PLL model, SDF or board verification",
+        "kind": "latch"
+      },
+      "report_sha256": "323ccbaaaf11ca2bde3e37900eb556c57650d924f6ec249e65b95cdfb67b8bf1",
+      "vendor_pll_simulation": {
+        "passed": true,
+        "scope": "Unmodified vendor PLL and latch RTL models; no SDF or board validation",
+        "error": null,
+        "clocks": [
+          {
+            "index": 0,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.1505200000000286,
+            "max_phase_error_ns": 0.002640967741908362,
+            "passed": true
+          },
+          {
+            "index": 1,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.6881499999999505,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 2,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.6881499999999505,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 3,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.1505200000000286,
+            "max_phase_error_ns": 0.002640967741908362,
+            "passed": true
+          },
+          {
+            "index": 4,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.6881499999999505,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 5,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.150519999999915,
+            "max_phase_error_ns": 0.0026458064514800483,
+            "passed": true
+          },
+          {
+            "index": 6,
+            "period_ns": 10.75260000000003,
+            "width_ns": 4.838669999999979,
+            "max_phase_error_ns": 0.002642365591268181,
+            "passed": true
+          },
+          {
+            "index": 7,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.1505200000000286,
+            "max_phase_error_ns": 0.0026416129032300617,
+            "passed": true
+          },
+          {
+            "index": 8,
+            "period_ns": 10.75260000000003,
+            "width_ns": 4.838669999999979,
+            "max_phase_error_ns": 0.002642365591268181,
+            "passed": true
+          },
+          {
+            "index": 9,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.1505200000000286,
+            "max_phase_error_ns": 0.0026416129032300617,
+            "passed": true
+          },
+          {
+            "index": 10,
+            "period_ns": 10.75260000000003,
+            "width_ns": 6.451559999999972,
+            "max_phase_error_ns": 0.0026437634408553734,
+            "passed": true
+          },
+          {
+            "index": 11,
+            "period_ns": 10.75260000000003,
+            "width_ns": 6.451559999999972,
+            "max_phase_error_ns": 0.0026437634408553734,
+            "passed": true
+          },
+          {
+            "index": 12,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.6881499999999505,
+            "max_phase_error_ns": 0.0026446236558941294,
+            "passed": true
+          },
+          {
+            "index": 13,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.1505200000000286,
+            "max_phase_error_ns": 0.002641827957060805,
+            "passed": true
+          },
+          {
+            "index": 14,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.1505200000000286,
+            "max_phase_error_ns": 0.0026444086021202295,
+            "passed": true
+          },
+          {
+            "index": 15,
+            "period_ns": 10.75260000000003,
+            "width_ns": 5.913929999999937,
+            "max_phase_error_ns": 0.0026413978493993184,
+            "passed": true
+          },
+          {
+            "index": 16,
+            "period_ns": 10.75260000000003,
+            "width_ns": 5.913929999999937,
+            "max_phase_error_ns": 0.0026430107527604108,
+            "passed": true
+          },
+          {
+            "index": 17,
+            "period_ns": 10.75260000000003,
+            "width_ns": 5.376300000000015,
+            "max_phase_error_ns": 0.0026458064514800483,
+            "passed": true
+          },
+          {
+            "index": 18,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.6881499999999505,
+            "max_phase_error_ns": 0.0026492473119192894,
+            "passed": true
+          },
+          {
+            "index": 19,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.6881499999999505,
+            "max_phase_error_ns": 0.0026492473119192894,
+            "passed": true
+          },
+          {
+            "index": 20,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.150519999999915,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 21,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.150519999999915,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 22,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.150519999999915,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 23,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.150519999999915,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          },
+          {
+            "index": 24,
+            "period_ns": 10.75260000000003,
+            "width_ns": 2.150519999999915,
+            "max_phase_error_ns": 0.0027333333334231824,
+            "passed": true
+          }
+        ],
+        "function": [
+          [
+            "2048",
+            "0"
+          ]
+        ],
+        "tolerance_ns": 0.02
+      }
+    }
+  ],
+  "coverage": {
+    "expected_adjacent_pairs": 50,
+    "expected_pair_scenarios": 200,
+    "covered_pair_scenarios": 200,
+    "missing": [],
+    "unmatched_paths": [],
+    "issues": [],
+    "method": "Boolean connectivity of supported mapped primitives, checked against per-pair slow/fast setup/hold reports and SDF arcs"
+  },
+  "howard_continuous_period_ns": 10.548499999999999,
+  "howard_lp_agreement": true,
+  "board_tested": false,
+  "pll_cross_instance_startup_verified": false
+}

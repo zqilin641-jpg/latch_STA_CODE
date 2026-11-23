@@ -1,0 +1,14 @@
+record_type,constraint_type,source,target,cost,transit,slack_ns
+critical_cycle,"setup","REF:t","A:A",0,2,
+critical_cycle,"arrival_order","A:A","A:a",0,0,
+critical_cycle,"hold","A:a","REF:t",-0,0,
+lp_constraint,"hold","A","A",,,-0
+lp_constraint,"setup","A","A",,,-0
+lp_constraint,"earliest_data_to_q","A","A",,,-0
+lp_constraint,"earliest_clock_to_q","A","A",,,-0
+lp_constraint,"latest_data_to_q","A","A",,,-0
+lp_constraint,"latest_clock_to_q","A","A",,,-0
+lp_constraint,"arrival_order","A","A",,,0
+lp_constraint,"departure_order","A","A",,,0
+lp_constraint,"min_path_hold","A","A",,,0
+lp_constraint,"max_path_setup","A","A",,,-0

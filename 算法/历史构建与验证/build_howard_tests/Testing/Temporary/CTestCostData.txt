@@ -1,0 +1,7 @@
+howard_validation 3 0.0205624
+howard_graphs 1 0.0320979
+howard_s27_baseline 2 0.0128196
+howard_s27_duty 2 0.0108355
+howard_s27_nonzero 2 0.0122472
+howard_s27_override 2 0.0111598
+---
