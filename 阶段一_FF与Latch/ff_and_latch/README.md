@@ -1,57 +1,24 @@
-# Independent FF / Latch Timing Baseline
+# 实验一　比较触发器与锁存器的时序
 
-This directory contains two independent PGL50H-6/FBG484 PDS projects, not a
-board image. Do not download these projects to the MES50HP: there is no board
-pin assignment or implemented phase generator, and no bitstream is generated.
-The tested second-stage board image remains under `../single_latch/`.
+本实验用两个独立的 PDS 工程，在 PGL50H-6/FBG484 上实现相同的八位运算，观察存储单元改变后，数据在哪个时刻被接收、经过几级、何时到达输出。阶段一的完整报告见[实验阶段一](../实验阶段一.docx)。
 
-## Files
+| 对照项 | FF 工程 | Latch 工程 |
+| --- | --- | --- |
+| 算术核心 | 两级，共 16 个 FF | 两级，共 16 个高电平透明 Latch |
+| 输入与输出边界 | 输入、输出各 8 个 FF | 输入、输出各 8 个 FF |
+| 采入输入后，输出对应结果的时间 | 第 3 个参考时钟周期 | 第 1 个参考时钟周期 |
 
-| Location | Purpose |
-| --- | --- |
-| `rtl/timing_boundaries.v` | Identical eight-bit input and output register boundaries. |
-| `rtl/ff_timing_top.v` | Two-stage FF core, sampled once per transaction clock. |
-| `rtl/latch_timing_top.v` | Two-stage latch core with related external phase inputs. |
-| `../single_latch/rtl/datapath_compare.v` | Reused, unchanged arithmetic cores. No duplicate core source. |
-| `constraints/ff_timing.fdc` | FF clock, IO-delay assumptions and reset exception. |
-| `constraints/latch_timing.fdc` | Same reference period and related phase waveforms. |
-| `pds/ff_build.tcl`, `pds/latch_build.tcl` | Independent compile through timing-report generation. |
-| `scripts/run_build.ps1` | Build, check mapped storage and export comparisons. |
-| `scripts/export_comparison.ps1` | Extract core paths and verify destination-macro coverage. |
-| `sim/tb_independent_timing.v` | Transaction-aligned tests, two phase configurations and reset. |
-| `scripts/run_sim.ps1` | RTL or post-route functional simulation. |
+两组都先将输入加上 `0x39` 并保留低八位，再循环左移三位，最后与 `0xA7` 异或。仿真按输入事务核对输出，以适应表中的延迟差异。
 
-## Contracts
+## 怎样读时序报告
 
-Both cores compute `rotl8((x + 0x39) mod 256, 3) XOR 0xA7`.
-The transaction period is 640 ns in both projects, not 20 ns. The FF core now
-uses that transaction clock directly instead of the second-stage board's
-50 MHz controller with a once-per-32-cycle enable. There is no checker or
-stimulus generator inside either synthesis project.
+在 PDS 的 **File → Open Project** 中打开 `build/ff/ff_timing_top.pds` 或 `build/latch/latch_timing_top.pds`。参考时钟周期为 640 ns。Latch 工程的一级在 40～200 ns 透明，二级在 320～480 ns 透明。FDC 将两相定义为相关的外部时钟。输入输出最大、最小延时分别设为 2 ns 和 0.2 ns，用户时钟不确定度为 0.2 ns。
 
-Both versions add identical input/output register boundaries. Including
-those boundaries, the FF result is returned three reference-clock cycles
-after sampling the input; the latch result is returned one cycle afterwards.
-The testbench checks transaction identities rather than same-time output equality.
-Each core still has sixteen storage cells. The latch version also has sixteen
-boundary FFs; the FF version has thirty-two FFs including its boundaries.
+在 **Report Timing → Slow Corner → Worst Case Timing Path → Setup** 中，按起点和终点辨认“输入 FF → 第一级”“第一级 → 第二级”“第二级 → 输出 FF”。`build/comparison/core_paths.csv` 给出两组提取的路径，原始 `.rtr` 位于各工程的 `report_timing` 目录。部分加法器和 FF 被映射进同一个宏，报告的终点可能显示为宏的输入引脚。
 
-Latch default clocks share a nominal time origin:
+## 怎样运行
 
-- `transaction_clock`: period 640 ns, waveform [0,320) ns.
-- `phase_a`: period 640 ns, high [40,200) ns, 25% duty.
-- `phase_b`: period 640 ns, high [320,480) ns, 25% duty.
-
-These are assumptions about related ideal external clocks. They are not PLL
-outputs or evidence of actual waveform generation on the board. The separate
-40% simulation uses A=[40,296), B=[360,616) ns at the same period; it does not
-change the PDS constraints or imply that 40% timing closure has been checked.
-IO delays (max 2 ns, min 0.2 ns) and clock uncertainty (0.2 ns) are assumptions.
-Only the asynchronous reset port has a false-path exception.
-
-## Build and Simulate
-
-Run from this directory:
+从本实验目录打开 PowerShell。归档脚本按相对路径引用 `../single_latch/rtl/datapath_compare.v`；当前阶段目录缺少这个同级工程。原工作区保留了该依赖，可从 `E:\pds\lacth\latch_validation\ff_and_latch` 运行以下命令。
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\run_sim.ps1
@@ -59,70 +26,8 @@ powershell -ExecutionPolicy Bypass -File .\scripts\run_build.ps1 -Variant all
 powershell -ExecutionPolicy Bypass -File .\scripts\run_sim.ps1 -PostRoute
 ```
 
-Use `-Variant ff` or `-Variant latch` for one build. Run
-`scripts/export_comparison.ps1` after both reports are available when using
-separate builds. Append `-Gui` to either simulation command for waveforms.
-Both simulation modes require 777 checks and zero errors. The mapped mode
-uses the exported physical netlists without SDF annotation.
+三条命令依次执行 RTL 仿真、两个工程的布局布线与时序报告导出、布线后网表功能仿真。仿真命令可加 `-Gui` 查看波形。后者未回标 SDF 延时。
 
-## PDS UI and Reports
+## 已有结果
 
-Open these existing projects in PDS via File > Open Project:
-
-- `build/ff/ff_timing_top.pds`
-- `build/latch/latch_timing_top.pds`
-
-Each project has its own sources, FDC, synthesis, mapping, placement/routing
-and Report Timing step. Re-running reports in the UI is supported. Report
-options use min/max analysis, one worst path per endpoint and up to 128 paths
-per group; retain sufficient path count if re-exporting comparisons.
-Do not run Generate Bit Stream or program either timing-only project.
-
-Original reports:
-
-- `build/ff/report_timing/ff_timing_top.rtr`
-- `build/latch/report_timing/latch_timing_top.rtr`
-
-Core-only extracts are under each project's `core_reports/` directory:
-`input_to_first.txt`, `first_to_second.txt`, `second_to_output.txt`.
-`build/comparison/core_paths.csv` contains the numeric path records.
-`build/comparison/comparison.md` contains a short table with explicit limits.
-
-PDS can pack adders and FFs into composite macros. Their timing endpoints may
-be macro input pins, with part of the arithmetic absorbed into the endpoint's
-timing requirement. Therefore path count is not register-bit count, and reported
-logic-plus-route delay is not necessarily the entire arithmetic delay. Export
-validation checks eight mapped cells in each storage bank and all destination
-macro groups for setup/hold at both corners; it does not claim to list every
-possible combinational path. Original reports remain the primary evidence.
-
-## Limits and Next Work
-
-The 640 ns case is a conservative analysis baseline. A larger reported slack
-does not establish a higher Fmax: FF and latch capture edges and latency differ.
-The PDS Performance Summary also includes boundary IO paths. Automatic pin
-placement, different clock routing and packed resource types affect the reports.
-Do not derive measured Fmax from that summary or compare only LUT counts.
-
-Inspect the latch `Time borrow` and `Max time borrow` fields. A borrowing window
-alone does not mean borrowing is being used; selected baseline paths currently
-report zero actual borrowing. No SDF validation, real phase-generator design,
-board frequency sweep, Howard Tmin or independent LP prediction is provided.
-Keep library setup/hold values and clock assumptions explicit in the next model;
-do not replace them by zero or assume that FPGA timing equals ASIC timing.
-
-## Recorded Verification: 2026-10-14
-
-- Full two-project build and report export completed successfully.
-- FF mapped core: sixteen FFs, no latches; latch mapped core: sixteen latches,
-  no FFs inside the arithmetic core. Both retain sixteen boundary FFs.
-- RTL simulation: 777 checks, zero errors/warnings.
-- Post-route functional simulation: 777 checks, zero errors/warnings, no SDF.
-- Export: 216 selected timing paths, with mapped destination-macro coverage
-  verified for all three groups, both checks and both corners.
-- Largest selected actual latch borrowing: 0 ns at the baseline period.
-
-PDS warnings about unspecified physical IO placement are expected for these
-analysis-only wrappers. The reset port is intentionally asynchronous and
-excluded from timing, so this is not proof of reset recovery/removal closure.
-No hardware execution or frequency measurement was performed for these projects.
+2026-10-14 的实验记录中，两种仿真均通过 777 项检查，错误数为 0。共导出 216 条选定路径，涵盖三级路径的建立和保持检查及快慢工艺角。基准条件下，所选路径实际借用时间最大为 **0 ns**。这一组建立了功能与时序对照；两种实现的最高频率仍需单独扫周期验证。观察实际发生借时的例子，可继续读[时间借用实验](../time_borrow/README.md)。

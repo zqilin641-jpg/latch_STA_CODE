@@ -1,8 +1,0 @@
--L simprims_ver
--L unisims_ver
---sdfmax /tb=carry.sdf
---pulse_r 0
---pulse_e 0
-work.tb
--s carry
-work.glbl

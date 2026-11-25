@@ -1,122 +1,35 @@
-# Controlled Time-Borrowing Experiment
+# 实验二　验证锁存器的时间借用
 
-This is a timing-analysis experiment, not a board image. No board pin assignment,
-real clock generator, bitstream, SDF run or measured Fmax is provided. The
-earlier `single_latch` and `ff_and_latch` source files are reused unchanged.
-Howard and its independent LP reference have not been integrated here.
+本实验沿用[FF 与 Latch 对照实验](../ff_and_latch/README.md)的两级 Latch 核心。它回答两个问题：数据在第一级开门之后到达时，还能否通过？如果可以，第二级还剩多少时间？阶段一的完整报告见[实验阶段一](../实验阶段一.docx)。
 
-## PDS Cases
+## 三组对照与结果
 
-All cases use `latch_timing_top`, a 640 ns transaction period, related ideal
-external clocks, 16 core latches and 16 input/output boundary FFs. Phase B is
-high over [320,480) ns. IO budgets and user uncertainty match the old baseline.
+参考时钟周期均为 640 ns，第二级的 B 相透明窗口均为 320～480 ns。三组分别修改第一级的 A 相窗口并独立布局布线。下表来自 2026-10-19 的 PDS 检查记录。
 
-| Case | Phase A high (ns) | Purpose |
-| --- | --- | --- |
-| baseline | [40,200) | Data arrives before opening; no borrowing required. |
-| borrow | [2,162) | Earlier opening, same 160 ns pulse; exercise borrowing. |
-| overflow | [2,3) | Deliberately too-short capture window; expect setup failures. |
+| 工程 | A 相透明窗口（ns） | 慢角最大实际借时（ns） | 第一级慢角最差 setup slack（ns） | 第一级 setup 违例端点数（慢角 / 快角） |
+| --- | --- | ---: | ---: | --- |
+| baseline | 40～200 | 0.000 | 34.370 | 0 / 0 |
+| borrow | 2～162 | 3.514 | 0.000 | 0 / 0 |
+| overflow | 2～3 | 1.020 | −2.465 | 8 / 6 |
 
-The 1 ns pulse is an intentionally unrealistic negative control, not a
-recommendation for generating such clocks on the MES50HP. Each case is placed
-and routed independently. Differences between cases are not a fixed-route
-measurement and do not prove an Fmax improvement.
+**borrow** 把开门时刻提前，同时保留 160 ns 的透明窗口。第一级借到时间后满足建立要求，下一级的起算时刻也随之推迟。**overflow** 把窗口缩到 1 ns，即使计入允许的借时，最差路径仍晚到 2.465 ns。三组共检查了 288 条选定的路径记录；这些数据用于验证借时机制，未测量板上最高频率。
 
-Build from this directory:
+## 在报告中找到借时
+
+在 PDS 打开 `build/borrow/latch_timing_top.pds`，选择 **Report Timing → Slow Corner → Worst Case Timing Path → Setup**。也可以直接搜索原始文本 `build/borrow/report_timing/latch_timing_top.rtr`。
+
+1. 选终点为第一级 Latch 的路径，在 **Data required time** 明细中找 `time borrowed from endpoint`。例如，借时前允许到达时刻为 4.025 ns，实际到达时刻为 6.624 ns，借入 2.599 ns 后，报告的 slack 恰为 0。
+2. 再选从同一个 Latch 的 `/D` 出发、到第二级的路径，在 **Data arrival time** 明细中找 `time given to startpoint`。该项推迟下一段路径的起算时刻。报告在两侧分别计入时钟延时与不确定度，两个字段应按各自的路径明细读取。
+3. 三组汇总见 `build/comparison/summary.csv`，逐条数据见 `build/comparison/paths.csv`。借时组中，下一级最大的起点时间调整为 3.264 ns。
+
+## 怎样复现
+
+脚本依赖同级的 `ff_and_latch` 和 `single_latch` 工程。归档目录缺少同级的 `single_latch`，可从原工作区 `E:\pds\lacth\latch_validation\time_borrow` 打开 PowerShell，依次执行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\run_build.ps1 -Case all
 powershell -ExecutionPolicy Bypass -File .\scripts\check_reports.ps1
-```
-
-Use `-Case baseline`, `borrow` or `overflow` for one build. The checker requires
-all three reports. A successful tool execution is not sufficient: it also
-checks storage mapping, eight destinations per core stage/check/corner,
-slack arithmetic, positive borrowing, downstream launch adjustment, and the
-expected negative-control setup failures. `Some Constraints Violated` is the
-intended result of `overflow`, not permission to use that case on hardware.
-
-## Open in PDS UI
-
-Use File > Open Project; there is no need to run Generate Bitstream.
-
-- `build/baseline/latch_timing_top.pds`
-- `build/borrow/latch_timing_top.pds`
-- `build/overflow/latch_timing_top.pds`
-
-For `borrow`, open Report Timing > Slow Corner > Worst Case Timing Path > Setup.
-Paths ending at `u_stage_one` can report Slack=0 after the tool adds borrowing.
-This does not mean no time was borrowed. Read `Time borrow`, `Max time borrow`
-and `time borrowed from endpoint` in the original text report:
-`build/borrow/report_timing/latch_timing_top.rtr`.
-
-For the following stage, look for a startpoint ending in `/D` and
-`time given to startpoint`: data is launched later than the nominal G opening
-reference. The available next-stage time is reduced by this adjustment relative
-to that path's own opening-based budget. Do not compare raw stage slack across
-different A phases as though all capture relationships were identical.
-
-Borrowing fields include the tool's uncertainty and early/late accounting.
-For example, reported borrowing is not necessarily D arrival minus the
-unadjusted local gate opening. Always retain the original report evidence.
-Do not interpret the min/hold report's borrow-window labels as the max/setup
-transparent window; the checker uses max/slow records for borrowing evidence.
-
-Results: `build/comparison/comparison.md`, `summary.csv`, `paths.csv`, and
-per-case `build/<case>/evidence/` detailed path extracts. The reference-clock
-Performance Summary can show a positive Estimated Frequency even while the
-separate phase-A paths fail. It is not whole-design Fmax or board measurement.
-
-## Separate RTL Illustration
-
-```powershell
 powershell -ExecutionPolicy Bypass -File .\scripts\run_concept_sim.ps1
-powershell -ExecutionPolicy Bypass -File .\scripts\run_concept_sim.ps1 -Gui
 ```
 
-This test reuses the original arithmetic core with the vendor GTP latch model.
-It has no synthesized boundary FFs and no SDF delays. All three instances use
-A=[40,200), B=[320,480) ns. The stimulus deliberately changes inputs at 20, 60
-and 220 ns, respectively. These stimulus times are not measured FPGA delays
-and are not the PDS cases' phase-A waveforms.
-
-- Early input: the new first-stage value launches at A opening, 40 ns.
-- Input during transparency: it launches at 60 ns, losing 20 ns of the next
-  stage's opening-based budget, while still returning the correct transaction.
-- Input after closing: the expected transaction is missed and appears one
-  cycle later. The test must detect this failure, not silently shift its
-  scoreboard to accept the wrong transaction.
-
-The batch script requires exactly 22 checks and zero unexpected errors. A VCD
-and transcript are generated in `build/modelsim_concept/`. This is conceptual
-functional evidence, not independent verification of the physical STA numbers.
-
-## Recorded Verification: 2026-10-19
-
-All three projects were rebuilt through placement/routing and report generation.
-The checker verified 288 selected core path records across all cases, three
-stages, max/min checks and slow/fast corners, including all eight destinations.
-
-| Case | Maximum slow setup borrowing (ns) | Worst first-latch slow setup slack (ns) | Slow / fast failing first-latch endpoints |
-| --- | ---: | ---: | --- |
-| baseline | 0.000 | 34.370 | 0 / 0 |
-| borrow | 3.514 | 0.000 | 0 / 0 |
-| overflow | 1.020 | -2.465 | 8 / 6 |
-
-The passing borrowed case also reports a maximum 3.264 ns next-stage source
-adjustment. It includes paths starting at the first latch's D rather than G,
-confirming that the reported borrowing is propagated into the following stage.
-The overflow borrowing values are limited by its short window and do not
-make that timing-violating case valid.
-
-The separate RTL illustration passed 22 checks with zero unexpected errors;
-its 20 ns late-data launch shift and missed-window negative control were both
-detected. The original independent FF/latch RTL regression was rerun and passed
-777 checks. No original arithmetic or wrapper RTL was edited.
-
-These are analysis and functional-simulation results, not hardware execution.
-Expected PDS warnings include unassigned physical IO placement and the
-asynchronous reset exception. Recovery/removal closure, a real phase generator,
-SDF simulation, Howard/LP agreement and an actual Fmax comparison remain future
-work. In particular, neither a 1 ns pulse nor the library's very small pulse
-width requirements should be treated as an achievable board-clock waveform.
+第一条运行三组布局布线，第二条检查全部三份报告，包括预期的 overflow 违例。第三条单独运行 RTL 示意仿真，加 `-Gui` 可看波形：在 A 相 40～200 ns 的共同窗口下，输入于 20 ns 改变会等到开门，于 60 ns 改变可在透明期通过，于 220 ns 改变则要等下一周期。历史记录中的 22 项仿真检查全部符合预期。这三个激励时刻用于解释行为，物理路径延时请读 PDS 报告。

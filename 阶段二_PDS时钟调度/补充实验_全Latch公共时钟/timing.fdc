@@ -1,0 +1,48 @@
+create_clock -name board_clock -period 20 [get_ports {clk_in}]
+create_generated_clock -name c00 -source [get_ports {clk_in}] -edges {1 2 3} -edge_shift {0.000000000 -3.939393939 -7.878787879} [get_pins {pll_0/CLKOUT0}]
+set_clock_uncertainty 0.2 [get_clocks {*}]
+set_input_delay -clock c00 -max 2.0 [get_ports {data_in[*]}]
+set_input_delay -clock c00 -min 0.2 [get_ports {data_in[*]}]
+set_output_delay -clock c00 -max 2.0 [get_ports {result[*]}]
+set_output_delay -clock c00 -min 0.2 [get_ports {result[*]}]
+set_false_path -from [get_ports {reset}]
+set_false_path -to [get_ports {locked}]
+define_attribute {p:clk_in} {PAP_IO_LOC} {P20}
+define_attribute {p:clk_in} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:clk_in} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:data_in[0]} {PAP_IO_LOC} {T21}
+define_attribute {p:data_in[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:data_in[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:data_in[1]} {PAP_IO_LOC} {U12}
+define_attribute {p:data_in[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:data_in[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:data_in[2]} {PAP_IO_LOC} {R3}
+define_attribute {p:data_in[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:data_in[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:data_in[3]} {PAP_IO_LOC} {Y13}
+define_attribute {p:data_in[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:data_in[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:data_in[4]} {PAP_IO_LOC} {AB13}
+define_attribute {p:data_in[4]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:data_in[4]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:locked} {PAP_IO_LOC} {AB12}
+define_attribute {p:locked} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:locked} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:reset} {PAP_IO_LOC} {AB15}
+define_attribute {p:reset} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:reset} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:result[0]} {PAP_IO_LOC} {M19}
+define_attribute {p:result[0]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:result[0]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:result[1]} {PAP_IO_LOC} {L3}
+define_attribute {p:result[1]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:result[1]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:result[2]} {PAP_IO_LOC} {T11}
+define_attribute {p:result[2]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:result[2]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:result[3]} {PAP_IO_LOC} {L20}
+define_attribute {p:result[3]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:result[3]} {PAP_IO_STANDARD} {LVCMOS33}
+define_attribute {p:result[4]} {PAP_IO_LOC} {M21}
+define_attribute {p:result[4]} {PAP_IO_VCCIO} {3.3}
+define_attribute {p:result[4]} {PAP_IO_STANDARD} {LVCMOS33}

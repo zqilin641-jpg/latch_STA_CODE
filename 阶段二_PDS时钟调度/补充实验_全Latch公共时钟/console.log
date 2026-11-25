@@ -1,0 +1,9 @@
+E: Flow-0183: Failed to check license fabric_shell from E:\pds\FPGA--license\MAC\license\new_pds_F4A80DA47D72.lic;E:\pds\FPGA--license\MAC\license\new_pds_F4A80DA47D72.lic
+Error list:
+{Node license check failed! Please try replacing the license file ().
+More informaiton:
+At line 2, the date is already expired!
+Line 2 is ignored!
+No rights is defined in license file.}
+Check license failed.
+

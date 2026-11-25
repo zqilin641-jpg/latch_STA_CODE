@@ -1,0 +1,21 @@
+{
+  "configurations": [
+    {
+      "intelliSenseMode": "linux-gcc-x64",
+      "includePath": [
+        "${workspaceFolder}/include",
+        "//wsl.localhost/Ubuntu/usr/include/c++/13",
+        "//wsl.localhost/Ubuntu/usr/include/x86_64-linux-gnu/c++/13",
+        "//wsl.localhost/Ubuntu/usr/include/c++/13/backward",
+        "//wsl.localhost/Ubuntu/usr/lib/gcc/x86_64-linux-gnu/13/include",
+        "//wsl.localhost/Ubuntu/usr/local/include",
+        "//wsl.localhost/Ubuntu/usr/include/x86_64-linux-gnu",
+        "//wsl.localhost/Ubuntu/usr/include"
+      ],
+      "name": "Ubuntu GCC",
+      "cppStandard": "c++17",
+      "compilerPath": ""
+    }
+  ],
+  "version": 4
+}

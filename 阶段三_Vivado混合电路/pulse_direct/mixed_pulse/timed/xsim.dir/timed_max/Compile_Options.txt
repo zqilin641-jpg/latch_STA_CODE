@@ -1,1 +1,0 @@
--L "simprims_ver" -L "unisims_ver" "work.tb" "work.glbl" -s "timed_max" 

@@ -1,0 +1,51 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "编译并运行 main",
+      "type": "process",
+      "command": "wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu",
+        "--cd",
+        "${workspaceFolder}",
+        "--",
+        "bash",
+        "-c",
+        "cmake -S . -B ~/latchsta-build && cmake --build ~/latchsta-build --target main -j4 && ~/latchsta-build/main"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "编译 main",
+      "type": "process",
+      "command": "wsl.exe",
+      "args": [
+        "-d",
+        "Ubuntu",
+        "--cd",
+        "${workspaceFolder}",
+        "--",
+        "bash",
+        "-c",
+        "cmake -S . -B ~/latchsta-build && cmake --build ~/latchsta-build --target main -j4"
+      ],
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}

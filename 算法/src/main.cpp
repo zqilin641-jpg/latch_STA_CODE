@@ -220,6 +220,9 @@ static bool writeTimingReport(const string &fileName, const Graph &graph,
 
 int main(int argc, char *const argv[])
 {
+     // VS Code 默认电路：保留一条启用的配置；命令行参数可以覆盖它。
+     const char *defaultCircuit = "benchmark/s27.blif.out";
+     // const char *defaultCircuit = "benchmark/s1196.blif.out";
      string reportFile;
      int positionalArgc = argc;
      if (argc >= 3 && string(argv[argc - 2]) == "--report")
@@ -227,7 +230,7 @@ int main(int argc, char *const argv[])
           reportFile = argv[argc - 1];
           positionalArgc -= 2;
      }
-     if (positionalArgc != 4 && positionalArgc != 8 &&
+     if (argc != 1 && positionalArgc != 4 && positionalArgc != 8 &&
          positionalArgc != 9 && positionalArgc != 10)
      {
           cerr << "Usage: " << argv[0]
@@ -237,10 +240,10 @@ int main(int argc, char *const argv[])
           return 1;
      }
      auto change = high_resolution_clock::now() - high_resolution_clock::now();
-     string filename(argv[1]);
+     string filename(argc == 1 ? defaultCircuit : argv[1]);
      cout << filename << endl;
-     int iter = atoi(argv[2]);
-     double alpha = atof(argv[3]);
+     int iter = argc == 1 ? 1 : atoi(argv[2]);
+     double alpha = argc == 1 ? 100.0 : atof(argv[3]);
      LatchTimingParams params;
      if (positionalArgc >= 8)
      {

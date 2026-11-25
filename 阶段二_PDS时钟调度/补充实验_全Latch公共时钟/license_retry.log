@@ -1,0 +1,29 @@
+E: Flow-0183: Failed to check license fabric_shell from E:\pds\FPGA--license\MAC\license\PDS-0028F8405C9F.lic;E:\pds\FPGA--license\MAC\license\PDS-0028F8405C9F.lic
+Error list:
+{Node license check failed! Please try replacing the license file ().
+More informaiton:
+At line 1, keywords "FEATURE" is not supported!
+Line 1 is ignored!
+At line 4, keywords "FEATURE" is not supported!
+Line 4 is ignored!
+At line 7, keywords "FEATURE" is not supported!
+Line 7 is ignored!
+At line 10, keywords "FEATURE" is not supported!
+Line 10 is ignored!
+At line 13, keywords "FEATURE" is not supported!
+Line 13 is ignored!
+At line 16, keywords "FEATURE" is not supported!
+Line 16 is ignored!
+At line 19, keywords "FEATURE" is not supported!
+Line 19 is ignored!
+At line 22, keywords "FEATURE" is not supported!
+Line 22 is ignored!
+At line 25, keywords "FEATURE" is not supported!
+Line 25 is ignored!
+At line 28, keywords "FEATURE" is not supported!
+Line 28 is ignored!
+At line 31, keywords "FEATURE" is not supported!
+Line 31 is ignored!
+No rights is defined in license file.}
+Check license failed.
+

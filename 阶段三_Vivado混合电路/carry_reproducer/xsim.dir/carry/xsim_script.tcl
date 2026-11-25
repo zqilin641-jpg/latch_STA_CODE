@@ -1,1 +1,0 @@
-xsim {carry} -autoloadwcfg -runall

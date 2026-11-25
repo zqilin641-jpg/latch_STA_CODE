@@ -1,0 +1,29 @@
+{
+  "configurations": [
+    {
+      "sourceFileMap": {
+        "/mnt/e/大四上/曦源项目/现LatchSTA_Code/latch-STA/算法": "${workspaceFolder}"
+      },
+      "preLaunchTask": "编译 main",
+      "stopAtEntry": false,
+      "cwd": "/mnt/e/大四上/曦源项目/现LatchSTA_Code/latch-STA/算法",
+      "request": "launch",
+      "pipeTransport": {
+        "pipeCwd": "",
+        "debuggerPath": "/usr/bin/gdb",
+        "pipeProgram": "wsl.exe",
+        "pipeArgs": [
+          "-d",
+          "Ubuntu",
+          "--"
+        ]
+      },
+      "name": "调试 main",
+      "MIMode": "gdb",
+      "type": "cppdbg",
+      "program": "/root/latchsta-build/main",
+      "args": []
+    }
+  ],
+  "version": "0.2.0"
+}

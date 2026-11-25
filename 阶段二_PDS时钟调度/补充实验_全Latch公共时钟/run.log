@@ -1,0 +1,123 @@
+Reading E:/real-modelsim/tcl/vsim/pref.tcl
+
+# 10.4
+
+# vsim -novopt -c -t 1fs work.tb -do "onerror {quit -code 2};run -all;quit -f" 
+# Start time: 21:52:22 on Nov 23,2026
+# ** Warning: (vsim-8891) All optimizations are turned off because the -novopt switch is in effect. This will cause your simulation to run very slowly. If you are using this switch to preserve visibility for Debug or PLI features please see the User's Manual section on Preserving Object Visibility with vopt.
+# 
+# //  ModelSim SE-64 10.4 Dec  3 2014 
+# //
+# //  Copyright 1991-2014 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+# //  WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR ITS
+# //  LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+# //  THIS DOCUMENT CONTAINS TRADE SECRETS AND COMMERCIAL OR FINANCIAL
+# //  INFORMATION THAT ARE PRIVILEGED, CONFIDENTIAL, AND EXEMPT FROM
+# //  DISCLOSURE UNDER THE FREEDOM OF INFORMATION ACT, 5 U.S.C. SECTION 552.
+# //  FURTHERMORE, THIS INFORMATION IS PROHIBITED FROM DISCLOSURE UNDER
+# //  THE TRADE SECRETS ACT, 18 U.S.C. SECTION 1905.
+# //
+# Refreshing E:/pds/lacth/latch_validation/howard_bridge/small25_experiment/common_latch_ffwave_82p5/pipeline_check/work.tb
+# Loading sv_std.std
+# Loading work.tb
+# Refreshing E:/pds/lacth/latch_validation/howard_bridge/small25_experiment/common_latch_ffwave_82p5/pipeline_check/work.GTP_GRS
+# Loading work.GTP_GRS
+# Refreshing E:/pds/lacth/latch_validation/howard_bridge/small25_experiment/common_latch_ffwave_82p5/pipeline_check/work.ff_reference
+# Loading work.ff_reference
+# Refreshing E:/pds/lacth/latch_validation/howard_bridge/small25_experiment/common_latch_ffwave_82p5/pipeline_check/work.GTP_PLL_E3
+# Loading work.GTP_PLL_E3
+# Refreshing E:/pds/lacth/latch_validation/howard_bridge/small25_experiment/common_latch_ffwave_82p5/pipeline_check/work.small25
+# Loading work.small25
+# Refreshing E:/pds/lacth/latch_validation/howard_bridge/small25_experiment/common_latch_ffwave_82p5/pipeline_check/work.GTP_DLATCH_C
+# Loading work.GTP_DLATCH_C
+# ** Warning: (vsim-3017) ff_reference.v(3): [TFMPC] - Too few port connections. Expected 46, found 43.
+#    Time: 0 fs  Iteration: 0  Instance: /tb/control/pll_0 File: C:/pango design suite/PDS_2022.2-SP6.4/arch/vendor/pango/verilog/simulation/GTP_PLL_E3.v
+# ** Warning: (vsim-3722) ff_reference.v(3): [TFMPC] - Missing connection for port 'CLKOUT0_EXT'.
+# ** Warning: (vsim-3722) ff_reference.v(3): [TFMPC] - Missing connection for port 'CLKOUT5'.
+# ** Warning: (vsim-3722) ff_reference.v(3): [TFMPC] - Missing connection for port 'CLKSWITCH_FLAG'.
+# ** Warning: (vsim-3017) ../design.v(3): [TFMPC] - Too few port connections. Expected 46, found 43.
+#    Time: 0 fs  Iteration: 0  Instance: /tb/dut/pll_0 File: C:/pango design suite/PDS_2022.2-SP6.4/arch/vendor/pango/verilog/simulation/GTP_PLL_E3.v
+# ** Warning: (vsim-3722) ../design.v(3): [TFMPC] - Missing connection for port 'CLKOUT0_EXT'.
+# ** Warning: (vsim-3722) ../design.v(3): [TFMPC] - Missing connection for port 'CLKOUT5'.
+# ** Warning: (vsim-3722) ../design.v(3): [TFMPC] - Missing connection for port 'CLKSWITCH_FLAG'.
+# onerror {quit -code 2}
+#  Warning: onerror command for use within macro
+# run -all
+# ALL_LOCKED 690.000000000
+# EDGE 0 F 931.817360000
+# EDGE 0 R 937.877960000
+# EDGE 0 F 943.938560000
+# EDGE 0 R 949.999160000
+# EDGE 0 F 956.059760000
+# EDGE 0 R 962.120360000
+# EDGE 0 F 968.180960000
+# EDGE 0 R 974.241560000
+# EDGE 0 F 980.302160000
+# EDGE 0 R 986.362760000
+# EDGE 0 F 992.423360000
+# EDGE 0 R 998.483960000
+# EDGE 0 F 1004.544560000
+# EDGE 0 R 1010.605160000
+# EDGE 0 F 1016.665760000
+# EDGE 0 R 1022.726360000
+# EDGE 0 F 1028.786960000
+# EDGE 0 R 1034.847560000
+# EDGE 0 F 1040.908160000
+# EDGE 0 R 1046.968760000
+# EDGE 0 F 1053.029360000
+# EDGE 0 R 1059.089960000
+# EDGE 0 F 1065.150560000
+# EDGE 0 R 1071.211160000
+# EDGE 0 F 1077.271760000
+# MISMATCH 11 7 21
+# EDGE 0 R 1083.332360000
+# EDGE 0 F 1089.392960000
+# MISMATCH 12 21 7
+# EDGE 0 R 1095.453560000
+# EDGE 0 F 1101.514160000
+# MISMATCH 13 20 21
+# EDGE 0 R 1107.574760000
+# EDGE 0 F 1113.635360000
+# MISMATCH 14 21 20
+# EDGE 0 R 1119.695960000
+# EDGE 0 F 1125.756560000
+# EDGE 0 R 1131.817160000
+# EDGE 0 F 1137.877760000
+# EDGE 0 R 1143.938360000
+# EDGE 0 F 1149.998960000
+# EDGE 0 R 1156.059560000
+# EDGE 0 F 1162.120160000
+# EDGE 0 R 1168.180760000
+# EDGE 0 F 1174.241360000
+# EDGE 0 R 1180.301960000
+# EDGE 0 F 1186.362560000
+# EDGE 0 R 1192.423160000
+# EDGE 0 F 1198.483760000
+# EDGE 0 R 1204.544360000
+# EDGE 0 F 1210.604960000
+# EDGE 0 R 1216.665560000
+# EDGE 0 F 1222.726160000
+# EDGE 0 R 1228.786760000
+# EDGE 0 F 1234.847360000
+# EDGE 0 R 1240.907960000
+# EDGE 0 F 1246.968560000
+# EDGE 0 R 1253.029160000
+# EDGE 0 F 1259.089760000
+# EDGE 0 R 1265.150360000
+# EDGE 0 F 1271.210960000
+# EDGE 0 R 1277.271560000
+# EDGE 0 F 1283.332160000
+# EDGE 0 R 1289.392760000
+# EDGE 0 F 1295.453360000
+# EDGE 0 R 1301.513960000
+# EDGE 0 F 1307.574560000
+# EDGE 0 R 1313.635160000
+# ALIGNMENT checks=2048 latch0=0 latch1=1982 latch5=1984 ff5=0
+# FUNCTION_RESULT checks=2048 errors=1984
+# ** Note: $finish    : tb.v(39)
+#    Time: 25955984772 fs  Iteration: 0  Instance: /tb
+# End time: 21:52:23 on Nov 23,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 9

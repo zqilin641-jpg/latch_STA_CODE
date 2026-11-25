@@ -1,0 +1,21 @@
+{
+  "passed": false,
+  "scope": "Unmodified vendor PLL and latch RTL models; no SDF or board validation",
+  "error": null,
+  "clocks": [
+    {
+      "index": 0,
+      "period_ns": 12.121200000000044,
+      "width_ns": 6.060600000000022,
+      "max_phase_error_ns": 0.00037575757574082047,
+      "passed": true
+    }
+  ],
+  "function": [
+    [
+      "2048",
+      "1984"
+    ]
+  ],
+  "tolerance_ns": 0.02
+}
